@@ -59,10 +59,11 @@ def calculate_pdf_all_by_displacements(obs,grid_stats):
     it takes one object observation at one time sends the dictionary (current_item_dict)to grid_by_grid_displacement_observation function to get the displacements of the objects
     take the returned 5*5 list (curr_obj_dis) calculates the the object's pdf in all the cells it has displacement
     Parameters:
-    - obs: dictionary containing {object id: (frame,x_coord,y_coord)}
-    - grid_stats: 5*5 list of mu and covariance matrices
+    - obs: dictionary containing {object id: [(frame,x_coord,y_coord)]}
+    - grid_stats: M*N list of mu and covariance matrices
     Returns:
-    - pdf_all_dict: dictionary {object_id: pdf values}.
+    - pdf_all_dict: dictionary {object_id: [pdf values]}. Each pdf value
+      corresponds to one displacement.
     """
     pdf_all_dict = {}
     i=0
