@@ -1,0 +1,891 @@
+   1,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_001.png', cX=  70, cY= 924, Frame=   164
+   1,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_002.png', cX= 169, cY= 927, Frame=   165
+   1,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_003.png', cX= 261, cY= 928, Frame=   166
+   1,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_004.png', cX= 350, cY= 930, Frame=   167
+   1,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_005.png', cX= 433, cY= 953, Frame=   168
+   1,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_006.png', cX= 503, cY= 959, Frame=   169
+   1,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_007.png', cX= 573, cY= 961, Frame=   170
+   1,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_008.png', cX= 644, cY= 959, Frame=   171
+   1,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_009.png', cX= 713, cY= 960, Frame=   172
+   1,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_010.png', cX= 784, cY= 961, Frame=   173
+   1,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_011.png', cX= 855, cY= 961, Frame=   174
+   1,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_012.png', cX= 927, cY= 961, Frame=   175
+   1,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_013.png', cX= 998, cY= 962, Frame=   176
+   1,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_014.png', cX=1071, cY= 962, Frame=   177
+   1,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_015.png', cX=1145, cY= 961, Frame=   178
+   1,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_016.png', cX=1217, cY= 961, Frame=   179
+   1,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_017.png', cX=1291, cY= 960, Frame=   180
+   1,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_018.png', cX=1364, cY= 962, Frame=   181
+   1,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_019.png', cX=1436, cY= 962, Frame=   182
+   1,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_020.png', cX=1508, cY= 963, Frame=   183
+   1,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_021.png', cX=1581, cY= 964, Frame=   184
+   1,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_022.png', cX=1657, cY= 966, Frame=   185
+   2,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_002\Image_001.png', cX= 227, cY=2124, Frame=   185
+   1,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_023.png', cX=1730, cY= 966, Frame=   186
+   2,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_002\Image_002.png', cX= 275, cY=2127, Frame=   186
+   1,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_024.png', cX=1804, cY= 966, Frame=   187
+   2,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_002\Image_003.png', cX= 323, cY=2133, Frame=   187
+   1,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_025.png', cX=1889, cY= 968, Frame=   188
+   2,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_002\Image_004.png', cX= 367, cY=2144, Frame=   188
+   1,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_026.png', cX=1960, cY= 966, Frame=   189
+   2,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_002\Image_005.png', cX= 399, cY=2152, Frame=   189
+   1,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_027.png', cX=2025, cY= 965, Frame=   190
+   1,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_028.png', cX=2090, cY= 964, Frame=   191
+   1,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_029.png', cX=2152, cY= 961, Frame=   192
+   1,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_030.png', cX=2217, cY= 962, Frame=   193
+   1,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_031.png', cX=2277, cY= 962, Frame=   194
+   1,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_032.png', cX=2335, cY= 962, Frame=   195
+   1,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_033.png', cX=2396, cY= 964, Frame=   196
+   1,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_034.png', cX=2458, cY= 965, Frame=   197
+   1,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_035.png', cX=2520, cY= 965, Frame=   198
+   1,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_036.png', cX=2584, cY= 967, Frame=   199
+   1,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_037.png', cX=2652, cY= 968, Frame=   200
+   1,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_038.png', cX=2721, cY= 968, Frame=   201
+   1,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_039.png', cX=2790, cY= 967, Frame=   202
+   1,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_040.png', cX=2858, cY= 966, Frame=   203
+   1,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_041.png', cX=2930, cY= 964, Frame=   204
+   1,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_042.png', cX=2997, cY= 964, Frame=   205
+   1,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_043.png', cX=3063, cY= 966, Frame=   206
+   1,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_044.png', cX=3131, cY= 965, Frame=   207
+   1,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_045.png', cX=3199, cY= 965, Frame=   208
+   1,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_046.png', cX=3268, cY= 967, Frame=   209
+   1,   47, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_047.png', cX=3336, cY= 967, Frame=   210
+   1,   48, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_048.png', cX=3404, cY= 966, Frame=   211
+   1,   49, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_049.png', cX=3470, cY= 964, Frame=   212
+   1,   50, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_050.png', cX=3551, cY= 963, Frame=   213
+   1,   51, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_051.png', cX=3620, cY= 958, Frame=   214
+   1,   52, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_052.png', cX=3697, cY= 953, Frame=   215
+   1,   53, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_053.png', cX=3768, cY= 947, Frame=   216
+   1,   54, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_054.png', cX=3846, cY= 956, Frame=   217
+   1,   55, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_055.png', cX=3906, cY= 957, Frame=   218
+   1,   56, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_056.png', cX=3967, cY= 955, Frame=   219
+   1,   57, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_057.png', cX=4030, cY= 953, Frame=   220
+   1,   58, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_001\Image_058.png', cX=4087, cY= 961, Frame=   221
+   3,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_001.png', cX=  10, cY=1464, Frame=   228
+   3,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_002.png', cX=  80, cY=1479, Frame=   229
+   3,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_003.png', cX= 181, cY=1487, Frame=   230
+   3,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_004.png', cX= 286, cY=1496, Frame=   231
+   3,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_005.png', cX= 392, cY=1507, Frame=   232
+   3,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_006.png', cX= 501, cY=1518, Frame=   233
+   3,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_007.png', cX= 614, cY=1531, Frame=   234
+   3,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_008.png', cX= 725, cY=1542, Frame=   235
+   3,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_009.png', cX= 841, cY=1558, Frame=   236
+   3,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_010.png', cX= 945, cY=1565, Frame=   237
+   4,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_001.png', cX= 250, cY=1963, Frame=   237
+   3,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_011.png', cX=1032, cY=1565, Frame=   238
+   4,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_002.png', cX= 337, cY=1967, Frame=   238
+   3,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_012.png', cX=1107, cY=1563, Frame=   239
+   4,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_003.png', cX= 424, cY=1972, Frame=   239
+   3,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_013.png', cX=1165, cY=1552, Frame=   240
+   4,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_004.png', cX= 509, cY=1977, Frame=   240
+   3,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_014.png', cX=1228, cY=1544, Frame=   241
+   4,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_005.png', cX= 594, cY=1982, Frame=   241
+   3,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_015.png', cX=1291, cY=1539, Frame=   242
+   4,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_006.png', cX= 680, cY=1988, Frame=   242
+   3,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_016.png', cX=1354, cY=1534, Frame=   243
+   4,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_007.png', cX= 768, cY=1993, Frame=   243
+   3,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_017.png', cX=1417, cY=1529, Frame=   244
+   4,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_008.png', cX= 854, cY=2003, Frame=   244
+   3,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_018.png', cX=1476, cY=1527, Frame=   245
+   4,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_009.png', cX= 944, cY=2006, Frame=   245
+   3,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_019.png', cX=1536, cY=1524, Frame=   246
+   4,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_010.png', cX=1035, cY=2011, Frame=   246
+   3,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_020.png', cX=1597, cY=1520, Frame=   247
+   4,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_011.png', cX=1128, cY=2017, Frame=   247
+   3,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_021.png', cX=1657, cY=1518, Frame=   248
+   4,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_012.png', cX=1218, cY=2023, Frame=   248
+   3,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_022.png', cX=1718, cY=1514, Frame=   249
+   4,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_013.png', cX=1307, cY=2024, Frame=   249
+   3,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_023.png', cX=1778, cY=1510, Frame=   250
+   4,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_014.png', cX=1394, cY=2029, Frame=   250
+   3,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_024.png', cX=1843, cY=1504, Frame=   251
+   4,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_015.png', cX=1482, cY=2033, Frame=   251
+   3,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_025.png', cX=1908, cY=1502, Frame=   252
+   4,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_016.png', cX=1568, cY=2036, Frame=   252
+   3,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_026.png', cX=1978, cY=1491, Frame=   253
+   4,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_017.png', cX=1654, cY=2037, Frame=   253
+   3,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_027.png', cX=2050, cY=1482, Frame=   254
+   4,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_018.png', cX=1739, cY=2038, Frame=   254
+   3,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_028.png', cX=2125, cY=1473, Frame=   255
+   4,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_019.png', cX=1824, cY=2038, Frame=   255
+   3,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_029.png', cX=2202, cY=1468, Frame=   256
+   4,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_020.png', cX=1906, cY=2041, Frame=   256
+   3,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_030.png', cX=2277, cY=1469, Frame=   257
+   4,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_021.png', cX=1986, cY=2046, Frame=   257
+   3,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_031.png', cX=2354, cY=1466, Frame=   258
+   4,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_022.png', cX=2059, cY=2050, Frame=   258
+   3,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_032.png', cX=2440, cY=1469, Frame=   259
+   4,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_023.png', cX=2134, cY=2053, Frame=   259
+   5,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_001.png', cX= 206, cY=2015, Frame=   259
+   3,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_033.png', cX=2517, cY=1478, Frame=   260
+   4,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_024.png', cX=2209, cY=2056, Frame=   260
+   5,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_002.png', cX= 269, cY=2018, Frame=   260
+   3,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_034.png', cX=2604, cY=1489, Frame=   261
+   4,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_025.png', cX=2283, cY=2057, Frame=   261
+   5,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_003.png', cX= 330, cY=2023, Frame=   261
+   3,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_035.png', cX=2681, cY=1507, Frame=   262
+   4,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_026.png', cX=2357, cY=2058, Frame=   262
+   5,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_004.png', cX= 390, cY=2027, Frame=   262
+   3,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_036.png', cX=2773, cY=1519, Frame=   263
+   4,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_027.png', cX=2429, cY=2059, Frame=   263
+   5,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_005.png', cX= 450, cY=2031, Frame=   263
+   3,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_037.png', cX=2859, cY=1541, Frame=   264
+   4,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_028.png', cX=2500, cY=2062, Frame=   264
+   5,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_006.png', cX= 510, cY=2034, Frame=   264
+   3,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_038.png', cX=2959, cY=1559, Frame=   265
+   4,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_029.png', cX=2570, cY=2063, Frame=   265
+   5,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_007.png', cX= 568, cY=2036, Frame=   265
+   3,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_039.png', cX=3054, cY=1580, Frame=   266
+   4,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_030.png', cX=2645, cY=2059, Frame=   266
+   5,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_008.png', cX= 626, cY=2037, Frame=   266
+   3,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_040.png', cX=3150, cY=1602, Frame=   267
+   4,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_031.png', cX=2718, cY=2057, Frame=   267
+   5,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_009.png', cX= 685, cY=2039, Frame=   267
+   3,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_041.png', cX=3238, cY=1625, Frame=   268
+   4,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_032.png', cX=2795, cY=2055, Frame=   268
+   5,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_010.png', cX= 744, cY=2041, Frame=   268
+   3,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_042.png', cX=3314, cY=1646, Frame=   269
+   4,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_033.png', cX=2876, cY=2054, Frame=   269
+   5,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_011.png', cX= 804, cY=2042, Frame=   269
+   3,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_043.png', cX=3379, cY=1657, Frame=   270
+   4,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_034.png', cX=2958, cY=2052, Frame=   270
+   5,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_012.png', cX= 864, cY=2043, Frame=   270
+   3,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_044.png', cX=3432, cY=1666, Frame=   271
+   4,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_035.png', cX=3045, cY=2052, Frame=   271
+   5,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_013.png', cX= 925, cY=2044, Frame=   271
+   3,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_045.png', cX=3486, cY=1672, Frame=   272
+   4,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_036.png', cX=3136, cY=2045, Frame=   272
+   5,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_014.png', cX= 984, cY=2044, Frame=   272
+   6,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_001.png', cX= 223, cY=1174, Frame=   272
+   3,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_046.png', cX=3550, cY=1674, Frame=   273
+   4,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_037.png', cX=3228, cY=2039, Frame=   273
+   5,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_015.png', cX=1043, cY=2044, Frame=   273
+   6,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_002.png', cX= 320, cY=1160, Frame=   273
+   3,   47, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_047.png', cX=3614, cY=1677, Frame=   274
+   4,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_038.png', cX=3319, cY=2032, Frame=   274
+   5,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_016.png', cX=1102, cY=2045, Frame=   274
+   6,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_003.png', cX= 410, cY=1161, Frame=   274
+   3,   48, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_048.png', cX=3681, cY=1678, Frame=   275
+   4,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_039.png', cX=3418, cY=2028, Frame=   275
+   5,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_017.png', cX=1161, cY=2045, Frame=   275
+   6,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_004.png', cX= 490, cY=1152, Frame=   275
+   3,   49, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_049.png', cX=3742, cY=1679, Frame=   276
+   4,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_040.png', cX=3514, cY=2006, Frame=   276
+   5,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_018.png', cX=1219, cY=2045, Frame=   276
+   6,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_005.png', cX= 578, cY=1149, Frame=   276
+   3,   50, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_050.png', cX=3809, cY=1681, Frame=   277
+   4,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_041.png', cX=3610, cY=1982, Frame=   277
+   5,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_019.png', cX=1277, cY=2044, Frame=   277
+   6,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_006.png', cX= 669, cY=1149, Frame=   277
+   3,   51, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_051.png', cX=3882, cY=1686, Frame=   278
+   4,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_042.png', cX=3709, cY=1962, Frame=   278
+   5,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_020.png', cX=1336, cY=2045, Frame=   278
+   6,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_007.png', cX= 764, cY=1156, Frame=   278
+   3,   52, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_052.png', cX=3962, cY=1689, Frame=   279
+   4,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_043.png', cX=3801, cY=1942, Frame=   279
+   5,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_021.png', cX=1395, cY=2045, Frame=   279
+   6,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_008.png', cX= 859, cY=1163, Frame=   279
+   3,   53, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_003\Image_053.png', cX=4045, cY=1689, Frame=   280
+   4,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_044.png', cX=3900, cY=1924, Frame=   280
+   5,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_022.png', cX=1454, cY=2045, Frame=   280
+   6,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_009.png', cX= 949, cY=1174, Frame=   280
+   4,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_045.png', cX=3995, cY=1894, Frame=   281
+   5,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_023.png', cX=1513, cY=2045, Frame=   281
+   6,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_010.png', cX=1032, cY=1188, Frame=   281
+   4,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_004\Image_046.png', cX=4071, cY=1866, Frame=   282
+   5,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_024.png', cX=1573, cY=2045, Frame=   282
+   6,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_011.png', cX=1102, cY=1201, Frame=   282
+   5,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_025.png', cX=1632, cY=2046, Frame=   283
+   6,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_012.png', cX=1176, cY=1212, Frame=   283
+   5,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_026.png', cX=1690, cY=2046, Frame=   284
+   6,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_013.png', cX=1233, cY=1229, Frame=   284
+   5,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_027.png', cX=1748, cY=2048, Frame=   285
+   6,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_014.png', cX=1298, cY=1240, Frame=   285
+   5,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_028.png', cX=1807, cY=2049, Frame=   286
+   6,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_015.png', cX=1354, cY=1258, Frame=   286
+   5,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_029.png', cX=1865, cY=2050, Frame=   287
+   6,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_016.png', cX=1416, cY=1269, Frame=   287
+   5,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_030.png', cX=1922, cY=2051, Frame=   288
+   6,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_017.png', cX=1474, cY=1283, Frame=   288
+   5,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_031.png', cX=1978, cY=2053, Frame=   289
+   6,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_018.png', cX=1534, cY=1296, Frame=   289
+   5,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_032.png', cX=2035, cY=2056, Frame=   290
+   6,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_019.png', cX=1593, cY=1312, Frame=   290
+   5,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_033.png', cX=2091, cY=2058, Frame=   291
+   6,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_020.png', cX=1653, cY=1319, Frame=   291
+   5,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_034.png', cX=2146, cY=2060, Frame=   292
+   6,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_021.png', cX=1703, cY=1326, Frame=   292
+   5,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_035.png', cX=2201, cY=2062, Frame=   293
+   6,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_022.png', cX=1762, cY=1332, Frame=   293
+   5,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_036.png', cX=2256, cY=2064, Frame=   294
+   6,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_023.png', cX=1819, cY=1335, Frame=   294
+   5,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_037.png', cX=2309, cY=2066, Frame=   295
+   6,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_024.png', cX=1875, cY=1335, Frame=   295
+   5,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_038.png', cX=2362, cY=2068, Frame=   296
+   6,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_025.png', cX=1915, cY=1334, Frame=   296
+   5,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_039.png', cX=2415, cY=2070, Frame=   297
+   6,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_026.png', cX=1972, cY=1331, Frame=   297
+   5,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_040.png', cX=2468, cY=2071, Frame=   298
+   6,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_027.png', cX=2019, cY=1326, Frame=   298
+   5,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_041.png', cX=2520, cY=2071, Frame=   299
+   6,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_028.png', cX=2068, cY=1324, Frame=   299
+   5,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_042.png', cX=2574, cY=2071, Frame=   300
+   6,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_029.png', cX=2107, cY=1320, Frame=   300
+   5,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_043.png', cX=2627, cY=2071, Frame=   301
+   6,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_030.png', cX=2158, cY=1320, Frame=   301
+   5,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_044.png', cX=2682, cY=2071, Frame=   302
+   6,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_031.png', cX=2221, cY=1321, Frame=   302
+   5,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_045.png', cX=2735, cY=2071, Frame=   303
+   6,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_032.png', cX=2279, cY=1321, Frame=   303
+   5,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_046.png', cX=2788, cY=2071, Frame=   304
+   6,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_033.png', cX=2334, cY=1319, Frame=   304
+   5,   47, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_047.png', cX=2842, cY=2070, Frame=   305
+   6,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_034.png', cX=2398, cY=1319, Frame=   305
+   5,   48, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_048.png', cX=2896, cY=2070, Frame=   306
+   6,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_035.png', cX=2458, cY=1320, Frame=   306
+   5,   49, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_049.png', cX=2950, cY=2071, Frame=   307
+   6,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_036.png', cX=2525, cY=1323, Frame=   307
+   5,   50, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_050.png', cX=3003, cY=2070, Frame=   308
+   6,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_037.png', cX=2584, cY=1329, Frame=   308
+   5,   51, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_051.png', cX=3056, cY=2070, Frame=   309
+   6,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_038.png', cX=2655, cY=1334, Frame=   309
+   5,   52, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_052.png', cX=3110, cY=2070, Frame=   310
+   6,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_039.png', cX=2717, cY=1346, Frame=   310
+   5,   53, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_053.png', cX=3162, cY=2070, Frame=   311
+   6,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_040.png', cX=2786, cY=1354, Frame=   311
+   7,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_001.png', cX= 235, cY=1960, Frame=   311
+   5,   54, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_054.png', cX=3216, cY=2070, Frame=   312
+   6,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_041.png', cX=2843, cY=1369, Frame=   312
+   7,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_002.png', cX= 306, cY=1962, Frame=   312
+   5,   55, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_055.png', cX=3270, cY=2071, Frame=   313
+   6,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_042.png', cX=2909, cY=1376, Frame=   313
+   7,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_003.png', cX= 373, cY=1966, Frame=   313
+   5,   56, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_056.png', cX=3324, cY=2071, Frame=   314
+   6,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_043.png', cX=2958, cY=1384, Frame=   314
+   7,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_004.png', cX= 455, cY=1975, Frame=   314
+   5,   57, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_057.png', cX=3378, cY=2072, Frame=   315
+   6,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_044.png', cX=3010, cY=1381, Frame=   315
+   7,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_005.png', cX= 532, cY=1982, Frame=   315
+   5,   58, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_058.png', cX=3433, cY=2072, Frame=   316
+   6,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_045.png', cX=3065, cY=1381, Frame=   316
+   7,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_006.png', cX= 614, cY=1986, Frame=   316
+   5,   59, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_059.png', cX=3488, cY=2073, Frame=   317
+   6,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_046.png', cX=3117, cY=1377, Frame=   317
+   7,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_007.png', cX= 691, cY=1992, Frame=   317
+   5,   60, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_060.png', cX=3540, cY=2073, Frame=   318
+   6,   47, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_047.png', cX=3172, cY=1376, Frame=   318
+   7,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_008.png', cX= 769, cY=1998, Frame=   318
+   5,   61, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_061.png', cX=3594, cY=2075, Frame=   319
+   6,   48, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_048.png', cX=3213, cY=1371, Frame=   319
+   7,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_009.png', cX= 852, cY=2001, Frame=   319
+   5,   62, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_062.png', cX=3646, cY=2076, Frame=   320
+   6,   49, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_049.png', cX=3265, cY=1371, Frame=   320
+   7,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_010.png', cX= 933, cY=2005, Frame=   320
+   5,   63, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_063.png', cX=3699, cY=2077, Frame=   321
+   6,   50, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_050.png', cX=3316, cY=1370, Frame=   321
+   7,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_011.png', cX=1012, cY=2009, Frame=   321
+   5,   64, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_064.png', cX=3752, cY=2077, Frame=   322
+   6,   51, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_051.png', cX=3372, cY=1371, Frame=   322
+   7,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_012.png', cX=1092, cY=2011, Frame=   322
+   5,   65, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_065.png', cX=3803, cY=2077, Frame=   323
+   7,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_013.png', cX=1170, cY=2020, Frame=   323
+   5,   66, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_066.png', cX=3855, cY=2078, Frame=   324
+   6,   52, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_052.png', cX=3449, cY=1376, Frame=   324
+   7,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_014.png', cX=1252, cY=2024, Frame=   324
+   5,   67, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_067.png', cX=3907, cY=2078, Frame=   325
+   6,   53, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_053.png', cX=3492, cY=1384, Frame=   325
+   7,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_015.png', cX=1335, cY=2027, Frame=   325
+   5,   68, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_068.png', cX=3959, cY=2077, Frame=   326
+   6,   54, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_054.png', cX=3551, cY=1389, Frame=   326
+   7,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_016.png', cX=1406, cY=2035, Frame=   326
+   5,   69, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_069.png', cX=4010, cY=2077, Frame=   327
+   6,   55, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_055.png', cX=3602, cY=1398, Frame=   327
+   7,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_017.png', cX=1491, cY=2038, Frame=   327
+   5,   70, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_005\Image_070.png', cX=4061, cY=2078, Frame=   328
+   6,   56, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_056.png', cX=3661, cY=1408, Frame=   328
+   7,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_018.png', cX=1577, cY=2037, Frame=   328
+   6,   57, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_057.png', cX=3713, cY=1420, Frame=   329
+   7,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_019.png', cX=1652, cY=2041, Frame=   329
+   6,   58, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_058.png', cX=3782, cY=1425, Frame=   330
+   7,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_020.png', cX=1739, cY=2044, Frame=   330
+   6,   59, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_059.png', cX=3834, cY=1429, Frame=   331
+   7,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_021.png', cX=1827, cY=2045, Frame=   331
+   6,   60, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_060.png', cX=3893, cY=1427, Frame=   332
+   7,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_022.png', cX=1903, cY=2045, Frame=   332
+   6,   61, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_061.png', cX=3961, cY=1424, Frame=   333
+   7,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_023.png', cX=1979, cY=2045, Frame=   333
+   6,   62, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_062.png', cX=4023, cY=1414, Frame=   334
+   7,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_024.png', cX=2062, cY=2047, Frame=   334
+   6,   63, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_006\Image_063.png', cX=4067, cY=1399, Frame=   335
+   7,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_025.png', cX=2147, cY=2048, Frame=   335
+   7,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_026.png', cX=2224, cY=2050, Frame=   336
+   7,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_027.png', cX=2293, cY=2054, Frame=   337
+   7,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_028.png', cX=2371, cY=2055, Frame=   338
+   7,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_029.png', cX=2448, cY=2055, Frame=   339
+   7,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_030.png', cX=2521, cY=2056, Frame=   340
+   7,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_031.png', cX=2597, cY=2056, Frame=   341
+   7,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_032.png', cX=2673, cY=2058, Frame=   342
+   7,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_033.png', cX=2747, cY=2056, Frame=   343
+   7,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_034.png', cX=2826, cY=2056, Frame=   344
+   7,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_035.png', cX=2903, cY=2056, Frame=   345
+   7,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_036.png', cX=2974, cY=2055, Frame=   346
+   7,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_037.png', cX=3051, cY=2056, Frame=   347
+   7,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_038.png', cX=3129, cY=2058, Frame=   348
+   7,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_039.png', cX=3200, cY=2056, Frame=   349
+   7,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_040.png', cX=3277, cY=2055, Frame=   350
+   7,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_041.png', cX=3356, cY=2056, Frame=   351
+   7,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_042.png', cX=3431, cY=2055, Frame=   352
+   7,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_043.png', cX=3510, cY=2054, Frame=   353
+   7,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_044.png', cX=3590, cY=2056, Frame=   354
+   7,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_045.png', cX=3667, cY=2059, Frame=   355
+   7,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_046.png', cX=3745, cY=2061, Frame=   356
+   7,   47, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_047.png', cX=3819, cY=2062, Frame=   357
+   7,   48, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_048.png', cX=3895, cY=2058, Frame=   358
+   7,   49, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_049.png', cX=3971, cY=2054, Frame=   359
+   7,   50, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_050.png', cX=4048, cY=2051, Frame=   360
+   7,   51, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_007\Image_051.png', cX=4090, cY=2052, Frame=   361
+   8,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_001.png', cX=1236, cY= 892, Frame=   370
+   8,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_002.png', cX=1308, cY= 892, Frame=   371
+   8,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_003.png', cX=1380, cY= 892, Frame=   372
+   8,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_004.png', cX=1452, cY= 893, Frame=   373
+   8,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_005.png', cX=1523, cY= 894, Frame=   374
+   8,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_006.png', cX=1593, cY= 894, Frame=   375
+   8,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_007.png', cX=1664, cY= 895, Frame=   376
+   9,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_001.png', cX=1416, cY= 388, Frame=   376
+   8,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_008.png', cX=1736, cY= 896, Frame=   377
+   9,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_002.png', cX=1486, cY= 392, Frame=   377
+   8,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_009.png', cX=1806, cY= 896, Frame=   378
+   9,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_003.png', cX=1549, cY= 392, Frame=   378
+   8,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_010.png', cX=1875, cY= 896, Frame=   379
+   9,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_004.png', cX=1613, cY= 393, Frame=   379
+   8,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_011.png', cX=1946, cY= 896, Frame=   380
+   9,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_005.png', cX=1675, cY= 393, Frame=   380
+   8,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_012.png', cX=2015, cY= 897, Frame=   381
+   9,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_006.png', cX=1739, cY= 394, Frame=   381
+   8,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_013.png', cX=2084, cY= 897, Frame=   382
+   9,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_007.png', cX=1801, cY= 395, Frame=   382
+   8,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_014.png', cX=2152, cY= 898, Frame=   383
+   9,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_008.png', cX=1863, cY= 395, Frame=   383
+   8,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_015.png', cX=2221, cY= 898, Frame=   384
+   9,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_009.png', cX=1927, cY= 395, Frame=   384
+   8,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_016.png', cX=2289, cY= 900, Frame=   385
+   9,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_010.png', cX=1990, cY= 396, Frame=   385
+   8,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_017.png', cX=2356, cY= 899, Frame=   386
+   9,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_011.png', cX=2052, cY= 396, Frame=   386
+   8,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_018.png', cX=2422, cY= 898, Frame=   387
+   9,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_012.png', cX=2114, cY= 396, Frame=   387
+   8,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_019.png', cX=2488, cY= 899, Frame=   388
+   9,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_013.png', cX=2176, cY= 396, Frame=   388
+   8,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_020.png', cX=2555, cY= 899, Frame=   389
+   9,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_014.png', cX=2237, cY= 396, Frame=   389
+   8,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_021.png', cX=2619, cY= 898, Frame=   390
+   9,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_015.png', cX=2297, cY= 396, Frame=   390
+   8,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_022.png', cX=2685, cY= 899, Frame=   391
+   9,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_016.png', cX=2357, cY= 395, Frame=   391
+   8,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_023.png', cX=2751, cY= 898, Frame=   392
+   9,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_017.png', cX=2417, cY= 396, Frame=   392
+   8,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_024.png', cX=2817, cY= 898, Frame=   393
+   9,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_018.png', cX=2477, cY= 396, Frame=   393
+   8,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_025.png', cX=2882, cY= 898, Frame=   394
+   9,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_019.png', cX=2537, cY= 395, Frame=   394
+   8,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_026.png', cX=2948, cY= 900, Frame=   395
+   9,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_020.png', cX=2597, cY= 394, Frame=   395
+   8,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_027.png', cX=3013, cY= 898, Frame=   396
+   9,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_021.png', cX=2657, cY= 394, Frame=   396
+   8,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_028.png', cX=3079, cY= 898, Frame=   397
+   9,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_022.png', cX=2716, cY= 394, Frame=   397
+  10,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_001.png', cX= 220, cY= 730, Frame=   397
+   8,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_029.png', cX=3144, cY= 897, Frame=   398
+   9,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_023.png', cX=2775, cY= 394, Frame=   398
+  10,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_002.png', cX= 284, cY= 729, Frame=   398
+   8,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_030.png', cX=3209, cY= 896, Frame=   399
+   9,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_024.png', cX=2835, cY= 393, Frame=   399
+  10,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_003.png', cX= 345, cY= 729, Frame=   399
+   8,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_031.png', cX=3273, cY= 894, Frame=   400
+   9,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_025.png', cX=2895, cY= 393, Frame=   400
+  10,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_004.png', cX= 405, cY= 730, Frame=   400
+   8,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_032.png', cX=3337, cY= 893, Frame=   401
+   9,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_026.png', cX=2955, cY= 392, Frame=   401
+  10,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_005.png', cX= 468, cY= 730, Frame=   401
+   8,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_033.png', cX=3400, cY= 890, Frame=   402
+   9,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_027.png', cX=3013, cY= 392, Frame=   402
+  10,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_006.png', cX= 528, cY= 731, Frame=   402
+   8,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_034.png', cX=3463, cY= 888, Frame=   403
+   9,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_028.png', cX=3072, cY= 392, Frame=   403
+  10,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_007.png', cX= 589, cY= 731, Frame=   403
+   8,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_035.png', cX=3526, cY= 884, Frame=   404
+   9,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_029.png', cX=3130, cY= 391, Frame=   404
+  10,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_008.png', cX= 651, cY= 732, Frame=   404
+   8,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_036.png', cX=3590, cY= 879, Frame=   405
+   9,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_030.png', cX=3189, cY= 390, Frame=   405
+  10,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_009.png', cX= 710, cY= 732, Frame=   405
+   8,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_037.png', cX=3655, cY= 872, Frame=   406
+   9,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_031.png', cX=3247, cY= 390, Frame=   406
+  10,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_010.png', cX= 768, cY= 732, Frame=   406
+   8,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_038.png', cX=3722, cY= 867, Frame=   407
+   9,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_032.png', cX=3306, cY= 389, Frame=   407
+  10,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_011.png', cX= 829, cY= 733, Frame=   407
+   8,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_039.png', cX=3792, cY= 862, Frame=   408
+   9,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_033.png', cX=3364, cY= 389, Frame=   408
+  10,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_012.png', cX= 890, cY= 733, Frame=   408
+   8,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_040.png', cX=3862, cY= 857, Frame=   409
+   9,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_034.png', cX=3422, cY= 389, Frame=   409
+  10,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_013.png', cX= 951, cY= 733, Frame=   409
+   8,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_041.png', cX=3934, cY= 855, Frame=   410
+   9,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_035.png', cX=3480, cY= 388, Frame=   410
+  10,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_014.png', cX=1008, cY= 733, Frame=   410
+   8,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_042.png', cX=4007, cY= 855, Frame=   411
+   9,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_036.png', cX=3540, cY= 388, Frame=   411
+  10,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_015.png', cX=1068, cY= 734, Frame=   411
+   8,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_008\Image_043.png', cX=4083, cY= 858, Frame=   412
+   9,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_037.png', cX=3599, cY= 388, Frame=   412
+  10,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_016.png', cX=1126, cY= 735, Frame=   412
+   9,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_038.png', cX=3659, cY= 387, Frame=   413
+  10,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_017.png', cX=1186, cY= 735, Frame=   413
+   9,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_039.png', cX=3719, cY= 388, Frame=   414
+  10,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_018.png', cX=1244, cY= 736, Frame=   414
+   9,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_040.png', cX=3779, cY= 388, Frame=   415
+  10,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_019.png', cX=1303, cY= 736, Frame=   415
+   9,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_041.png', cX=3839, cY= 390, Frame=   416
+  10,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_020.png', cX=1358, cY= 737, Frame=   416
+   9,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_042.png', cX=3898, cY= 392, Frame=   417
+  10,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_021.png', cX=1414, cY= 738, Frame=   417
+   9,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_043.png', cX=3955, cY= 393, Frame=   418
+  10,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_022.png', cX=1470, cY= 738, Frame=   418
+   9,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_044.png', cX=4012, cY= 396, Frame=   419
+  10,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_023.png', cX=1526, cY= 738, Frame=   419
+   9,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_009\Image_045.png', cX=4067, cY= 401, Frame=   420
+  10,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_024.png', cX=1585, cY= 739, Frame=   420
+  10,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_025.png', cX=1642, cY= 740, Frame=   421
+  10,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_026.png', cX=1698, cY= 740, Frame=   422
+  10,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_027.png', cX=1755, cY= 740, Frame=   423
+  10,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_028.png', cX=1812, cY= 740, Frame=   424
+  11,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_001.png', cX= 440, cY= 290, Frame=   424
+  10,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_029.png', cX=1871, cY= 741, Frame=   425
+  11,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_002.png', cX= 535, cY= 290, Frame=   425
+  10,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_030.png', cX=1929, cY= 739, Frame=   426
+  11,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_003.png', cX= 629, cY= 289, Frame=   426
+  10,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_031.png', cX=1987, cY= 740, Frame=   427
+  11,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_004.png', cX= 723, cY= 290, Frame=   427
+  10,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_032.png', cX=2044, cY= 740, Frame=   428
+  11,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_005.png', cX= 817, cY= 290, Frame=   428
+  10,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_033.png', cX=2102, cY= 741, Frame=   429
+  11,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_006.png', cX= 910, cY= 291, Frame=   429
+  10,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_034.png', cX=2158, cY= 741, Frame=   430
+  11,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_007.png', cX=1002, cY= 291, Frame=   430
+  10,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_035.png', cX=2215, cY= 742, Frame=   431
+  11,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_008.png', cX=1094, cY= 292, Frame=   431
+  10,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_036.png', cX=2272, cY= 742, Frame=   432
+  11,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_009.png', cX=1186, cY= 293, Frame=   432
+  10,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_037.png', cX=2327, cY= 742, Frame=   433
+  11,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_010.png', cX=1276, cY= 293, Frame=   433
+  10,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_038.png', cX=2380, cY= 741, Frame=   434
+  11,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_011.png', cX=1366, cY= 294, Frame=   434
+  10,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_039.png', cX=2433, cY= 742, Frame=   435
+  11,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_012.png', cX=1457, cY= 295, Frame=   435
+  10,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_040.png', cX=2487, cY= 742, Frame=   436
+  11,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_013.png', cX=1547, cY= 296, Frame=   436
+  10,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_041.png', cX=2543, cY= 742, Frame=   437
+  11,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_014.png', cX=1636, cY= 297, Frame=   437
+  10,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_042.png', cX=2598, cY= 743, Frame=   438
+  11,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_015.png', cX=1726, cY= 298, Frame=   438
+  10,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_043.png', cX=2653, cY= 743, Frame=   439
+  11,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_016.png', cX=1815, cY= 299, Frame=   439
+  10,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_044.png', cX=2708, cY= 743, Frame=   440
+  11,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_017.png', cX=1905, cY= 300, Frame=   440
+  10,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_045.png', cX=2764, cY= 742, Frame=   441
+  11,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_018.png', cX=1994, cY= 301, Frame=   441
+  10,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_046.png', cX=2819, cY= 743, Frame=   442
+  11,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_019.png', cX=2084, cY= 301, Frame=   442
+  10,   47, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_047.png', cX=2875, cY= 742, Frame=   443
+  11,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_020.png', cX=2173, cY= 302, Frame=   443
+  10,   48, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_048.png', cX=2932, cY= 741, Frame=   444
+  11,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_021.png', cX=2262, cY= 301, Frame=   444
+  10,   49, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_049.png', cX=2987, cY= 739, Frame=   445
+  11,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_022.png', cX=2349, cY= 301, Frame=   445
+  10,   50, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_050.png', cX=3042, cY= 740, Frame=   446
+  11,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_023.png', cX=2437, cY= 301, Frame=   446
+  10,   51, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_051.png', cX=3091, cY= 739, Frame=   447
+  11,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_024.png', cX=2520, cY= 301, Frame=   447
+  10,   52, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_052.png', cX=3135, cY= 738, Frame=   448
+  11,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_025.png', cX=2596, cY= 301, Frame=   448
+  11,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_026.png', cX=2665, cY= 300, Frame=   449
+  11,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_027.png', cX=2730, cY= 299, Frame=   450
+  11,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_028.png', cX=2792, cY= 299, Frame=   451
+  11,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_029.png', cX=2853, cY= 300, Frame=   452
+  11,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_030.png', cX=2913, cY= 299, Frame=   453
+  11,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_031.png', cX=2972, cY= 298, Frame=   454
+  11,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_032.png', cX=3031, cY= 298, Frame=   455
+  11,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_033.png', cX=3089, cY= 298, Frame=   456
+  11,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_034.png', cX=3147, cY= 298, Frame=   457
+  11,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_035.png', cX=3206, cY= 298, Frame=   458
+  10,   53, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_053.png', cX=3535, cY= 722, Frame=   459
+  11,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_036.png', cX=3264, cY= 297, Frame=   459
+  11,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_037.png', cX=3322, cY= 296, Frame=   460
+  10,   54, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_054.png', cX=3610, cY= 717, Frame=   461
+  11,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_038.png', cX=3380, cY= 296, Frame=   461
+  10,   55, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_055.png', cX=3650, cY= 715, Frame=   462
+  11,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_039.png', cX=3437, cY= 296, Frame=   462
+  10,   56, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_056.png', cX=3690, cY= 715, Frame=   463
+  11,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_040.png', cX=3495, cY= 296, Frame=   463
+  10,   57, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_057.png', cX=3730, cY= 714, Frame=   464
+  11,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_041.png', cX=3553, cY= 296, Frame=   464
+  10,   58, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_058.png', cX=3771, cY= 714, Frame=   465
+  11,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_042.png', cX=3611, cY= 295, Frame=   465
+  10,   59, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_059.png', cX=3812, cY= 713, Frame=   466
+  11,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_043.png', cX=3669, cY= 295, Frame=   466
+  10,   60, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_010\Image_060.png', cX=3853, cY= 712, Frame=   467
+  11,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_044.png', cX=3728, cY= 296, Frame=   467
+  11,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_045.png', cX=3787, cY= 296, Frame=   468
+  11,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_046.png', cX=3845, cY= 297, Frame=   469
+  11,   47, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_047.png', cX=3904, cY= 298, Frame=   470
+  11,   48, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_048.png', cX=3963, cY= 299, Frame=   471
+  11,   49, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_049.png', cX=4021, cY= 301, Frame=   472
+  11,   50, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_011\Image_050.png', cX=4080, cY= 302, Frame=   473
+  12,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_012\Image_001.png', cX=1127, cY=1088, Frame=   548
+  12,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_012\Image_002.png', cX=1183, cY=1087, Frame=   549
+  13,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_013\Image_001.png', cX=   7, cY=1708, Frame=   560
+  14,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_014\Image_001.png', cX= 107, cY=1722, Frame=   562
+  15,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_001.png', cX= 232, cY=1730, Frame=   564
+  15,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_002.png', cX= 302, cY=1734, Frame=   565
+  15,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_003.png', cX= 373, cY=1735, Frame=   566
+  15,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_004.png', cX= 445, cY=1739, Frame=   567
+  15,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_005.png', cX= 518, cY=1739, Frame=   568
+  15,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_006.png', cX= 591, cY=1738, Frame=   569
+  15,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_007.png', cX= 662, cY=1736, Frame=   570
+  15,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_008.png', cX= 733, cY=1736, Frame=   571
+  15,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_009.png', cX= 809, cY=1730, Frame=   572
+  15,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_010.png', cX= 877, cY=1728, Frame=   573
+  15,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_011.png', cX= 947, cY=1725, Frame=   574
+  15,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_012.png', cX=1016, cY=1720, Frame=   575
+  15,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_013.png', cX=1083, cY=1718, Frame=   576
+  15,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_014.png', cX=1147, cY=1714, Frame=   577
+  15,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_015.png', cX=1205, cY=1714, Frame=   578
+  15,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_016.png', cX=1260, cY=1713, Frame=   579
+  15,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_017.png', cX=1314, cY=1716, Frame=   580
+  15,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_018.png', cX=1364, cY=1718, Frame=   581
+  15,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_019.png', cX=1410, cY=1722, Frame=   582
+  15,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_020.png', cX=1460, cY=1728, Frame=   583
+  15,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_021.png', cX=1507, cY=1733, Frame=   584
+  16,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_001.png', cX= 240, cY=1400, Frame=   584
+  15,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_022.png', cX=1557, cY=1743, Frame=   585
+  16,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_002.png', cX= 304, cY=1403, Frame=   585
+  15,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_023.png', cX=1608, cY=1751, Frame=   586
+  16,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_003.png', cX= 367, cY=1404, Frame=   586
+  15,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_024.png', cX=1659, cY=1760, Frame=   587
+  16,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_004.png', cX= 431, cY=1408, Frame=   587
+  15,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_025.png', cX=1711, cY=1769, Frame=   588
+  16,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_005.png', cX= 495, cY=1408, Frame=   588
+  15,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_026.png', cX=1762, cY=1779, Frame=   589
+  16,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_006.png', cX= 557, cY=1410, Frame=   589
+  15,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_027.png', cX=1809, cY=1787, Frame=   590
+  16,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_007.png', cX= 620, cY=1412, Frame=   590
+  15,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_028.png', cX=1853, cY=1793, Frame=   591
+  16,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_008.png', cX= 681, cY=1414, Frame=   591
+  15,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_029.png', cX=1889, cY=1801, Frame=   592
+  16,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_009.png', cX= 746, cY=1415, Frame=   592
+  15,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_030.png', cX=1917, cY=1804, Frame=   593
+  16,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_010.png', cX= 806, cY=1416, Frame=   593
+  15,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_031.png', cX=1941, cY=1805, Frame=   594
+  16,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_011.png', cX= 865, cY=1417, Frame=   594
+  15,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_032.png', cX=1958, cY=1805, Frame=   595
+  16,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_012.png', cX= 926, cY=1418, Frame=   595
+  15,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_033.png', cX=1978, cY=1801, Frame=   596
+  16,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_013.png', cX= 985, cY=1420, Frame=   596
+  15,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_034.png', cX=1996, cY=1799, Frame=   597
+  16,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_014.png', cX=1046, cY=1419, Frame=   597
+  15,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_035.png', cX=2019, cY=1795, Frame=   598
+  16,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_015.png', cX=1104, cY=1423, Frame=   598
+  15,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_036.png', cX=2045, cY=1788, Frame=   599
+  16,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_016.png', cX=1164, cY=1424, Frame=   599
+  15,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_037.png', cX=2068, cY=1785, Frame=   600
+  16,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_017.png', cX=1221, cY=1424, Frame=   600
+  15,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_038.png', cX=2096, cY=1779, Frame=   601
+  16,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_018.png', cX=1281, cY=1423, Frame=   601
+  15,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_039.png', cX=2123, cY=1769, Frame=   602
+  16,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_019.png', cX=1339, cY=1427, Frame=   602
+  15,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_040.png', cX=2151, cY=1761, Frame=   603
+  16,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_020.png', cX=1396, cY=1426, Frame=   603
+  15,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_041.png', cX=2175, cY=1754, Frame=   604
+  16,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_021.png', cX=1455, cY=1428, Frame=   604
+  15,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_042.png', cX=2194, cY=1749, Frame=   605
+  16,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_022.png', cX=1512, cY=1428, Frame=   605
+  15,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_043.png', cX=2209, cY=1745, Frame=   606
+  16,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_023.png', cX=1572, cY=1427, Frame=   606
+  15,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_044.png', cX=2225, cY=1742, Frame=   607
+  16,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_024.png', cX=1629, cY=1429, Frame=   607
+  15,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_045.png', cX=2236, cY=1741, Frame=   608
+  16,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_025.png', cX=1687, cY=1430, Frame=   608
+  15,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_046.png', cX=2247, cY=1741, Frame=   609
+  16,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_026.png', cX=1746, cY=1431, Frame=   609
+  15,   47, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_047.png', cX=2259, cY=1742, Frame=   610
+  16,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_027.png', cX=1803, cY=1431, Frame=   610
+  15,   48, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_048.png', cX=2266, cY=1745, Frame=   611
+  16,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_028.png', cX=1862, cY=1433, Frame=   611
+  15,   49, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_049.png', cX=2276, cY=1750, Frame=   612
+  16,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_029.png', cX=1918, cY=1435, Frame=   612
+  15,   50, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_050.png', cX=2284, cY=1753, Frame=   613
+  16,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_030.png', cX=1977, cY=1435, Frame=   613
+  16,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_031.png', cX=2035, cY=1433, Frame=   614
+  16,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_032.png', cX=2091, cY=1435, Frame=   615
+  15,   51, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_051.png', cX=2311, cY=1758, Frame=   616
+  16,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_033.png', cX=2147, cY=1435, Frame=   616
+  15,   52, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_052.png', cX=2322, cY=1758, Frame=   617
+  16,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_034.png', cX=2203, cY=1436, Frame=   617
+  16,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_035.png', cX=2258, cY=1437, Frame=   618
+  15,   53, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_053.png', cX=2343, cY=1756, Frame=   619
+  16,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_036.png', cX=2313, cY=1438, Frame=   619
+  15,   54, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_054.png', cX=2361, cY=1754, Frame=   620
+  16,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_037.png', cX=2368, cY=1437, Frame=   620
+  15,   55, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_055.png', cX=2381, cY=1752, Frame=   621
+  16,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_038.png', cX=2424, cY=1439, Frame=   621
+  15,   56, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_056.png', cX=2405, cY=1752, Frame=   622
+  16,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_039.png', cX=2481, cY=1439, Frame=   622
+  15,   57, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_057.png', cX=2437, cY=1751, Frame=   623
+  16,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_040.png', cX=2535, cY=1439, Frame=   623
+  15,   58, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_058.png', cX=2469, cY=1749, Frame=   624
+  16,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_041.png', cX=2588, cY=1439, Frame=   624
+  15,   59, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_059.png', cX=2508, cY=1748, Frame=   625
+  16,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_042.png', cX=2644, cY=1439, Frame=   625
+  15,   60, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_060.png', cX=2554, cY=1748, Frame=   626
+  16,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_043.png', cX=2700, cY=1440, Frame=   626
+  15,   61, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_061.png', cX=2600, cY=1747, Frame=   627
+  16,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_044.png', cX=2755, cY=1440, Frame=   627
+  15,   62, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_062.png', cX=2654, cY=1746, Frame=   628
+  16,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_045.png', cX=2809, cY=1440, Frame=   628
+  15,   63, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_063.png', cX=2709, cY=1745, Frame=   629
+  16,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_046.png', cX=2864, cY=1440, Frame=   629
+  15,   64, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_064.png', cX=2765, cY=1743, Frame=   630
+  16,   47, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_047.png', cX=2920, cY=1442, Frame=   630
+  15,   65, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_065.png', cX=2825, cY=1738, Frame=   631
+  16,   48, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_048.png', cX=2975, cY=1442, Frame=   631
+  15,   66, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_066.png', cX=2885, cY=1735, Frame=   632
+  16,   49, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_049.png', cX=3029, cY=1442, Frame=   632
+  15,   67, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_067.png', cX=2943, cY=1732, Frame=   633
+  16,   50, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_050.png', cX=3086, cY=1443, Frame=   633
+  15,   68, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_068.png', cX=3000, cY=1728, Frame=   634
+  16,   51, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_051.png', cX=3140, cY=1447, Frame=   634
+  15,   69, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_069.png', cX=3055, cY=1727, Frame=   635
+  16,   52, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_052.png', cX=3194, cY=1446, Frame=   635
+  15,   70, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_070.png', cX=3113, cY=1722, Frame=   636
+  16,   53, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_053.png', cX=3248, cY=1447, Frame=   636
+  15,   71, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_071.png', cX=3166, cY=1718, Frame=   637
+  16,   54, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_054.png', cX=3301, cY=1447, Frame=   637
+  15,   72, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_072.png', cX=3216, cY=1714, Frame=   638
+  16,   55, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_055.png', cX=3355, cY=1450, Frame=   638
+  15,   73, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_073.png', cX=3268, cY=1710, Frame=   639
+  16,   56, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_056.png', cX=3412, cY=1452, Frame=   639
+  15,   74, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_074.png', cX=3318, cY=1711, Frame=   640
+  16,   57, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_057.png', cX=3464, cY=1455, Frame=   640
+  15,   75, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_075.png', cX=3366, cY=1713, Frame=   641
+  16,   58, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_058.png', cX=3520, cY=1459, Frame=   641
+  15,   76, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_076.png', cX=3417, cY=1715, Frame=   642
+  16,   59, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_059.png', cX=3579, cY=1462, Frame=   642
+  15,   77, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_077.png', cX=3470, cY=1720, Frame=   643
+  16,   60, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_060.png', cX=3633, cY=1465, Frame=   643
+  15,   78, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_078.png', cX=3521, cY=1724, Frame=   644
+  16,   61, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_061.png', cX=3690, cY=1468, Frame=   644
+  15,   79, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_079.png', cX=3579, cY=1731, Frame=   645
+  16,   62, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_062.png', cX=3750, cY=1472, Frame=   645
+  15,   80, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_080.png', cX=3638, cY=1739, Frame=   646
+  16,   63, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_063.png', cX=3809, cY=1475, Frame=   646
+  15,   81, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_081.png', cX=3693, cY=1750, Frame=   647
+  16,   64, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_064.png', cX=3870, cY=1476, Frame=   647
+  15,   82, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_082.png', cX=3756, cY=1754, Frame=   648
+  16,   65, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_065.png', cX=3931, cY=1478, Frame=   648
+  15,   83, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_083.png', cX=3820, cY=1762, Frame=   649
+  16,   66, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_066.png', cX=3985, cY=1474, Frame=   649
+  15,   84, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_084.png', cX=3884, cY=1771, Frame=   650
+  16,   67, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_016\Image_067.png', cX=4048, cY=1475, Frame=   650
+  15,   85, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_085.png', cX=3946, cY=1776, Frame=   651
+  15,   86, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_086.png', cX=4012, cY=1782, Frame=   652
+  15,   87, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_015\Image_087.png', cX=4075, cY=1785, Frame=   653
+  17,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_017\Image_001.png', cX= 253, cY=1368, Frame=   769
+  17,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_017\Image_002.png', cX= 300, cY=1370, Frame=   770
+  17,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_017\Image_003.png', cX= 328, cY=1370, Frame=   771
+  17,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_017\Image_004.png', cX= 363, cY=1369, Frame=   772
+  17,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_017\Image_005.png', cX= 410, cY=1373, Frame=   773
+  18,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_001.png', cX= 250, cY= 387, Frame=   875
+  18,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_002.png', cX= 294, cY= 386, Frame=   876
+  18,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_003.png', cX= 334, cY= 387, Frame=   877
+  18,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_004.png', cX= 377, cY= 387, Frame=   878
+  18,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_005.png', cX= 417, cY= 388, Frame=   879
+  18,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_006.png', cX= 459, cY= 390, Frame=   880
+  18,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_007.png', cX= 499, cY= 391, Frame=   881
+  18,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_008.png', cX= 540, cY= 392, Frame=   882
+  18,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_009.png', cX= 581, cY= 392, Frame=   883
+  18,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_010.png', cX= 621, cY= 392, Frame=   884
+  18,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_011.png', cX= 662, cY= 392, Frame=   885
+  18,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_012.png', cX= 703, cY= 393, Frame=   886
+  18,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_013.png', cX= 741, cY= 394, Frame=   887
+  18,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_014.png', cX= 781, cY= 397, Frame=   888
+  18,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_015.png', cX= 823, cY= 398, Frame=   889
+  18,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_016.png', cX= 864, cY= 398, Frame=   890
+  18,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_017.png', cX= 905, cY= 397, Frame=   891
+  18,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_018.png', cX= 943, cY= 399, Frame=   892
+  18,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_019.png', cX= 984, cY= 399, Frame=   893
+  18,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_020.png', cX=1022, cY= 402, Frame=   894
+  18,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_021.png', cX=1064, cY= 402, Frame=   895
+  18,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_022.png', cX=1106, cY= 402, Frame=   896
+  18,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_023.png', cX=1144, cY= 404, Frame=   897
+  18,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_024.png', cX=1182, cY= 406, Frame=   898
+  18,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_025.png', cX=1223, cY= 406, Frame=   899
+  18,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_026.png', cX=1260, cY= 408, Frame=   900
+  18,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_027.png', cX=1299, cY= 407, Frame=   901
+  18,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_028.png', cX=1340, cY= 408, Frame=   902
+  18,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_029.png', cX=1379, cY= 411, Frame=   903
+  18,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_030.png', cX=1417, cY= 411, Frame=   904
+  18,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_031.png', cX=1458, cY= 413, Frame=   905
+  18,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_032.png', cX=1495, cY= 413, Frame=   906
+  18,   33, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_033.png', cX=1533, cY= 413, Frame=   907
+  18,   34, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_034.png', cX=1573, cY= 417, Frame=   908
+  18,   35, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_035.png', cX=1617, cY= 417, Frame=   909
+  18,   36, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_036.png', cX=1655, cY= 418, Frame=   910
+  18,   37, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_037.png', cX=1694, cY= 418, Frame=   911
+  18,   38, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_038.png', cX=1734, cY= 420, Frame=   912
+  18,   39, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_039.png', cX=1775, cY= 421, Frame=   913
+  18,   40, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_040.png', cX=1813, cY= 422, Frame=   914
+  18,   41, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_041.png', cX=1853, cY= 422, Frame=   915
+  18,   42, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_042.png', cX=1894, cY= 424, Frame=   916
+  18,   43, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_043.png', cX=1934, cY= 425, Frame=   917
+  18,   44, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_044.png', cX=1975, cY= 426, Frame=   918
+  18,   45, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_045.png', cX=2014, cY= 426, Frame=   919
+  18,   46, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_046.png', cX=2054, cY= 426, Frame=   920
+  18,   47, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_047.png', cX=2094, cY= 427, Frame=   921
+  18,   48, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_048.png', cX=2132, cY= 429, Frame=   922
+  18,   49, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_049.png', cX=2172, cY= 430, Frame=   923
+  18,   50, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_050.png', cX=2212, cY= 430, Frame=   924
+  18,   51, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_051.png', cX=2252, cY= 430, Frame=   925
+  18,   52, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_052.png', cX=2293, cY= 430, Frame=   926
+  18,   53, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_053.png', cX=2331, cY= 430, Frame=   927
+  18,   54, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_054.png', cX=2371, cY= 432, Frame=   928
+  18,   55, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_055.png', cX=2411, cY= 431, Frame=   929
+  18,   56, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_056.png', cX=2448, cY= 432, Frame=   930
+  18,   57, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_057.png', cX=2487, cY= 432, Frame=   931
+  18,   58, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_058.png', cX=2525, cY= 432, Frame=   932
+  18,   59, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_059.png', cX=2564, cY= 432, Frame=   933
+  18,   60, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_060.png', cX=2604, cY= 435, Frame=   934
+  18,   61, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_061.png', cX=2642, cY= 434, Frame=   935
+  18,   62, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_062.png', cX=2681, cY= 434, Frame=   936
+  18,   63, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_063.png', cX=2719, cY= 434, Frame=   937
+  18,   64, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_064.png', cX=2757, cY= 434, Frame=   938
+  18,   65, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_065.png', cX=2796, cY= 434, Frame=   939
+  18,   66, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_066.png', cX=2835, cY= 434, Frame=   940
+  18,   67, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_067.png', cX=2874, cY= 435, Frame=   941
+  18,   68, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_068.png', cX=2912, cY= 434, Frame=   942
+  18,   69, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_069.png', cX=2952, cY= 436, Frame=   943
+  18,   70, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_070.png', cX=2992, cY= 436, Frame=   944
+  18,   71, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_071.png', cX=3031, cY= 435, Frame=   945
+  18,   72, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_072.png', cX=3070, cY= 436, Frame=   946
+  18,   73, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_073.png', cX=3108, cY= 435, Frame=   947
+  18,   74, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_074.png', cX=3147, cY= 437, Frame=   948
+  18,   75, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_075.png', cX=3186, cY= 435, Frame=   949
+  18,   76, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_076.png', cX=3225, cY= 436, Frame=   950
+  18,   77, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_077.png', cX=3263, cY= 437, Frame=   951
+  18,   78, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_078.png', cX=3300, cY= 436, Frame=   952
+  18,   79, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_079.png', cX=3340, cY= 436, Frame=   953
+  18,   80, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_080.png', cX=3379, cY= 435, Frame=   954
+  19,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_019\Image_001.png', cX= 207, cY=1809, Frame=   954
+  18,   81, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_081.png', cX=3417, cY= 434, Frame=   955
+  19,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_019\Image_002.png', cX= 222, cY=1809, Frame=   955
+  18,   82, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_082.png', cX=3456, cY= 435, Frame=   956
+  19,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_019\Image_003.png', cX= 235, cY=1812, Frame=   956
+  18,   83, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_083.png', cX=3495, cY= 433, Frame=   957
+  19,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_019\Image_004.png', cX= 244, cY=1816, Frame=   957
+  18,   84, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_084.png', cX=3531, cY= 434, Frame=   958
+  19,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_019\Image_005.png', cX= 251, cY=1818, Frame=   958
+  18,   85, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_085.png', cX=3571, cY= 434, Frame=   959
+  19,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_019\Image_006.png', cX= 262, cY=1819, Frame=   959
+  18,   86, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_086.png', cX=3612, cY= 433, Frame=   960
+  19,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_019\Image_007.png', cX= 265, cY=1820, Frame=   960
+  18,   87, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_087.png', cX=3651, cY= 434, Frame=   961
+  19,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_019\Image_008.png', cX= 267, cY=1820, Frame=   961
+  18,   88, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_088.png', cX=3688, cY= 433, Frame=   962
+  19,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_019\Image_009.png', cX= 270, cY=1814, Frame=   962
+  18,   89, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_089.png', cX=3728, cY= 433, Frame=   963
+  18,   90, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_090.png', cX=3769, cY= 433, Frame=   964
+  18,   91, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_091.png', cX=3807, cY= 434, Frame=   965
+  18,   92, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_092.png', cX=3845, cY= 433, Frame=   966
+  18,   93, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_093.png', cX=3885, cY= 433, Frame=   967
+  18,   94, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_094.png', cX=3924, cY= 435, Frame=   968
+  20,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_020\Image_001.png', cX= 361, cY=1797, Frame=   968
+  18,   95, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_095.png', cX=3965, cY= 436, Frame=   969
+  20,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_020\Image_002.png', cX= 386, cY=1793, Frame=   969
+  18,   96, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_096.png', cX=4007, cY= 437, Frame=   970
+  20,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_020\Image_003.png', cX= 410, cY=1788, Frame=   970
+  18,   97, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_097.png', cX=4048, cY= 437, Frame=   971
+  20,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_020\Image_004.png', cX= 439, cY=1777, Frame=   971
+  18,   98, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_018\Image_098.png', cX=4086, cY= 439, Frame=   972
+  20,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_020\Image_005.png', cX= 468, cY=1773, Frame=   972
+  20,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_020\Image_006.png', cX= 500, cY=1765, Frame=   973
+  20,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_020\Image_007.png', cX= 533, cY=1759, Frame=   974
+  20,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_020\Image_008.png', cX= 567, cY=1756, Frame=   975
+  20,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_020\Image_009.png', cX= 602, cY=1748, Frame=   976
+  21,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_021\Image_001.png', cX= 314, cY=1546, Frame=  1006
+  21,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_021\Image_002.png', cX= 353, cY=1549, Frame=  1007
+  21,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_021\Image_003.png', cX= 387, cY=1550, Frame=  1008
+  22,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_001.png', cX= 247, cY=1196, Frame=  1035
+  22,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_002.png', cX= 290, cY=1198, Frame=  1036
+  22,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_003.png', cX= 334, cY=1199, Frame=  1037
+  22,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_004.png', cX= 379, cY=1198, Frame=  1038
+  22,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_005.png', cX= 420, cY=1202, Frame=  1039
+  22,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_006.png', cX= 461, cY=1203, Frame=  1040
+  22,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_007.png', cX= 549, cY=1204, Frame=  1042
+  22,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_008.png', cX= 590, cY=1206, Frame=  1043
+  22,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_009.png', cX= 631, cY=1207, Frame=  1044
+  22,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_010.png', cX= 673, cY=1208, Frame=  1045
+  22,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_011.png', cX= 714, cY=1209, Frame=  1046
+  22,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_012.png', cX= 756, cY=1208, Frame=  1047
+  22,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_013.png', cX= 799, cY=1210, Frame=  1048
+  22,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_014.png', cX= 838, cY=1210, Frame=  1049
+  22,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_015.png', cX= 879, cY=1212, Frame=  1050
+  22,   16, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_016.png', cX= 919, cY=1213, Frame=  1051
+  22,   17, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_017.png', cX= 962, cY=1214, Frame=  1052
+  22,   18, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_018.png', cX=1004, cY=1215, Frame=  1053
+  22,   19, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_019.png', cX=1045, cY=1218, Frame=  1054
+  22,   20, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_020.png', cX=1085, cY=1217, Frame=  1055
+  22,   21, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_021.png', cX=1125, cY=1218, Frame=  1056
+  22,   22, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_022.png', cX=1167, cY=1220, Frame=  1057
+  22,   23, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_023.png', cX=1206, cY=1220, Frame=  1058
+  22,   24, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_024.png', cX=1247, cY=1217, Frame=  1059
+  22,   25, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_025.png', cX=1289, cY=1218, Frame=  1060
+  22,   26, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_026.png', cX=1325, cY=1220, Frame=  1061
+  22,   27, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_027.png', cX=1364, cY=1220, Frame=  1062
+  22,   28, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_028.png', cX=1405, cY=1223, Frame=  1063
+  22,   29, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_029.png', cX=1443, cY=1224, Frame=  1064
+  22,   30, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_030.png', cX=1485, cY=1224, Frame=  1065
+  22,   31, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_031.png', cX=1525, cY=1225, Frame=  1066
+  22,   32, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_022\Image_032.png', cX=1560, cY=1224, Frame=  1067
+  23,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_023\Image_001.png', cX= 214, cY=  90, Frame=  1114
+  23,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_023\Image_002.png', cX= 232, cY=  83, Frame=  1115
+  23,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_023\Image_003.png', cX= 266, cY=  84, Frame=  1116
+  23,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_023\Image_004.png', cX= 305, cY=  85, Frame=  1117
+  23,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_023\Image_005.png', cX= 324, cY=  82, Frame=  1118
+  24,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_024\Image_001.png', cX= 533, cY=  79, Frame=  1124
+  24,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_024\Image_002.png', cX= 575, cY=  77, Frame=  1125
+  24,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_024\Image_003.png', cX= 608, cY=  81, Frame=  1126
+  24,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_024\Image_004.png', cX= 633, cY=  86, Frame=  1127
+  24,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_024\Image_005.png', cX= 672, cY=  91, Frame=  1128
+  25,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_025\Image_001.png', cX= 384, cY=1364, Frame=  1261
+  25,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_025\Image_002.png', cX= 394, cY=1366, Frame=  1262
+  25,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_025\Image_003.png', cX= 371, cY=1355, Frame=  1264
+  25,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_025\Image_004.png', cX= 370, cY=1356, Frame=  1265
+  26,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_026\Image_001.png', cX= 207, cY= 945, Frame=  1283
+  27,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_001.png', cX= 209, cY= 469, Frame=  1309
+  27,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_002.png', cX= 237, cY= 470, Frame=  1310
+  27,    3, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_003.png', cX= 267, cY= 469, Frame=  1311
+  27,    4, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_004.png', cX= 295, cY= 470, Frame=  1312
+  27,    5, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_005.png', cX= 322, cY= 471, Frame=  1313
+  27,    6, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_006.png', cX= 352, cY= 471, Frame=  1314
+  27,    7, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_007.png', cX= 380, cY= 472, Frame=  1315
+  27,    8, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_008.png', cX= 408, cY= 472, Frame=  1316
+  27,    9, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_009.png', cX= 434, cY= 473, Frame=  1317
+  27,   10, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_010.png', cX= 463, cY= 473, Frame=  1318
+  27,   11, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_011.png', cX= 493, cY= 475, Frame=  1319
+  27,   12, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_012.png', cX= 519, cY= 475, Frame=  1320
+  27,   13, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_013.png', cX= 546, cY= 475, Frame=  1321
+  27,   14, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_014.png', cX= 574, cY= 475, Frame=  1322
+  27,   15, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_027\Image_015.png', cX= 606, cY= 476, Frame=  1323
+  28,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_028\Image_001.png', cX= 308, cY=1096, Frame=  1351
+  28,    2, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_028\Image_002.png', cX= 369, cY=1099, Frame=  1354
+  29,    1, '..\VideoTestCases\Live Ostracods 3-3-23 Example 3a\Images_001\Object_029\Image_001.png', cX= 394, cY=1065, Frame=  1381

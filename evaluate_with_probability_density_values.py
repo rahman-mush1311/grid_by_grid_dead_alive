@@ -16,7 +16,26 @@ def mismatching_pdf_observations(curr_obs,curr_pdf):
             i+=1
     print(i)
 
-
+def calculate_pdf_obj(curr_obj_pos,mu,cov_matrix):
+    """
+    this creates a list for the a object's pdf values for one grid cell
+    it traverses the list of all the displacements of one object in one grid cell calculates the multivariate_normal using numpy library functions
+    Parameters:
+    - curr_obj_pos: a list of displacement of one object on a particular grid
+    - mu: list of means for dx,dy 
+    - covariance: 2*2 list 
+    Returns:
+    - pdfs_for_obj: list of pdf values for one object's one grid cell.
+    """
+    
+    pdfs_for_obj=[]    
+    for point_to_evaluate in curr_obj_pos:
+        #print(f"from calculate pdf of objects function: {point_to_evaluate}\n")
+        pdf_value = multivariate_normal.pdf(point_to_evaluate, mean=mu, cov=cov_matrix)
+        pdfs_for_obj.append(pdf_value)
+        #print(f"pdf value is: {pdf_value}, list is: {pdfs_for_obj}\n")
+    return pdfs_for_obj
+    
 def grid_by_grid_pdf(grid_stat, current_obj_dis):
     """
     this creates a list for the current object's pdf values with the help of grid statistics and object's displacements
@@ -39,17 +58,24 @@ def grid_by_grid_pdf(grid_stat, current_obj_dis):
             print(f"    cov_matrix:\n{cov_matrix}")
             print(f"    current displacement:\n{curr_obj_dis_cord}")
             '''
-            
             if(len(curr_obj_dis_cord)>0):
+                pdfs=calculate_pdf_obj(curr_obj_dis_cord,mu,cov_matrix)
+                '''
                 curr_dis_arr = np.array(curr_obj_dis_cord)
                 mvn = multivariate_normal(mean=mu, cov=cov_matrix)
                 curr_pdf_values=mvn.pdf(curr_dis_arr)
-                curr_pdf_values = np.atleast_1d(curr_pdf_values)#converting to 1d array
-                
+                curr_pdf_values = np.atleast_1d(curr_pdf_values)#converting to 1d array               
                 pdfs_for_cells.extend(curr_pdf_values)
-                
-                #print(f" calculated with numpy array:{curr_pdf_values.shape} {curr_pdf_values}")
-    return pdfs_for_cells
+                #contains_zero = np.any(pdfs == 0.00)
+                #print("Contains zero:", contains_zero)
+                '''
+                pdfs_for_cells.append(pdfs)
+                #print(pdfs)
+    flatten_pdfs=[pdfs for sublist in pdfs_for_cells for pdfs in sublist]
+    return flatten_pdfs
+    #return pdfs_for_cells
+    
+    
     
 def calculate_pdf_all_by_displacements(obs,grid_stats,max_x,max_y):
     """
@@ -104,5 +130,16 @@ def get_pdf_value_list(curr_pdf):
         pdf_values.extend(val_list)
         
     return pdf_values
+
+def get_unique_values_of_pdfs(curr_pdfs):
+   
+    unique_pdfs = set()
+
+    for values in curr_pdfs.values():
+        unique_pdfs.update(values) 
+        
+    print(len(unique_pdfs))
+    return
+    
 
 

@@ -24,12 +24,12 @@ logging.basicConfig(
     ]
 )
 
-def load_observations(filename):
+def load_observations(filenames):
     """
     this function processes the input file parses it to required data (object id, frame, x,y coordinates)
     
     Parameters:
-    - filename: data file containing object and their coordinates and frame along with other description
+    - filenames: list of data files which contains object and their coordinates and frame along with other description
     
     Returns:
     - returns a dictionary of the observation (alive/dead).
@@ -44,17 +44,18 @@ def load_observations(filename):
     \s*Frame\s*=\s*(?P<frame>\d+)           # Frame number
 ''', re.VERBOSE)
     
-    observations = collections.defaultdict(list)    
-    with open(filename) as object_xys:
-        for line in object_xys:
-            m = pattern.match(line)
-            if m:
-                obj_id = int(m.group('object_id'))
-                frame = m.group('frame')
-                cX=m.group('x')
-                cY=m.group('y')
+    observations = collections.defaultdict(list)
+    for filename in filenames:
+        with open(filename) as object_xys:
+            for line in object_xys:
+                m = pattern.match(line)
+                if m:
+                    obj_id = int(m.group('object_id'))
+                    frame = m.group('frame')
+                    cX=m.group('x')
+                    cY=m.group('y')
                 
-                observations[int(m.group('object_id'))].append((int(m.group('frame')), int(m.group('x')), int(m.group('y'))))
+                    observations[int(m.group('object_id'))].append((int(m.group('frame')), int(m.group('x')), int(m.group('y'))))
 
     # make sure the observations are in frame order
     for object_id in observations:
@@ -198,4 +199,15 @@ def print_grid_stats(grid_stat):
                 print(f"    cov_matrix:\n{cov_matrix}")
             else:
                 print(f"grid[{i}][{j}]: None")
+
+def get_unique_values_of_pdfs(curr_pdfs):
+   
+    unique_pdfs = set()
+
+    for values in curr_pdfs.values():
+        unique_pdfs.update(values) 
+        
+    #print(unique_pdfs)
+    return unique_pdfs
+
  
