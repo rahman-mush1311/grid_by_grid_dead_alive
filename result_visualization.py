@@ -4,6 +4,7 @@ from collections import Counter
 from scipy.stats import multivariate_normal
 from matplotlib.patches import Ellipse
 import matplotlib as mpl
+from scipy.stats import skew
 mpl.rcParams['figure.max_open_warning'] = 100 
 
 def plot_pdf_histogram_bins(curr_pdf_list,object_type,width_of_bin):
@@ -243,7 +244,7 @@ def mean_covariance_plot(grid_stat):
             ax.grid(True)
             ax.set_title(f"Visualization of Mean and Covariance Matrix as Ellipses For Grid {[i]}{[j]}")
             #plt.axis('equal')
-            #plt.savefig(f"dead_grid_stat_[{i}][{j}]")
+            plt.savefig(f"dead_grid_stats_in_same_range[{i}][{j}]")
             plt.show()
 
 def plot_cdf_line_side_by_side(dead_pdf_list, alive_pdf_list):

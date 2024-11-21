@@ -46,7 +46,7 @@ if __name__ == "__main__":
     #get_unique_values_of_pdfs(alive_pdf_all_dict)
     
     #result plot related codes start here:
-    #mean_covariance_plot(dead_grid_stats)
+    mean_covariance_plot(dead_grid_stats)
     #plot_cdf_line_side_by_side(dead_pdf_list, alive_pdf_list)
     #plot_cdf_line_with_log_side_by_side(dead_pdf_list, alive_pdf_list)
     #plot_cdf_line_overlay(dead_pdf_list, alive_pdf_list)
@@ -58,6 +58,6 @@ if __name__ == "__main__":
     #plot_pdf_histogram_bins(dead_pdf_list,"Dead",0.5)
     #plot_pdf_overlay_histogram_bins(alive_pdf_list,dead_pdf_list)
     #filtered_overlay_histogram(dead_pdf_list,alive_pdf_list)
-    large_small_frequency_overlay_histogram(dead_pdf_list,alive_pdf_list)
+    #large_small_frequency_overlay_histogram(dead_pdf_list,alive_pdf_list)
     
     
