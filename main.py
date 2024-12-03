@@ -35,7 +35,7 @@ if __name__ == "__main__":
     #print(alive_dis_list)
     alive_pdf_all_dict=calculate_pdf_all_by_displacements(alive_obs,dead_grid_stats,4128,2196)
     #mismatching_pdf_observations(alive_obs,alive_pdf_all_dict)
-    #print(len(alive_pdf_all_dict)) #run this to see the alive pdf values
+    #print(alive_pdf_all_dict) #run this to see the alive pdf values
     
     #get flattened list:
     dead_pdf_list=get_pdf_value_list(dead_pdf_all_dict)
@@ -44,6 +44,13 @@ if __name__ == "__main__":
     get_unique_values_of_pdfs(dead_pdf_all_dict)
     #print(len(alive_pdf_list))
     get_unique_values_of_pdfs(alive_pdf_all_dict)
+    '''
+    dead_grid_obs=grid_by_grid_observation(dead_obs,5,4128,2196)
+    print(dead_grid_obs)
+    alive_grid_obs=grid_by_grid_observation(alive_obs,5,4128,2196)
+    print(alive_grid_obs)
+    '''
+    
     '''
     alive_grid_displacements=grid_by_grid_displacement_observation(alive_obs,5,4128,2196) 
     alive_grid_stats=grid_covariance_calculate(alive_grid_displacements)
@@ -65,10 +72,8 @@ if __name__ == "__main__":
     #large_small_frequency_overlay_histogram(dead_pdf_list,alive_pdf_list)
     
     #make_collage()
-    dead_grid_obs=grid_by_grid_observation(dead_obs,5,4128,2196)
-    #print(dead_grid_obs)
-    alive_grid_obs=grid_by_grid_observation(alive_obs,5,4128,2196)
-    #print(alive_grid_obs)
+   
+   
     #convert_dict_to_dataframe(dead_obs_pdf,1)
     #convert_dict_to_dataframe(alive_obs_pdf,0)
     

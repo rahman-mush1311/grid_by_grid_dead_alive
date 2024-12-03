@@ -1,7 +1,7 @@
 from scipy.stats import multivariate_normal
 import numpy as np
 
-from grid_by_grid_guassian_estimation import grid_by_grid_displacement_observation
+from grid_by_grid_guassian_estimation import grid_by_grid_displacement_observation,grid_by_grid_observation
 
 def mismatching_pdf_observations(curr_obs,curr_pdf):
     i=0;
@@ -74,9 +74,18 @@ def grid_by_grid_pdf(grid_stat, current_obj_dis):
     flatten_pdfs=[pdfs for sublist in pdfs_for_cells for pdfs in sublist]
     return flatten_pdfs
     #return pdfs_for_cells
-'''
+
 def grid_by_grid_pdf_obs_dis(grid_stat, current_obj_dis,curr_obj_obs):
-   
+    """
+    this creates a list for the current object's pdf values with the help of grid statistics and object's displacements
+    it traverses three lists one cell at a time extract's the mu,covariance ,displacements and actual coordinates in the particular cell
+    Parameters:
+    - grid_stat: 5*5 list of mu and covariance_matrix
+    - curr_obj_dis: 5*5 list of displacement of one object
+    - curr_obj_obs: 5*5 list of the coordinate of one object
+    Returns:
+    - pdfs_obs_dis: list of (cooridantes, displacements, pdf corresponding values).
+    """
     pdfs_obs_dis=[]
     
     for i, (stats, obj_dis,obj_cord) in enumerate(zip(grid_stat,current_obj_dis,curr_obj_obs)):
@@ -109,11 +118,11 @@ def grid_by_grid_pdf_obs_dis(grid_stat, current_obj_dis,curr_obj_obs):
                     for row1,row2,pdf_for_rows in zip(curr_dis_arr,curr_obs_arr,curr_pdf_values):
                         dx,dy=row1
                         x,y=row2
+                        #print(x,y,dx,dy,pdf_for_rows)
                         pdfs_obs_dis.append((x,y,dx,dy,pdf_for_rows))
                     
     return pdfs_obs_dis   
-    
-'''    
+        
 def calculate_pdf_all_by_displacements(obs,grid_stats,max_x,max_y):
     """
     this creates a dictionary for all the pdf value for the displacements
@@ -125,7 +134,7 @@ def calculate_pdf_all_by_displacements(obs,grid_stats,max_x,max_y):
     - max_x : x_coordinate maximum range
     - max_y : y_coordinate maximum range
     Returns:
-    - pdf_all_dict: dictionary {object_id: [pdf values]}. Each pdf value
+    - pdf_all_dict: dictionary {object_id: [x,y,dx,dy,pdf value]}. Each pdf value
       corresponds to one displacement.
     """
     pdf_all_dict = {}
@@ -140,18 +149,19 @@ def calculate_pdf_all_by_displacements(obs,grid_stats,max_x,max_y):
         current_item_dict = {obj_id: obj_cord_list}
         #print(f"from calculate all displacements functions: current object id: {obj_id}")
         
-        # Compute displacement observations for the current object
+        # Compute displacements & observations for the current object
         curr_obj_dis = grid_by_grid_displacement_observation(current_item_dict,grid_squares,MAX_X,MAX_Y)
+        curr_obj_obs = grid_by_grid_observation(current_item_dict,grid_squares,MAX_X,MAX_Y)
         
-        # Calculate Pdfs by grid for the current object's displacement observations
-        pdfs_by_grid = grid_by_grid_pdf(grid_stats, curr_obj_dis)
-        #print(pdfs_by_grid)
-        # Store the result in dead_pdf_all_dict
+        # Calculate Pdfs by grid for the current object's displacement and their track of their observations and displacements   
+        obs_dis_pdfs = grid_by_grid_pdf_obs_dis(grid_stats, curr_obj_dis,curr_obj_obs)
+        #print(obs_dis_pdfs)
+        pdf_all_dict[obj_id] = obs_dis_pdfs
+        '''
+        #pdfs_by_grid=grid_by_grid_pdf(grid_stats, curr_obj_dis)
+        # Store the result in pdf_all_dict
         pdf_all_dict[obj_id] = pdfs_by_grid
-        
-        #obs_dis_pdfs = grid_by_grid_pdf_obs_dis(grid_stat, curr_obj_dis,curr_obj_obs)
-        
-        
+        '''
     return pdf_all_dict
 
 def get_pdf_value_list(curr_pdf):

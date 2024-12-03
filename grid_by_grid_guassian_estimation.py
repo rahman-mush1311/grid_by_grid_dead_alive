@@ -253,7 +253,7 @@ def grid_by_grid_observation(curr_obs,grid_squares,max_x,max_y):
                     if (frame_distance!=0):
                         grid_pos.append((x1,y1))
             else:
-                logging.error(f"missing data for the grid, for grid[{x1_row}][{y1_col}] for {x1,y1}.")
+                logging.error(f" only observations missing data for the  grid, for grid[{x1_row}][{y1_col}] for {x1,y1}.")
                 
     #print(grid_obs)             
     return grid_obs
