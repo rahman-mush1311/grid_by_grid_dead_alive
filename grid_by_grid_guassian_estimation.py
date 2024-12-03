@@ -4,6 +4,7 @@ import math
 import numpy as np
 import logging
 import os
+import pandas as pd
 
 LOG_DIRECTORY = r"D:\RA work Fall2024\grid_by_grid_dead_alive\log_info"
 LOG_FILE = "gaussian_estimation.log"
@@ -58,6 +59,7 @@ def load_observations(filenames):
                     observations[int(m.group('object_id'))].append((int(m.group('frame')), int(m.group('x')), int(m.group('y'))))
 
     # make sure the observations are in frame order
+    
     for object_id in observations:
         observations[object_id].sort()
                 
@@ -87,7 +89,7 @@ def grid_by_grid_displacement_observation(curr_obs,grid_squares,max_x,max_y):
     # FIXME - make this a parameter(w)
     GRID_SQUARES = grid_squares
 
-    grid_obs = [[[] for _ in range(GRID_SQUARES)] for _ in range(GRID_SQUARES)]
+    grid_dis = [[[] for _ in range(GRID_SQUARES)] for _ in range(GRID_SQUARES)]
     #print(obs) 
     for obj_id, obs in curr_obs.items():
         #print(f"current obj is: {obj_id}:")
@@ -109,7 +111,7 @@ def grid_by_grid_displacement_observation(curr_obs,grid_squares,max_x,max_y):
             # FIXME - if the below "if" is not true, then we are losing data;(logging to a log file)
             # this should be an error (rather than silently ignored)
             if(0<= x1_row <GRID_SQUARES and 0<= y1_col <GRID_SQUARES):
-                grid_pos=grid_obs[x1_row][y1_col]
+                grid_pos=grid_dis[x1_row][y1_col]
                 if(x1_frame==(x2_frame+1)):
                     dx=x2-x1
                     dy=y2-y1
@@ -129,7 +131,7 @@ def grid_by_grid_displacement_observation(curr_obs,grid_squares,max_x,max_y):
                 
         #assert loop_count == len(obs)-1, f"Loop count ({loop_count}) does not match list size ({len(obs)})"
         #print(f"The loop ran the same number of times as the list size, loop count is: {loop_count}")          
-    return grid_obs
+    return grid_dis
 
 def grid_covariance_calculate(grid_displacements):
     """
@@ -209,5 +211,55 @@ def get_unique_values_of_pdfs(curr_pdfs):
         
     #print(unique_pdfs)
     return unique_pdfs
+'''
+def grid_by_grid_observation(curr_obs,grid_squares,max_x,max_y):
 
+    MAX_X=max_x
+    MAX_Y=max_y
+    
+    GRID_SQUARES = grid_squares
+    
+    grid_obs = [[[] for _ in range(GRID_SQUARES)] for _ in range(GRID_SQUARES)]#grid by grid actual observations not displacements
+    missing_grid_obs={}
+    for obj_id, obs in curr_obs.items():
+        for j in range(len(obs)-1):
+            x1_frame,x1,y1=obs[j]
+            x2_frame,x2,y2=obs[j+1]
+            
+            x1_row=math.floor(x1/MAX_X*GRID_SQUARES)
+            y1_col=math.floor(y1/MAX_Y*GRID_SQUARES)
+
+            x2_row=math.floor(x2/MAX_X*GRID_SQUARES)
+            y2_col=math.floor(y2/MAX_Y*GRID_SQUARES)
+            
+            if(0<= x1_row <GRID_SQUARES and 0<= y1_col <GRID_SQUARES):
+                grid_pos=grid_obs[x1_row][y1_col]
+                if(x1_frame==(x2_frame+1)):
+                    grid_pos.append((x1,y1))
+                else:
+                    frame_distance=x2_frame-x1_frame 
+                    if (frame_distance!=0):
+                        grid_pos.append((x1,y1))
+            else:
+                logging.error(f"missing data for the grid, for grid[{x1_row}][{y1_col}] for {x1,y1}.")
+                
+    #print(grid_obs)             
+    return grid_obs
+''' 
+
+'''   
+def convert_dict_to_dataframe(data_dict, data_type):
+    # Create an empty list to hold the rows
+    rows = []
+    
+    # Iterate through the dictionary
+    for object_id, values in data_dict.items():
+        for value in values:
+            # Append each row, adding the object_id and data_type
+            rows.append([object_id, *value, data_type])
+    
+    # Create a DataFrame
+    columns = ["obj_id", "x", "y", "dx", "dy", "pdf", "type"]
+    return pd.DataFrame(rows, columns=columns)
+'''
  

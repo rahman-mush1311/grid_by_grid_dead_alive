@@ -12,9 +12,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Import custom functions
-from grid_by_grid_guassian_estimation import load_observations,grid_by_grid_displacement_observation,grid_covariance_calculate,print_grid_stats
+from grid_by_grid_guassian_estimation import load_observations,grid_by_grid_displacement_observation,grid_covariance_calculate,print_grid_stats,convert_dict_to_dataframe
 from evaluate_with_probability_density_values import grid_by_grid_pdf,calculate_pdf_all_by_displacements,get_pdf_value_list,mismatching_pdf_observations,get_unique_values_of_pdfs
-from result_visualization import plot_pdf_histogram_bins,plot_pdf_overlay_histogram_bins,mean_covariance_plot,plot_cdf_line_side_by_side,plot_cdf_line_with_log_side_by_side,plot_cdf_line_overlay,plot_cdf_min_max_normalized_line_overlay,plot_cdf_zscore_normalized_line_overlay,filtered_overlay_histogram,large_small_frequency_overlay_histogram
+from result_visualization import plot_pdf_histogram_bins,plot_pdf_overlay_histogram_bins,mean_covariance_plot,plot_cdf_line_side_by_side,plot_cdf_line_with_log_side_by_side,plot_cdf_line_overlay,plot_cdf_min_max_normalized_line_overlay,plot_cdf_zscore_normalized_line_overlay,filtered_overlay_histogram,large_small_frequency_overlay_histogram,make_collage
 # Main code execution
 if __name__ == "__main__":
     
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     dead_obs = load_observations(dead_file_list)  
     dead_grid_displacements=grid_by_grid_displacement_observation(dead_obs,5,4128,2196)   
     dead_grid_stats=grid_covariance_calculate(dead_grid_displacements)
-    print_grid_stats(dead_grid_stats) #run this to see the mu & sigma in formatted way
+    #print_grid_stats(dead_grid_stats) #run this to see the mu & sigma in formatted way
     
     #in below statement calculates the all dead object's probability density value of the displacements
     dead_pdf_all_dict=calculate_pdf_all_by_displacements(dead_obs,dead_grid_stats,4128,2196)
@@ -41,12 +41,16 @@ if __name__ == "__main__":
     dead_pdf_list=get_pdf_value_list(dead_pdf_all_dict)
     alive_pdf_list=get_pdf_value_list(alive_pdf_all_dict)
     #print(len(dead_pdf_list))
-    #get_unique_values_of_pdfs(dead_pdf_all_dict)
+    get_unique_values_of_pdfs(dead_pdf_all_dict)
     #print(len(alive_pdf_list))
-    #get_unique_values_of_pdfs(alive_pdf_all_dict)
-    
+    get_unique_values_of_pdfs(alive_pdf_all_dict)
+    '''
+    alive_grid_displacements=grid_by_grid_displacement_observation(alive_obs,5,4128,2196) 
+    alive_grid_stats=grid_covariance_calculate(alive_grid_displacements)
+    print_grid_stats(alive_grid_stats)
+    '''
     #result plot related codes start here:
-    mean_covariance_plot(dead_grid_stats)
+    #mean_covariance_plot(dead_grid_stats)
     #plot_cdf_line_side_by_side(dead_pdf_list, alive_pdf_list)
     #plot_cdf_line_with_log_side_by_side(dead_pdf_list, alive_pdf_list)
     #plot_cdf_line_overlay(dead_pdf_list, alive_pdf_list)
@@ -59,5 +63,9 @@ if __name__ == "__main__":
     #plot_pdf_overlay_histogram_bins(alive_pdf_list,dead_pdf_list)
     #filtered_overlay_histogram(dead_pdf_list,alive_pdf_list)
     #large_small_frequency_overlay_histogram(dead_pdf_list,alive_pdf_list)
+    
+    #make_collage()
+    #convert_dict_to_dataframe(dead_obs_pdf,1)
+    #convert_dict_to_dataframe(alive_obs_pdf,0)
     
     

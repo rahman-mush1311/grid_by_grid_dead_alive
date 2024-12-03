@@ -6,6 +6,9 @@ from matplotlib.patches import Ellipse
 import matplotlib as mpl
 from scipy.stats import skew
 mpl.rcParams['figure.max_open_warning'] = 100 
+from PIL import Image
+import os
+import math
 
 def plot_pdf_histogram_bins(curr_pdf_list,object_type,width_of_bin):
     """
@@ -242,9 +245,9 @@ def mean_covariance_plot(grid_stat):
             ax.set_ylabel("Y")
             ax.legend()
             ax.grid(True)
-            ax.set_title(f"Visualization of Mean and Covariance Matrix as Ellipses For Grid {[i]}{[j]}")
+            ax.set_title(f"Visualization of Mean and Covariance Matrix as Ellipses For Alive Grid {[i]}{[j]}")
             #plt.axis('equal')
-            plt.savefig(f"dead_grid_stats_in_same_range[{i}][{j}]")
+            #plt.savefig(f"dead_grid_stats_in_same_range[{i}][{j}]")
             plt.show()
 
 def plot_cdf_line_side_by_side(dead_pdf_list, alive_pdf_list):
@@ -357,7 +360,7 @@ def plot_cdf_min_max_normalized_line_overlay(dead_pdf_list, alive_pdf_list):
     '''
     # Step 1: Normalize and Offset the Log Probability Density Values
     norm_pdf_dead = (dead_log_values - min(dead_log_values)) / (max(dead_log_values) - min(dead_log_values))
-    norm_pdf_alive = (alive_log_values - min(alive_log_values)) / (max(alive_log_values) - min(alive_log_values)) + 0.5  # Adding offset to avoid overlap
+    norm_pdf_alive = (alive_log_values - min(alive_log_values)) / (max(alive_log_values) - min(alive_log_values))   # Adding offset to avoid overlap
     # Step 2: Add an offset to the second dataset's sorted values
     dead_sorted_values = np.sort(norm_pdf_dead)
     alive_sorted_values = np.sort(norm_pdf_alive)
@@ -372,8 +375,8 @@ def plot_cdf_min_max_normalized_line_overlay(dead_pdf_list, alive_pdf_list):
     #plt.plot(sorted_values, cdf, color='blue') #for line
     plt.xlabel('Log Probability Density Values(Min-Max Normalized)')
     plt.ylabel('Cumulative Probability')
-    plt.title(f"Cumulative Distribution Function (CDF) For Dead(B) & Alive(R) Offset 0.5")
-    plt.savefig(f"overlay_log_dead_alive_cdf_scatter_min_max_noramlization_(n).png", format='png', dpi=300)
+    plt.title(f"Cumulative Distribution Function (CDF) For Dead(B) & Alive(R) Without Offset")
+    #plt.savefig(f"overlay_log_dead_alive_cdf_scatter_min_max_noramlization_without_offset(n).png", format='png', dpi=300)
     plt.grid()
     plt.show()
    
@@ -491,3 +494,37 @@ def filtered_overlay_histogram(dead_pdf_list,alive_pdf_list):
     plt.savefig("Overlay of Two Histograms Lines with Non-Zero Bins")
     # Show the plot
     plt.show()
+    
+def make_collage():
+
+
+    # Folder containing your saved images
+    image_folder = r"D:\RA work Fall2024\grid_by_grid_dead_alive\dead_collage"
+    output_file = "collage.png"
+
+    # Get list of image files
+    image_files = [os.path.join(image_folder, f) for f in os.listdir(image_folder) if f.endswith(".png")]
+
+
+
+    # Load all images and get their dimensions
+    images = [Image.open(img) for img in image_files]
+    img_width, img_height = images[0].size
+
+    # Define grid size (6x5 for 26 images)
+    columns, rows = 5, 5
+    collage_width = columns * img_width
+    collage_height = rows * img_height
+
+    # Create blank canvas for the collage
+    collage = Image.new("RGB", (collage_width, collage_height), (255, 255, 255))
+
+    # Paste each image into the collage
+    for idx, img in enumerate(images):
+        x_offset = (idx % columns) * img_width
+        y_offset = (idx // columns) * img_height
+        collage.paste(img, (x_offset, y_offset))
+
+    # Save the final collage
+    collage.save(output_file)
+    print(f"Collage saved as {output_file}")

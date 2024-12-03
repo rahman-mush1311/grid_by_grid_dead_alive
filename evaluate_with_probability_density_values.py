@@ -74,9 +74,46 @@ def grid_by_grid_pdf(grid_stat, current_obj_dis):
     flatten_pdfs=[pdfs for sublist in pdfs_for_cells for pdfs in sublist]
     return flatten_pdfs
     #return pdfs_for_cells
+'''
+def grid_by_grid_pdf_obs_dis(grid_stat, current_obj_dis,curr_obj_obs):
+   
+    pdfs_obs_dis=[]
     
+    for i, (stats, obj_dis,obj_cord) in enumerate(zip(grid_stat,current_obj_dis,curr_obj_obs)):
+        for j, (stat_val,obj_dis_pos,obj_pos) in enumerate(zip(stats, obj_dis,obj_cord)):
+            mu=stat_val['mu']
+            cov_matrix=stat_val['cov_matrix']
+            curr_obj_dis_cord=obj_dis_pos if obj_dis_pos else []
+            curr_obj_pos_cord=obj_pos if obj_pos else []
+            
+            #print(f"at grid [{i}][{j}]")
+            #print(f"    mu: {mu}")              
+            #print(f"    cov_matrix:\n{cov_matrix}")
+            #print(f"displacements list lenght{len(curr_obj_dis_cord)} cordinates list {len(curr_obj_pos_cord),type(curr_obj_dis_cord)}, ")
+            if(len(curr_obj_dis_cord)>0 and len(curr_obj_pos_cord)):
+                #print(f"    current displacement:\n{curr_obj_dis_cord}")
+                #print(f"    current origina cordinate:\n{curr_obj_pos_cord}")
+                curr_dis_arr = np.array(curr_obj_dis_cord)
+                curr_obs_arr = np.array(curr_obj_pos_cord)
+                #print(curr_dis_arr.shape,curr_obj_pos_cord)
+            
+            
+            if(len(curr_obj_dis_cord)>0):
+                mvn = multivariate_normal(mean=mu, cov=cov_matrix)
+                curr_pdf_values=mvn.pdf(curr_dis_arr)
+                #print(f"checking sizes: {type(curr_pdf_values)},{curr_obs_arr.shape}")
+                curr_pdf_values = np.atleast_1d(curr_pdf_values)
+                #pdfs_for_cells.extend(curr_pdf_values)
+                #print(curr_dis_arr.shape,curr_obs_arr.shape,curr_pdf_values.shape)
+                if (curr_dis_arr.shape[0]==curr_obs_arr.shape[0] and curr_obs_arr.shape[0]==curr_pdf_values.shape[0]):
+                    for row1,row2,pdf_for_rows in zip(curr_dis_arr,curr_obs_arr,curr_pdf_values):
+                        dx,dy=row1
+                        x,y=row2
+                        pdfs_obs_dis.append((x,y,dx,dy,pdf_for_rows))
+                    
+    return pdfs_obs_dis   
     
-    
+'''    
 def calculate_pdf_all_by_displacements(obs,grid_stats,max_x,max_y):
     """
     this creates a dictionary for all the pdf value for the displacements
@@ -111,6 +148,9 @@ def calculate_pdf_all_by_displacements(obs,grid_stats,max_x,max_y):
         #print(pdfs_by_grid)
         # Store the result in dead_pdf_all_dict
         pdf_all_dict[obj_id] = pdfs_by_grid
+        
+        #obs_dis_pdfs = grid_by_grid_pdf_obs_dis(grid_stat, curr_obj_dis,curr_obj_obs)
+        
         
     return pdf_all_dict
 
