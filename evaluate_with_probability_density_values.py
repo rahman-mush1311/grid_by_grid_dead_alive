@@ -1,5 +1,8 @@
 from scipy.stats import multivariate_normal
 import numpy as np
+import pandas as pd
+from sklearn.metrics import confusion_matrix, roc_curve, auc, ConfusionMatrixDisplay,accuracy_score, precision_score, recall_score, f1_score
+import matplotlib.pyplot as plt
 
 from grid_by_grid_guassian_estimation import grid_by_grid_displacement_observation,grid_by_grid_observation
 
@@ -190,6 +193,71 @@ def get_unique_values_of_pdfs(curr_pdfs):
         
     print(len(unique_pdfs))
     return
+    
+    
+def alive_dead_thresholding(df):
+
+    df = df[df["pdf"] > 0].copy()
+    df["log_pdf"] = df["pdf"].apply(lambda x: np.log(x) if x > 0 else None)
+    
+   
+    fpr, tpr, thresholds = roc_curve(df["type"], df["log_pdf"])  # True labels, and log probabilities
+    roc_auc = auc(fpr, tpr)
+    
+    print(len(thresholds))
+    youden_j = tpr - fpr
+    optimal_idx = np.argmax(youden_j)  # Index of the optimal threshold
+    optimal_threshold = thresholds[optimal_idx]
+
+    # Print the best threshold and corresponding metrics
+    print(f"Optimal Threshold: {optimal_threshold:.4f}")
+    print(f"True Positive Rate (TPR): {tpr[optimal_idx]:.4f}")
+    print(f"False Positive Rate (FPR): {fpr[optimal_idx]:.4f}")
+    print(f"Youden's J Statistic: {youden_j[optimal_idx]:.4f}")
+    
+    threshold = optimal_threshold
+    df["predicted_type"] = (df["log_pdf"] >= threshold).astype(int)
+        
+    # Evaluate Performance with Confusion Matrix
+    cm = confusion_matrix(df["type"], df["predicted_type"])
+    labels = ["Alive (0)", "Dead (1)"]
+
+    # Convert confusion matrix to a DataFrame with row and column names
+    cm_df = pd.DataFrame(cm, index=[f"True {label}" for label in labels],
+                     columns=[f"Predicted {label}" for label in labels])
+
+    # Print confusion matrix
+    print("Confusion Matrix:")
+    print(cm_df)
+    
+    '''
+    #show the roc-auc curve
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
+    disp.plot(cmap=plt.cm.Blues)
+    plt.title("Confusion Matrix By Optimal Value Using Youden's J Statistic")
+    #plt.savefig("confusion matrix un")
+    '''
+        
+    # Calculate metrics
+    accuracy = accuracy_score(df["type"], df["predicted_type"])
+   
+    precision = precision_score(df["type"], df["predicted_type"], zero_division=1)
+    recall = recall_score(df["type"], df["predicted_type"], zero_division=1)
+    f1 = f1_score(df["type"], df["predicted_type"], zero_division=1)
+    print(f"Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1-Score: {f1}") 
+    
+    #show the ROC-AUC curve
+    plt.figure()
+    plt.plot(fpr, tpr, color="darkorange", lw=2, label=f"ROC Curve (AUC = {roc_auc:.2f})")
+    plt.plot([0, 1], [0, 1], color="navy", lw=2, linestyle="--")  # Diagonal line
+    plt.scatter(fpr[optimal_idx], tpr[optimal_idx], color='red', label=f"Optimal Threshold = {optimal_threshold:.2f}") #optimal threshold                    
+    plt.xlabel("False Positive (Dead) Rate")
+    plt.ylabel("True Positive (Dead) Rate")
+    plt.title("Receiver Operating Characteristic (ROC)")
+    plt.legend(loc="lower right")
+    #plt.savefig("ROC curve by using un")
+    plt.show()
+    
     
 
 

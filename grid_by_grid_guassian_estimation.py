@@ -261,6 +261,16 @@ def grid_by_grid_observation(curr_obs,grid_squares,max_x,max_y):
 
   
 def convert_dict_to_dataframe(data_dict, data_type):
+    """
+    this function creates a data frame from the dictionary
+    
+    Parameters:
+    - data_dict: dictionary containing object's observations(object id: (x_cordinate,y_coordinate, dx, dy, pdf))
+    - data_type: 0/1 ;(alive,dead)
+    Returns:
+    - returns a dataframe with (obj_id,x,y,dx,dy,pdf,type).
+    """
+    
     # Create an empty list to hold the rows
     rows = []
     
@@ -275,7 +285,15 @@ def convert_dict_to_dataframe(data_dict, data_type):
     return pd.DataFrame(rows, columns=columns)
 
 def combine_df_write_to_csv(alive_df,dead_df):
+    """
+    this function combines 2 data frame write to csv(for csv writing comment out)
     
+    Parameters:
+    - alive_df: data frame for alive objects
+    - dead_df: data frame for dead objects
+    Returns:
+    - returns a combined dataframe with (obj_id,x,y,dx,dy,pdf,type).
+    """
     csv_path="dead_alive_data.csv"
     combined_df=  pd.concat([alive_df, dead_df], ignore_index=True)
     
