@@ -68,7 +68,7 @@ def load_observations(filenames):
 
 def grid_by_grid_displacement_observation(curr_obs,grid_squares,max_x,max_y):
     """
-    this function creates a 5*5 list (grid_obs) by processing a dictionary of observations where each grid cell contains the displacements
+    this function creates a 5*5 list (grid_dis) by processing a dictionary of observations where each grid cell contains the displacements
     the calculation of displacement across 2 axes is displacmenet along dx= x2-x1; dy=y2-y1
     and the cell where the displacement belongs is calculate by diving the x1 cord/maximum_of_x_cords * searching cell(grid_squares)
     
@@ -213,7 +213,19 @@ def get_unique_values_of_pdfs(curr_pdfs):
     return unique_pdfs
 
 def grid_by_grid_observation(curr_obs,grid_squares,max_x,max_y):
-
+    """
+    this function creates a 5*5 list (grid_obs) by processing a dictionary of observations where each grid cell contains the coordinates it is located
+    and the cell where the displacement belongs is calculate by diving the x1 cord/maximum_of_x_cords * searching cell(grid_squares)
+    
+    
+    Parameters:
+    - curr_obs: dictionary containing object's observations(object id: (frame,x_cordinate,y_coordinate))
+    - grid_square: range for grid search
+    - max_x : x_coordinate maximum range
+    - max_y : y_coordinate maximum range
+    Returns:
+    - returns a 5*5 list of the observations(x,y).
+    """
     MAX_X=max_x
     MAX_Y=max_y
     
