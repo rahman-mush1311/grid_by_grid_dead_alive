@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Import custom functions
-from grid_by_grid_guassian_estimation import load_observations,grid_by_grid_displacement_observation,grid_covariance_calculate,print_grid_stats,grid_by_grid_observation
+from grid_by_grid_guassian_estimation import load_observations,grid_by_grid_displacement_observation,grid_covariance_calculate,print_grid_stats,grid_by_grid_observation,convert_dict_to_dataframe,combine_df_write_to_csv
 from evaluate_with_probability_density_values import grid_by_grid_pdf,calculate_pdf_all_by_displacements,get_pdf_value_list,mismatching_pdf_observations,get_unique_values_of_pdfs
 from result_visualization import plot_pdf_histogram_bins,plot_pdf_overlay_histogram_bins,mean_covariance_plot,plot_cdf_line_side_by_side,plot_cdf_line_with_log_side_by_side,plot_cdf_line_overlay,plot_cdf_min_max_normalized_line_overlay,plot_cdf_zscore_normalized_line_overlay,filtered_overlay_histogram,large_small_frequency_overlay_histogram,make_collage
 # Main code execution
@@ -37,13 +37,22 @@ if __name__ == "__main__":
     #mismatching_pdf_observations(alive_obs,alive_pdf_all_dict)
     #print(alive_pdf_all_dict) #run this to see the alive pdf values
     
-    #get flattened list:
+    alive_df = convert_dict_to_dataframe(alive_pdf_all_dict,1)
+    #print(alive_df)
+    dead_df = convert_dict_to_dataframe(dead_pdf_all_dict,0)
+    #print(dead_df)
+    total_df=combine_df_write_to_csv(alive_df,dead_df)
+    print(total_df)
+    '''
+    #get flattened list for dictionary having only pdfs it was to check only:
     dead_pdf_list=get_pdf_value_list(dead_pdf_all_dict)
     alive_pdf_list=get_pdf_value_list(alive_pdf_all_dict)
     #print(len(dead_pdf_list))
     get_unique_values_of_pdfs(dead_pdf_all_dict)
     #print(len(alive_pdf_list))
     get_unique_values_of_pdfs(alive_pdf_all_dict)
+    '''
+    
     '''
     dead_grid_obs=grid_by_grid_observation(dead_obs,5,4128,2196)
     print(dead_grid_obs)
@@ -74,7 +83,6 @@ if __name__ == "__main__":
     #make_collage()
    
    
-    #convert_dict_to_dataframe(dead_obs_pdf,1)
-    #convert_dict_to_dataframe(alive_obs_pdf,0)
+    
     
     

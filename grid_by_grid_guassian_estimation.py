@@ -259,7 +259,7 @@ def grid_by_grid_observation(curr_obs,grid_squares,max_x,max_y):
     return grid_obs
  
 
-'''   
+  
 def convert_dict_to_dataframe(data_dict, data_type):
     # Create an empty list to hold the rows
     rows = []
@@ -273,5 +273,16 @@ def convert_dict_to_dataframe(data_dict, data_type):
     # Create a DataFrame
     columns = ["obj_id", "x", "y", "dx", "dy", "pdf", "type"]
     return pd.DataFrame(rows, columns=columns)
-'''
+
+def combine_df_write_to_csv(alive_df,dead_df):
+    
+    csv_path="dead_alive_data.csv"
+    combined_df=  pd.concat([alive_df, dead_df], ignore_index=True)
+    
+    # Save the combined DataFrame to a CSV file
+    #combined_df.to_csv(csv_path, index=False)
+    
+    #print(f"Data successfully saved to {csv_path}")
+    return combined_df
+
  
