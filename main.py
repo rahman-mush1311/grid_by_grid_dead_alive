@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Import custom functions
-from grid_by_grid_guassian_estimation import load_observations,grid_by_grid_displacement_observation,grid_covariance_calculate,print_grid_stats,convert_dict_to_dataframe
+from grid_by_grid_guassian_estimation import load_observations,grid_by_grid_displacement_observation,grid_covariance_calculate,print_grid_stats,grid_by_grid_observation
 from evaluate_with_probability_density_values import grid_by_grid_pdf,calculate_pdf_all_by_displacements,get_pdf_value_list,mismatching_pdf_observations,get_unique_values_of_pdfs
 from result_visualization import plot_pdf_histogram_bins,plot_pdf_overlay_histogram_bins,mean_covariance_plot,plot_cdf_line_side_by_side,plot_cdf_line_with_log_side_by_side,plot_cdf_line_overlay,plot_cdf_min_max_normalized_line_overlay,plot_cdf_zscore_normalized_line_overlay,filtered_overlay_histogram,large_small_frequency_overlay_histogram,make_collage
 # Main code execution
@@ -65,6 +65,10 @@ if __name__ == "__main__":
     #large_small_frequency_overlay_histogram(dead_pdf_list,alive_pdf_list)
     
     #make_collage()
+    dead_grid_obs=grid_by_grid_observation(dead_obs,5,4128,2196)
+    #print(dead_grid_obs)
+    alive_grid_obs=grid_by_grid_observation(alive_obs,5,4128,2196)
+    #print(alive_grid_obs)
     #convert_dict_to_dataframe(dead_obs_pdf,1)
     #convert_dict_to_dataframe(alive_obs_pdf,0)
     

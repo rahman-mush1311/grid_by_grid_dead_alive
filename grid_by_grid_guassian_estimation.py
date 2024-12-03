@@ -211,7 +211,7 @@ def get_unique_values_of_pdfs(curr_pdfs):
         
     #print(unique_pdfs)
     return unique_pdfs
-'''
+
 def grid_by_grid_observation(curr_obs,grid_squares,max_x,max_y):
 
     MAX_X=max_x
@@ -245,7 +245,7 @@ def grid_by_grid_observation(curr_obs,grid_squares,max_x,max_y):
                 
     #print(grid_obs)             
     return grid_obs
-''' 
+ 
 
 '''   
 def convert_dict_to_dataframe(data_dict, data_type):
