@@ -1,10 +1,31 @@
 from scipy.stats import multivariate_normal
 import numpy as np
 import pandas as pd
+import os
+import logging
 from sklearn.metrics import confusion_matrix, roc_curve, auc, ConfusionMatrixDisplay,accuracy_score, precision_score, recall_score, f1_score
 import matplotlib.pyplot as plt
 
 from grid_by_grid_guassian_estimation import grid_by_grid_displacement_observation,grid_by_grid_observation
+
+LOG_DIRECTORY = r"D:\RA work Fall2024\grid_by_grid_dead_alive\log_info"
+LOG_FILE = "gaussian_estimation.log"
+
+# Ensure the directory exists
+os.makedirs(LOG_DIRECTORY, exist_ok=True)
+
+# Full path to the log file
+LOG_PATH = os.path.join(LOG_DIRECTORY, LOG_FILE)
+
+# Configure logging globally
+logging.basicConfig(
+    level=logging.WARNING,  # Set the minimum level globally
+    format="%(levelname)s - %(message)s",
+    handlers=[
+        logging.StreamHandler(),  # Log to the console
+        logging.FileHandler(LOG_PATH)  # Log to the specified file
+    ]
+)
 
 def mismatching_pdf_observations(curr_obs,curr_pdf):
     i=0;
@@ -216,7 +237,7 @@ def alive_dead_thresholding(df):
     print(f"Youden's J Statistic: {youden_j[optimal_idx]:.4f}")
     
     threshold = optimal_threshold
-    df["predicted_type"] = (df["log_pdf"] >= threshold).astype(int)
+    df["predicted_type"] = (df["log_pdf"] >= threshold).astype(int) #the boolean is true if log_pdf is greater than threshold else false
         
     # Evaluate Performance with Confusion Matrix
     cm = confusion_matrix(df["type"], df["predicted_type"])
@@ -229,14 +250,6 @@ def alive_dead_thresholding(df):
     # Print confusion matrix
     print("Confusion Matrix:")
     print(cm_df)
-    
-    '''
-    #show the roc-auc curve
-    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
-    disp.plot(cmap=plt.cm.Blues)
-    plt.title("Confusion Matrix By Optimal Value Using Youden's J Statistic")
-    #plt.savefig("confusion matrix un")
-    '''
         
     # Calculate metrics
     accuracy = accuracy_score(df["type"], df["predicted_type"])
@@ -257,6 +270,69 @@ def alive_dead_thresholding(df):
     plt.legend(loc="lower right")
     #plt.savefig("ROC curve by using un")
     plt.show()
+    
+def alive_dead_thresholding_sequential(df):
+
+    df = df[df["pdf"] > 0].copy()
+    df["log_pdf"] = df["pdf"].apply(lambda x: np.log(x) if x > 0 else None)
+    
+    #print(len(df))
+    
+    df = df.reset_index(drop=True) #since dropping rows with 0.00 pdf values need to reset them so that it becomes sequential
+    
+    fpr, tpr, thresholds = roc_curve(df["type"], df["log_pdf"])  # True labels, and log probabilities
+    roc_auc = auc(fpr, tpr)
+    
+    print(len(thresholds))
+    youden_j = tpr - fpr
+    optimal_idx = np.argmax(youden_j)  # Index of the optimal threshold
+    optimal_threshold = thresholds[optimal_idx]
+
+    # Print the best threshold and corresponding metrics
+    print(f"Optimal Threshold: {optimal_threshold:.4f}")
+    print(f"True Positive Rate (TPR): {tpr[optimal_idx]:.4f}")
+    print(f"False Positive Rate (FPR): {fpr[optimal_idx]:.4f}")
+    print(f"Youden's J Statistic: {youden_j[optimal_idx]:.4f}")
+    
+    threshold = optimal_threshold
+    df["predicted_type"] = 0
+    
+    log_pdf_col_index = df.columns.get_loc("log_pdf")
+    obj_id_col_index = df.columns.get_loc("obj_id")
+    #print(log_pdf_col_index)
+    # Iterate through rows to check conditions for sequential rows
+    for idx in range(len(df) - 1):  # Exclude the last row to avoid index out of bounds
+        # Check if current and next row satisfy the threshold and share the same object_id
+        if idx+1 in df.index:
+            curr_pdf,curr_obj_id=df.iloc[idx,log_pdf_col_index],df.iloc[idx,obj_id_col_index]
+            next_pdf,next_obj_id=df.iloc[idx+1,log_pdf_col_index],df.iloc[idx+1,obj_id_col_index]
+            if curr_pdf >=threshold and next_pdf>=threshold and curr_obj_id==next_obj_id:
+                df.loc[idx, "predicted_type"] = 1
+            else:
+                df.loc[idx, "predicted_type"] = 0
+        else:
+            logging.error(f"the dataframe is missing row {idx+1}")
+     
+    # Evaluate Performance with Confusion Matrix
+    cm = confusion_matrix(df["type"], df["predicted_type"])
+    labels = ["Alive (0)", "Dead (1)"]
+    
+    # Convert confusion matrix to a DataFrame with row and column names
+    cm_df = pd.DataFrame(cm, index=[f"True {label}" for label in labels],
+                     columns=[f"Predicted {label}" for label in labels])
+    # Print confusion matrix
+    print("Confusion Matrix:")
+    print(cm_df)
+    
+    # Calculate metrics
+    accuracy = accuracy_score(df["type"], df["predicted_type"])
+   
+    precision = precision_score(df["type"], df["predicted_type"], zero_division=1)
+    recall = recall_score(df["type"], df["predicted_type"], zero_division=1)
+    f1 = f1_score(df["type"], df["predicted_type"], zero_division=1)
+    print(f"Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1-Score: {f1}") 
+
+   
     
     
 
