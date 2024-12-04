@@ -217,7 +217,15 @@ def get_unique_values_of_pdfs(curr_pdfs):
     
     
 def alive_dead_thresholding(df):
-
+    """
+    this function does the classification of displacements based on thresholding 
+    thresholding value is determined with youden's j calculation J=TPR-FPR
+    additionally, calculates the confusion matrix and additional accuracy metrics based on the predicted type classified using thresholds
+    Parameters:
+    - df: dataframe containing all the related values}
+    Returns:
+    - N/A
+    """
     df = df[df["pdf"] > 0].copy()
     df["log_pdf"] = df["pdf"].apply(lambda x: np.log(x) if x > 0 else None)
     
@@ -268,11 +276,20 @@ def alive_dead_thresholding(df):
     plt.ylabel("True Positive (Dead) Rate")
     plt.title("Receiver Operating Characteristic (ROC)")
     plt.legend(loc="lower right")
-    #plt.savefig("ROC curve by using un")
+    #plt.savefig("ROC curve")
     plt.show()
     
+    
 def alive_dead_thresholding_sequential(df):
-
+    """
+    this function does the classification of displacements based on thresholding and looks at sequential values if meeting the threshold
+    thresholding value is determined with youden's j calculation J=TPR-FPR
+    additionally, calculates the confusion matrix and additional accuracy metrics based on the predicted type classified using thresholds
+    Parameters:
+    - df: dataframe containing all the related values}
+    Returns:
+    - N/A
+    """
     df = df[df["pdf"] > 0].copy()
     df["log_pdf"] = df["pdf"].apply(lambda x: np.log(x) if x > 0 else None)
     
@@ -331,6 +348,13 @@ def alive_dead_thresholding_sequential(df):
     recall = recall_score(df["type"], df["predicted_type"], zero_division=1)
     f1 = f1_score(df["type"], df["predicted_type"], zero_division=1)
     print(f"Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1-Score: {f1}") 
+    '''
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
+    disp.plot(cmap=plt.cm.Blues)
+    plt.title("Confusion Matrix By Optimal Value Using Youden's J Statistic & Sequential Rows")
+    #plt.savefig("confusion matrix of sequential rows")
+    plt.show()
+    '''
 
    
     
