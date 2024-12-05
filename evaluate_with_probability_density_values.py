@@ -215,16 +215,13 @@ def get_unique_values_of_pdfs(curr_pdfs):
     print(len(unique_pdfs))
     return
     
-    
-def alive_dead_thresholding(df):
+def get_treshold_value(df):
     """
-    this function does the classification of displacements based on thresholding 
-    thresholding value is determined with youden's j calculation J=TPR-FPR
-    additionally, calculates the confusion matrix and additional accuracy metrics based on the predicted type classified using thresholds
+    this function calculates the thresholding value is determined with youden's j calculation J=TPR-FPR and returns the optimal threshold
     Parameters:
     - df: dataframe containing all the related values}
     Returns:
-    - N/A
+    - optimal threshold
     """
     df = df[df["pdf"] > 0].copy()
     df["log_pdf"] = df["pdf"].apply(lambda x: np.log(x) if x > 0 else None)
@@ -244,7 +241,35 @@ def alive_dead_thresholding(df):
     print(f"False Positive Rate (FPR): {fpr[optimal_idx]:.4f}")
     print(f"Youden's J Statistic: {youden_j[optimal_idx]:.4f}")
     
-    threshold = optimal_threshold
+    #show the ROC-AUC curve
+    '''
+    plt.figure()
+    plt.plot(fpr, tpr, color="darkorange", lw=2, label=f"ROC Curve (AUC = {roc_auc:.2f})")
+    plt.plot([0, 1], [0, 1], color="navy", lw=2, linestyle="--")  # Diagonal line
+    plt.scatter(fpr[optimal_idx], tpr[optimal_idx], color='red', label=f"Optimal Threshold = {optimal_threshold:.2f}") #optimal threshold                    
+    plt.xlabel("False Positive (Dead) Rate")
+    plt.ylabel("True Positive (Dead) Rate")
+    plt.title("Receiver Operating Characteristic (ROC)")
+    plt.legend(loc="lower right")
+    #plt.savefig("ROC curve")
+    plt.show()
+    '''
+    return optimal_threshold
+    
+def alive_dead_thresholding(df):
+    """
+    this function does the classification of displacements based on thresholding, gets from get_treshold_value function
+    additionally, calculates the confusion matrix and additional accuracy metrics based on the predicted type classified using thresholds
+    Parameters:
+    - df: dataframe containing all the related values}
+    Returns:
+    - N/A
+    """
+       
+    threshold = get_treshold_value(df)
+    
+    df = df[df["pdf"] > 0].copy()
+    df["log_pdf"] = df["pdf"].apply(lambda x: np.log(x) if x > 0 else None)
     df["predicted_type"] = (df["log_pdf"] >= threshold).astype(int) #the boolean is true if log_pdf is greater than threshold else false
         
     # Evaluate Performance with Confusion Matrix
@@ -260,25 +285,69 @@ def alive_dead_thresholding(df):
     print(cm_df)
         
     # Calculate metrics
-    accuracy = accuracy_score(df["type"], df["predicted_type"])
-   
+    accuracy = accuracy_score(df["type"], df["predicted_type"]) 
     precision = precision_score(df["type"], df["predicted_type"], zero_division=1)
     recall = recall_score(df["type"], df["predicted_type"], zero_division=1)
     f1 = f1_score(df["type"], df["predicted_type"], zero_division=1)
     print(f"Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1-Score: {f1}") 
     
-    #show the ROC-AUC curve
-    plt.figure()
-    plt.plot(fpr, tpr, color="darkorange", lw=2, label=f"ROC Curve (AUC = {roc_auc:.2f})")
-    plt.plot([0, 1], [0, 1], color="navy", lw=2, linestyle="--")  # Diagonal line
-    plt.scatter(fpr[optimal_idx], tpr[optimal_idx], color='red', label=f"Optimal Threshold = {optimal_threshold:.2f}") #optimal threshold                    
-    plt.xlabel("False Positive (Dead) Rate")
-    plt.ylabel("True Positive (Dead) Rate")
-    plt.title("Receiver Operating Characteristic (ROC)")
-    plt.legend(loc="lower right")
-    #plt.savefig("ROC curve")
-    plt.show()
+
+def evaluate_model_performance(train_df,test_df):
+    """
+    this function does the classification of displacements based on thresholding, gets from get_treshold_value function using the trainning set
+    additionally, calculates the confusion matrix and additional accuracy metrics based on the predicted type classified using thresholds on both trainning & testing set
+    Parameters:
+    - train_df: dataframe of the trainning set containing all the related values}
+    - train_df: dataframe of the testing set containing all the related values}
+    Returns:
+    - N/A
+    """
+    threshold = get_treshold_value(train_df)
     
+    train_df = train_df[train_df["pdf"] > 0].copy()
+    train_df["log_pdf"] = train_df["pdf"].apply(lambda x: np.log(x) if x > 0 else None)
+    train_df["predicted_type"] = (train_df["log_pdf"] >= threshold).astype(int) #the boolean is true if log_pdf is greater than threshold else false
+        
+    # Evaluate Performance with Confusion Matrix
+    train_cm = confusion_matrix(train_df["type"], train_df["predicted_type"])
+    labels = ["Alive (0)", "Dead (1)"]
+
+    # Convert confusion matrix to a DataFrame with row and column names
+    cm_train_df = pd.DataFrame(train_cm, index=[f"True {label}" for label in labels],
+                     columns=[f"Predicted {label}" for label in labels])
+
+    # Print confusion matrix
+    print("Trainning Set Confusion Matrix:")
+    print(cm_train_df)
+        
+    # Calculate metrics
+    accuracy = accuracy_score(train_df["type"], train_df["predicted_type"]) 
+    precision = precision_score(train_df["type"], train_df["predicted_type"], zero_division=1)
+    recall = recall_score(train_df["type"], train_df["predicted_type"], zero_division=1)
+    f1 = f1_score(train_df["type"], train_df["predicted_type"], zero_division=1)
+    print(f"Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1-Score: {f1}") 
+    
+    test_df = test_df[test_df["pdf"] > 0].copy()
+    test_df["log_pdf"] = test_df["pdf"].apply(lambda x: np.log(x) if x > 0 else None)
+    test_df["predicted_type"] = (test_df["log_pdf"] >= threshold).astype(int) #the boolean is true if log_pdf is greater than threshold else false
+        
+    # Evaluate Performance with Confusion Matrix
+    test_cm = confusion_matrix(test_df["type"], test_df["predicted_type"])
+    labels = ["Alive (0)", "Dead (1)"]
+
+    # Convert confusion matrix to a DataFrame with row and column names
+    cm_test_df = pd.DataFrame(test_cm, index=[f"True {label}" for label in labels],
+                     columns=[f"Predicted {label}" for label in labels])
+
+    # Print confusion matrix
+    print("Testing Set Confusion Matrix:")
+    print(cm_test_df)
+    
+    test_accuracy = accuracy_score(test_df["type"], test_df["predicted_type"]) 
+    test_precision = precision_score(test_df["type"], test_df["predicted_type"], zero_division=1)
+    test_recall = recall_score(test_df["type"], test_df["predicted_type"], zero_division=1)
+    test_f1 = f1_score(test_df["type"], test_df["predicted_type"], zero_division=1)
+    print(f"Accuracy: {test_accuracy}, Precision: {test_precision}, Recall: {test_recall}, F1-Score: {test_f1}") 
     
 def alive_dead_thresholding_sequential(df):
     """
@@ -355,6 +424,7 @@ def alive_dead_thresholding_sequential(df):
     #plt.savefig("confusion matrix of sequential rows")
     plt.show()
     '''
+    
 
    
     

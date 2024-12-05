@@ -5,6 +5,7 @@ import numpy as np
 import logging
 import os
 import pandas as pd
+from sklearn.model_selection import train_test_split
 
 LOG_DIRECTORY = r"D:\RA work Fall2024\grid_by_grid_dead_alive\log_info"
 LOG_FILE = "gaussian_estimation.log"
@@ -302,5 +303,29 @@ def combine_df_write_to_csv(alive_df,dead_df):
     
     #print(f"Data successfully saved to {csv_path}")
     return combined_df
+
+def prepare_data(df):
+    """
+    this function divides the data frame into trainning and testing set ensures the testing set gets both of the types of object points
+    
+    Parameters:
+    - df: data frame containning all the informations
+    
+    Returns:
+    - train_df, test_df: two dataframes after splitting.
+    """
+    X = df.drop(columns=["type"])  # Features (can include all columns except the target)
+    y = df["type"]  # Target variable (type)
+
+    # Perform stratified train-test split
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42, stratify=y
+    )
+
+    # Combine back the features and target
+    train_df = pd.concat([X_train, y_train], axis=1)
+    test_df = pd.concat([X_test, y_test], axis=1)
+    
+    return train_df,test_df
 
  
