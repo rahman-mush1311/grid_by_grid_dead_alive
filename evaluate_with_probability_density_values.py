@@ -5,6 +5,7 @@ import os
 import logging
 from sklearn.metrics import confusion_matrix, roc_curve, auc, ConfusionMatrixDisplay,accuracy_score, precision_score, recall_score, f1_score
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 from grid_by_grid_guassian_estimation import grid_by_grid_displacement_observation,grid_by_grid_observation
 
@@ -283,6 +284,14 @@ def alive_dead_thresholding(df):
     # Print confusion matrix
     print("Confusion Matrix:")
     print(cm_df)
+    
+    '''
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
+    disp.plot(cmap=plt.cm.Blues)
+    plt.title("Confusion Matrix By Optimal Value Using Youden's J Statistic All")
+    plt.savefig("confusion matrix of using all data on trainning")
+    plt.show()
+    '''
         
     # Calculate metrics
     accuracy = accuracy_score(df["type"], df["predicted_type"]) 
@@ -319,7 +328,8 @@ def evaluate_model_performance(train_df,test_df):
     # Print confusion matrix
     print("Trainning Set Confusion Matrix:")
     print(cm_train_df)
-        
+    
+    
     # Calculate metrics
     accuracy = accuracy_score(train_df["type"], train_df["predicted_type"]) 
     precision = precision_score(train_df["type"], train_df["predicted_type"], zero_division=1)
@@ -342,7 +352,17 @@ def evaluate_model_performance(train_df,test_df):
     # Print confusion matrix
     print("Testing Set Confusion Matrix:")
     print(cm_test_df)
+    '''
+    plt.figure(figsize=(6, 5))
+    sns.heatmap(cm_test_df, annot=True, fmt='d', cmap="Greens", cbar=False, 
+            xticklabels=labels, yticklabels=labels, linewidths=0.5, linecolor='black')
     
+    # Add title and labels
+    plt.title("Confusion Matrix for Training Set", fontsize=16)
+    plt.xlabel("Predicted Labels", fontsize=12)
+    plt.ylabel("True Labels", fontsize=12)
+    plt.show()
+    '''
     test_accuracy = accuracy_score(test_df["type"], test_df["predicted_type"]) 
     test_precision = precision_score(test_df["type"], test_df["predicted_type"], zero_division=1)
     test_recall = recall_score(test_df["type"], test_df["predicted_type"], zero_division=1)
@@ -419,7 +439,7 @@ def alive_dead_thresholding_sequential(df):
     print(f"Accuracy: {accuracy}, Precision: {precision}, Recall: {recall}, F1-Score: {f1}") 
     '''
     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=labels)
-    disp.plot(cmap=plt.cm.Blues)
+    disp.plot(cmap=plt.cm.Oranges)
     plt.title("Confusion Matrix By Optimal Value Using Youden's J Statistic & Sequential Rows")
     #plt.savefig("confusion matrix of sequential rows")
     plt.show()

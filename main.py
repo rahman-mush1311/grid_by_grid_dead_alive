@@ -44,14 +44,14 @@ if __name__ == "__main__":
     total_df=combine_df_write_to_csv(alive_df,dead_df)
     #print(total_df)
     #alive_dead_thresholding(total_df)
-    #alive_dead_thresholding_sequential(total_df)
+    alive_dead_thresholding_sequential(total_df)
     
     train_df,test_df=prepare_data(total_df)
     # Display the results
     #print(f"Train set distribution:\n{train_df['type'].value_counts()}")
     #print(f"Test set distribution:\n{test_df['type'].value_counts()}")
 
-    evaluate_model_performance(train_df,test_df)
+    #evaluate_model_performance(train_df,test_df)
     '''
     #get flattened list for dictionary having only pdfs it was to check only:
     dead_pdf_list=get_pdf_value_list(dead_pdf_all_dict)
