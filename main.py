@@ -15,6 +15,7 @@ import seaborn as sns
 from grid_by_grid_guassian_estimation import load_observations,grid_by_grid_displacement_observation,grid_covariance_calculate,print_grid_stats,grid_by_grid_observation,convert_dict_to_dataframe,combine_df_write_to_csv,prepare_data
 from evaluate_with_probability_density_values import grid_by_grid_pdf,calculate_pdf_all_by_displacements,get_pdf_value_list,mismatching_pdf_observations,get_unique_values_of_pdfs,alive_dead_thresholding,alive_dead_thresholding_sequential,evaluate_model_performance
 from result_visualization import plot_pdf_histogram_bins,plot_pdf_overlay_histogram_bins,mean_covariance_plot,plot_cdf_line_side_by_side,plot_cdf_line_with_log_side_by_side,plot_cdf_line_overlay,plot_cdf_min_max_normalized_line_overlay,plot_cdf_zscore_normalized_line_overlay,filtered_overlay_histogram,large_small_frequency_overlay_histogram,make_collage
+from evaluate_thresholding_model import get_log_dictionary,get_thresholds_from_roc,thresholding_with_window_size
 # Main code execution
 if __name__ == "__main__":
     
@@ -36,22 +37,25 @@ if __name__ == "__main__":
     alive_pdf_all_dict=calculate_pdf_all_by_displacements(alive_obs,dead_grid_stats,4128,2196)
     #mismatching_pdf_observations(alive_obs,alive_pdf_all_dict)
     #print(alive_pdf_all_dict) #run this to see the alive pdf values
-    
-    alive_df = convert_dict_to_dataframe(alive_pdf_all_dict,0)
+    #data frame related stuffs
+    '''
+    #alive_df = convert_dict_to_dataframe(alive_pdf_all_dict,0)
     #print(alive_df)
-    dead_df = convert_dict_to_dataframe(dead_pdf_all_dict,1)
+    #dead_df = convert_dict_to_dataframe(dead_pdf_all_dict,1)
     #print(dead_df)
-    total_df=combine_df_write_to_csv(alive_df,dead_df)
+    #total_df=combine_df_write_to_csv(alive_df,dead_df)
     #print(total_df)
     #alive_dead_thresholding(total_df)
-    alive_dead_thresholding_sequential(total_df)
+    #alive_dead_thresholding_sequential(total_df)
     
-    train_df,test_df=prepare_data(total_df)
+    #train_df,test_df=prepare_data(total_df)
     # Display the results
     #print(f"Train set distribution:\n{train_df['type'].value_counts()}")
     #print(f"Test set distribution:\n{test_df['type'].value_counts()}")
 
     #evaluate_model_performance(train_df,test_df)
+    '''
+    
     '''
     #get flattened list for dictionary having only pdfs it was to check only:
     dead_pdf_list=get_pdf_value_list(dead_pdf_all_dict)
@@ -90,6 +94,9 @@ if __name__ == "__main__":
     #large_small_frequency_overlay_histogram(dead_pdf_list,alive_pdf_list)
     
     #make_collage()
+    
+    dead_log_pdf_dict, alive_log_pdf_dict=get_log_dictionary(dead_pdf_all_dict,alive_pdf_all_dict)
+    get_thresholds_from_roc(dead_log_pdf_dict,alive_log_pdf_dict)
    
    
     

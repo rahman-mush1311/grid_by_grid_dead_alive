@@ -179,14 +179,14 @@ def calculate_pdf_all_by_displacements(obs,grid_stats,max_x,max_y):
         curr_obj_obs = grid_by_grid_observation(current_item_dict,grid_squares,MAX_X,MAX_Y)
         
         # Calculate Pdfs by grid for the current object's displacement and their track of their observations and displacements   
-        obs_dis_pdfs = grid_by_grid_pdf_obs_dis(grid_stats, curr_obj_dis,curr_obj_obs)
+        #obs_dis_pdfs = grid_by_grid_pdf_obs_dis(grid_stats, curr_obj_dis,curr_obj_obs)
         #print(obs_dis_pdfs)
-        pdf_all_dict[obj_id] = obs_dis_pdfs
-        '''
-        #pdfs_by_grid=grid_by_grid_pdf(grid_stats, curr_obj_dis)
+        #pdf_all_dict[obj_id] = obs_dis_pdfs
+        
+        pdfs_by_grid=grid_by_grid_pdf(grid_stats, curr_obj_dis)
         # Store the result in pdf_all_dict
         pdf_all_dict[obj_id] = pdfs_by_grid
-        '''
+        
     return pdf_all_dict
 
 def get_pdf_value_list(curr_pdf):
