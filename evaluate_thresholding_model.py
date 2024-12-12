@@ -38,11 +38,19 @@ def get_log_dictionary(dead_pdf_all_dict,alive_pdf_all_dict):
 
         
 def get_thresholds_from_roc(dead_log_pdf_dict,alive_log_pdf_dict):
-
+    """
+    this function selects thresholds from dead & alive log pdf's dictionary using roc curve, it filters furthers when the tpr improves fpr decreases, it rounds the fpr, tpr values to 2 digits get more relevant thresholds
+    Parameters:
+    - dead_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the dead displacements}
+    - alive_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the alive displacements}
+    Returns:
+    - filtered threshold: list of threshold values got from filtering process
+    
+    """
     alive_log_values = [v for values in alive_log_pdf_dict.values() for v in values]
     dead_log_values = [v for values in dead_log_pdf_dict.values() for v in values]
     
-    true_labels = [0] * len(alive_log_values) + [1] * len(dead_log_values)  # 1 for Alive, 0 for Dead
+    true_labels = [0] * len(alive_log_values) + [1] * len(dead_log_values)  # 0 for Alive, 1 for Dead
     log_pdf_values = alive_log_values + dead_log_values
     
     fpr, tpr, roc_thresholds = roc_curve(true_labels, log_pdf_values)
@@ -58,6 +66,16 @@ def get_thresholds_from_roc(dead_log_pdf_dict,alive_log_pdf_dict):
     print(len(filtered_thresholds))
     return filtered_thresholds
 def get_threshold_from_object_minimum(data,dead_log_pdf_dict,alive_log_pdf_dict):
+    """
+    this function selects thresholds from dead & alive log pdf's dictionary taking the minimum of each objects, it filters furthers when the tpr improves fpr decreases, it also produces an rox curve for the minimum's
+    Parameters:
+    -data: combined dictionary with all the alive & dead displacements
+    - dead_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the dead displacements}
+    - alive_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the alive displacements}
+    Returns:
+    - filtered threshold: list of threshold values got from filtering process
+    
+    """
     thresholds=[min(values) for values in data.values()  if values ]
     thresholds.insert(0,float('inf'))
     
@@ -91,12 +109,22 @@ def get_threshold_from_object_minimum(data,dead_log_pdf_dict,alive_log_pdf_dict)
     plt.xlabel('False Positive Rate')
     plt.ylabel('True Positive Rate')
     plt.title('Receiver Operating Characteristic (ROC) Curve')
-    plt.show()
+    #plt.show()
     #print(len(thresholds))
     
     return thresholds
 def write_confusion_matrices(filename,threshold,true_labels,predicted_labels):
+    """
+    this function writes the confusion matrices to the files according to thresholds
+    Parameters:
+    - filename: string of the filenames
+    - threshold: current threshold to get the confusion matrix
+    - true_labels: 0/1 indicating dead/alive
+    - predicted_labels: 0/1 calculated using the threshold
+    Returns:
+    - N/A
     
+    """
     with open(filename, "a") as file:
         #for threshold in filtered_thresholds:
             #predicted_labels = [0 if log_pdf <= threshold else 1 for log_pdf in log_pdf_values]
@@ -110,7 +138,15 @@ def write_confusion_matrices(filename,threshold,true_labels,predicted_labels):
         file.write("\n")
 
 def combine_dictionaries(dead_log_pdf_dict,alive_log_pdf_dict):
+    """
+    this function merges the dictionaries, it modifies the key with a/d indicating coming from dead or alive
+    Parameters:
+    - dead_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the dead displacements}
+    - alive_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the alive displacements}
+    Returns:
+    - alive_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the displacements}
     
+    """
     merged_dict={}
     for obj_id, log_pdfs in dead_log_pdf_dict.items():
         merged_dict[f"{obj_id}d"]=log_pdfs
@@ -121,13 +157,32 @@ def combine_dictionaries(dead_log_pdf_dict,alive_log_pdf_dict):
     return merged_dict
     
 def max_matrix(threshold,window_size,true_labels,predicted_labels):
+    """
+    this function prints the confusion matrices which has highest TP/TN rate
+    Parameters:
+    - threshold: current threshold to get the confusion matrix
+    - window_size: for which size we are getting the maximum TP/TN rate
+    - true_labels: 0/1 indicating dead/alive
+    - predicted_labels: 0/1 calculated using the threshold
+    Returns:
+    - N/A
+    
+    """
     cm = confusion_matrix(true_labels, predicted_labels)
     print(f"Confusion Matrix for Threshold {threshold} Maximum TP/TN & Window Size {window_size}:")
     print(f"True d Pred d [[{cm[0][0]} {cm[0][1]}] True d Pre a")  # True Positive, False Negative
     print(f"True a Pred d [{cm[1][0]} {cm[1][1]}]] True a Pre a")  # False Positive, True Negative
 
 def thresholding_with_window_roc_curve(dead_log_pdf_dict,alive_log_pdf_dict):
-    
+    """
+    this function does the classification according to the thresholds got from roc_curve, it looks at different window to consider the classification 
+    additionally it computes the thresholds for which we get the maximum tp/tn
+    Parameters:
+    - dead_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the dead displacements}
+    - alive_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the alive displacements}
+    Returns:
+    - N/A
+    """
     data=combine_dictionaries(dead_log_pdf_dict,alive_log_pdf_dict)
     filtered_thresholds=get_thresholds_from_roc(dead_log_pdf_dict,alive_log_pdf_dict)
     #get_threshold_from_object_minimum(data,dead_log_pdf_dict,alive_log_pdf_dict)
@@ -177,13 +232,21 @@ def thresholding_with_window_roc_curve(dead_log_pdf_dict,alive_log_pdf_dict):
             max_tn_pred=predictions
             max_tn_true=true_labels
         #print(max_tp,max_tn,max_tp_threshold,max_tn_threshold)
-        write_confusion_matrices('confusion_matrices_obj_level.txt',threshold,true_labels,predictions)
+        #write_confusion_matrices('confusion_matrices_obj_level.txt',threshold,true_labels,predictions)
     print(max_tp,max_tn,max_tp_threshold,max_tn_threshold)
     max_matrix(max_tp_threshold,1,max_tp_true,max_tp_pred)
     max_matrix(max_tn_threshold,1,max_tn_true,max_tn_pred)
 
 def thresholding_classification_with_window_minimum(dead_log_pdf_dict,alive_log_pdf_dict):
-    
+    """
+    this function does the classification according to the thresholds got from taking object's minimum, it looks at different window to consider the classification 
+    additionally it prints the confusion matrix
+    Parameters:
+    - dead_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the dead displacements}
+    - alive_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the alive displacements}
+    Returns:
+    - N/A
+    """
     data=combine_dictionaries(dead_log_pdf_dict,alive_log_pdf_dict)
     filtered_thresholds=get_threshold_from_object_minimum(data,dead_log_pdf_dict,alive_log_pdf_dict)
     
