@@ -79,7 +79,7 @@ def compute_likelihood(log_pdfs_dead_dis_dead, log_pdfs_dead_dis_alive, true_lab
         valid_dead_log_pdfs = [v for v in log_pdfs_dead_dis_dead[obj_id] if v != 0]
         valid_alive_log_pdfs = [v for v in log_pdfs_dead_dis_alive[obj_id] if v != 0]
         
-        print(f"log_pdfs for obj_id {obj_id}. {valid_dead_log_pdfs} {valid_alive_log_pdfs}")
+        #print(f"log_pdfs for obj_id {obj_id}. {valid_dead_log_pdfs} {valid_alive_log_pdfs}")
         
         if not valid_dead_log_pdfs or not valid_alive_log_pdfs:
             print(f"Warning: Invalid log_pdfs for obj_id {obj_id}. {valid_dead_log_pdfs} {valid_alive_log_pdfs}")
@@ -99,7 +99,7 @@ def compute_likelihood(log_pdfs_dead_dis_dead, log_pdfs_dead_dis_alive, true_lab
         dead_log_sum_pdf = (np.sum(valid_dead_log_pdfs) * prior_dead) / total
         alive_log_sum_pdf = (np.sum(valid_alive_log_pdfs) * prior_alive) / total
         
-        print(f"dead_log_sum is {dead_log_sum_pdf}, alive_log_sum_pdf: {alive_log_sum_pdf}")
+        #print(f"dead_log_sum is {dead_log_sum_pdf}, alive_log_sum_pdf: {alive_log_sum_pdf}")
         # Classification based on posterior probabilities
         if dead_log_sum_pdf > alive_log_sum_pdf:
             cls = 'd'
@@ -113,7 +113,7 @@ def compute_likelihood(log_pdfs_dead_dis_dead, log_pdfs_dead_dis_alive, true_lab
         else:
             curr_likelihood[f"{obj_id}a"] = {'true_labels': 'a', 'predicted_labels': cls}
     
-    #print(curr_likelihood)
+    print(curr_likelihood)
     return curr_likelihood
 
 
