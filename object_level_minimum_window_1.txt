@@ -1,0 +1,1188 @@
+confusion matrices from minimum object level for window size 1 & threshold -9.173117143537405:
+86 45
+38 171
+
+confusion matrices from minimum object level for window size 1 & threshold -10.023026148539742:
+95 36
+56 153
+
+confusion matrices from minimum object level for window size 1 & threshold -7.852960606858657:
+49 82
+27 182
+
+confusion matrices from minimum object level for window size 1 & threshold -14.151984899356627:
+117 14
+118 91
+
+confusion matrices from minimum object level for window size 1 & threshold -8.626053414962268:
+75 56
+35 174
+
+confusion matrices from minimum object level for window size 1 & threshold -8.293070090208975:
+69 62
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -8.235619334549988:
+63 68
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -9.950824251210019:
+93 38
+54 155
+
+confusion matrices from minimum object level for window size 1 & threshold -9.18924789846729:
+87 44
+38 171
+
+confusion matrices from minimum object level for window size 1 & threshold -11.558212613868143:
+106 25
+79 130
+
+confusion matrices from minimum object level for window size 1 & threshold -11.855010791291786:
+110 21
+89 120
+
+confusion matrices from minimum object level for window size 1 & threshold -11.970827312549837:
+111 20
+92 117
+
+confusion matrices from minimum object level for window size 1 & threshold -8.559273380754309:
+74 57
+34 175
+
+confusion matrices from minimum object level for window size 1 & threshold -8.518171032767402:
+73 58
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -8.455257181886909:
+72 59
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -9.0495688633122:
+85 46
+37 172
+
+confusion matrices from minimum object level for window size 1 & threshold -8.069628608714845:
+59 72
+29 180
+
+confusion matrices from minimum object level for window size 1 & threshold -13.89361791758693:
+115 16
+114 95
+
+confusion matrices from minimum object level for window size 1 & threshold -9.031769705439427:
+84 47
+37 172
+
+confusion matrices from minimum object level for window size 1 & threshold -8.271239178505269:
+67 64
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -10.0127934754059:
+94 37
+56 153
+
+confusion matrices from minimum object level for window size 1 & threshold -6.982888672968041:
+24 107
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -8.7805644398728:
+81 50
+36 173
+
+confusion matrices from minimum object level for window size 1 & threshold -10.343722610826742:
+101 30
+57 152
+
+confusion matrices from minimum object level for window size 1 & threshold -8.75330905014426:
+78 53
+36 173
+
+confusion matrices from minimum object level for window size 1 & threshold -7.916387666879295:
+53 78
+28 181
+
+confusion matrices from minimum object level for window size 1 & threshold -9.680242945963652:
+91 40
+48 161
+
+confusion matrices from minimum object level for window size 1 & threshold -7.476928581139827:
+38 93
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -10.483715013055116:
+102 29
+60 149
+
+confusion matrices from minimum object level for window size 1 & threshold -10.228716429054177:
+98 33
+56 153
+
+confusion matrices from minimum object level for window size 1 & threshold -11.759054553036488:
+108 23
+86 123
+
+confusion matrices from minimum object level for window size 1 & threshold -8.26217227070016:
+66 65
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -16.58114353287632:
+120 11
+139 70
+
+confusion matrices from minimum object level for window size 1 & threshold -8.091305778021717:
+60 71
+29 180
+
+confusion matrices from minimum object level for window size 1 & threshold -7.323137239486916:
+32 99
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -11.751928929308132:
+107 24
+85 124
+
+confusion matrices from minimum object level for window size 1 & threshold -7.779523206769425:
+46 85
+26 183
+
+confusion matrices from minimum object level for window size 1 & threshold -7.85817275486905:
+50 81
+27 182
+
+confusion matrices from minimum object level for window size 1 & threshold -7.73586187349148:
+43 88
+25 184
+
+confusion matrices from minimum object level for window size 1 & threshold -9.479523273041096:
+89 42
+42 167
+
+confusion matrices from minimum object level for window size 1 & threshold -7.646598428299331:
+41 90
+25 184
+
+confusion matrices from minimum object level for window size 1 & threshold -11.538198595834793:
+105 26
+79 130
+
+confusion matrices from minimum object level for window size 1 & threshold -11.775672639253097:
+109 22
+86 123
+
+confusion matrices from minimum object level for window size 1 & threshold -7.706534493600744:
+42 89
+25 184
+
+confusion matrices from minimum object level for window size 1 & threshold -6.754052835994436:
+19 112
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -7.330812188209791:
+34 97
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -16.35906823075951:
+119 12
+139 70
+
+confusion matrices from minimum object level for window size 1 & threshold -13.239548018879056:
+114 17
+106 103
+
+confusion matrices from minimum object level for window size 1 & threshold -10.139025966138774:
+97 34
+56 153
+
+confusion matrices from minimum object level for window size 1 & threshold -10.10215909513336:
+96 35
+56 153
+
+confusion matrices from minimum object level for window size 1 & threshold -8.062519535464864:
+58 73
+29 180
+
+confusion matrices from minimum object level for window size 1 & threshold -8.251288507968795:
+64 67
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -10.669495184652533:
+104 27
+62 147
+
+confusion matrices from minimum object level for window size 1 & threshold -8.013105033752243:
+56 75
+28 181
+
+confusion matrices from minimum object level for window size 1 & threshold -7.804306417400534:
+47 84
+26 183
+
+confusion matrices from minimum object level for window size 1 & threshold -9.499710330569147:
+90 41
+43 166
+
+confusion matrices from minimum object level for window size 1 & threshold -8.253255522902696:
+65 66
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -7.1296628871107295:
+28 103
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -21.405170247088787:
+124 7
+160 49
+
+confusion matrices from minimum object level for window size 1 & threshold -7.382732017164609:
+36 95
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -8.759278563903687:
+79 52
+36 173
+
+confusion matrices from minimum object level for window size 1 & threshold -7.777441924629595:
+45 86
+26 183
+
+confusion matrices from minimum object level for window size 1 & threshold -6.966272225767962:
+23 108
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -7.192466344436555:
+29 102
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -7.328760562442484:
+33 98
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -7.583310834992062:
+39 92
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -8.340680795844067:
+70 61
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -9.2155385742105:
+88 43
+38 171
+
+confusion matrices from minimum object level for window size 1 & threshold -7.958657962393117:
+54 77
+28 181
+
+confusion matrices from minimum object level for window size 1 & threshold -8.112636860137112:
+61 70
+30 179
+
+confusion matrices from minimum object level for window size 1 & threshold -8.851524791224936:
+82 49
+36 173
+
+confusion matrices from minimum object level for window size 1 & threshold -7.31543993075218:
+31 100
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -14.054838021019584:
+116 15
+117 92
+
+confusion matrices from minimum object level for window size 1 & threshold -9.714009567669518:
+92 39
+50 159
+
+confusion matrices from minimum object level for window size 1 & threshold -7.0835780983939625:
+26 105
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -8.68329698478557:
+77 54
+35 174
+
+confusion matrices from minimum object level for window size 1 & threshold -7.754744167984366:
+44 87
+25 184
+
+confusion matrices from minimum object level for window size 1 & threshold -8.040600048219336:
+57 74
+29 180
+
+confusion matrices from minimum object level for window size 1 & threshold -6.95049932733914:
+22 109
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -7.610142323497084:
+40 91
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -18.019292352315567:
+121 10
+150 59
+
+confusion matrices from minimum object level for window size 1 & threshold -8.170227240798642:
+62 69
+31 178
+
+confusion matrices from minimum object level for window size 1 & threshold -7.086488339784805:
+27 104
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -7.338870571574275:
+35 96
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -10.29025130602388:
+99 32
+56 153
+
+confusion matrices from minimum object level for window size 1 & threshold -6.8917013686533295:
+21 110
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -6.87827091262536:
+20 111
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -8.664122982013083:
+76 55
+35 174
+
+confusion matrices from minimum object level for window size 1 & threshold -35.99242086870301:
+127 4
+177 32
+
+confusion matrices from minimum object level for window size 1 & threshold -8.410943438496203:
+71 60
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -7.383630328328064:
+37 94
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -7.970729815305175:
+55 76
+28 181
+
+confusion matrices from minimum object level for window size 1 & threshold -7.908721341026613:
+52 79
+27 182
+
+confusion matrices from minimum object level for window size 1 & threshold -8.288971226230291:
+68 63
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -8.762468569672041:
+80 51
+36 173
+
+confusion matrices from minimum object level for window size 1 & threshold -14.81189353201319:
+118 13
+128 81
+
+confusion matrices from minimum object level for window size 1 & threshold -12.837421842832288:
+112 19
+104 105
+
+confusion matrices from minimum object level for window size 1 & threshold -7.8311212449191965:
+48 83
+27 182
+
+confusion matrices from minimum object level for window size 1 & threshold -23.787031259691517:
+125 6
+166 43
+
+confusion matrices from minimum object level for window size 1 & threshold -13.077610361957255:
+113 18
+105 104
+
+confusion matrices from minimum object level for window size 1 & threshold -30.109163111545783:
+126 5
+175 34
+
+confusion matrices from minimum object level for window size 1 & threshold -18.57586058459645:
+123 8
+153 56
+
+confusion matrices from minimum object level for window size 1 & threshold -7.213563421337492:
+30 101
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -7.072510157541791:
+25 106
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -7.880069103155375:
+51 80
+27 182
+
+confusion matrices from minimum object level for window size 1 & threshold -43.75715400690733:
+128 3
+182 27
+
+confusion matrices from minimum object level for window size 1 & threshold -47.663714591727484:
+130 1
+182 27
+
+confusion matrices from minimum object level for window size 1 & threshold -18.31548695861957:
+122 9
+153 56
+
+confusion matrices from minimum object level for window size 1 & threshold -44.915944389784066:
+129 2
+182 27
+
+confusion matrices from minimum object level for window size 1 & threshold -10.521982188314558:
+103 28
+60 149
+
+confusion matrices from minimum object level for window size 1 & threshold -8.906721127547756:
+83 48
+37 172
+
+confusion matrices from minimum object level for window size 1 & threshold -10.301342085476485:
+100 31
+56 153
+
+confusion matrices from minimum object level for window size 1 & threshold -10.629036982287206:
+104 27
+61 148
+
+confusion matrices from minimum object level for window size 1 & threshold -101.80739401371478:
+131 0
+193 16
+
+confusion matrices from minimum object level for window size 1 & threshold -347.76886368923266:
+131 0
+202 7
+
+confusion matrices from minimum object level for window size 1 & threshold -363.5652929980097:
+131 0
+203 6
+
+confusion matrices from minimum object level for window size 1 & threshold -98.70352827584331:
+131 0
+192 17
+
+confusion matrices from minimum object level for window size 1 & threshold -201.62905830361046:
+131 0
+197 12
+
+confusion matrices from minimum object level for window size 1 & threshold -77.59186611173536:
+131 0
+188 21
+
+confusion matrices from minimum object level for window size 1 & threshold -33.663066928097024:
+127 4
+175 34
+
+confusion matrices from minimum object level for window size 1 & threshold -48.37860799359321:
+131 0
+182 27
+
+confusion matrices from minimum object level for window size 1 & threshold -245.23117233648915:
+131 0
+199 10
+
+confusion matrices from minimum object level for window size 1 & threshold -94.14235928755392:
+131 0
+191 18
+
+confusion matrices from minimum object level for window size 1 & threshold -51.130934306944255:
+131 0
+183 26
+
+confusion matrices from minimum object level for window size 1 & threshold -588.6694267168793:
+131 0
+206 3
+
+confusion matrices from minimum object level for window size 1 & threshold -37.703140268439505:
+128 3
+177 32
+
+confusion matrices from minimum object level for window size 1 & threshold -704.4501953024321:
+131 0
+208 1
+
+confusion matrices from minimum object level for window size 1 & threshold -651.0677905166825:
+131 0
+207 2
+
+confusion matrices from minimum object level for window size 1 & threshold -134.38230617743605:
+131 0
+195 14
+
+confusion matrices from minimum object level for window size 1 & threshold -18.205026692078157:
+122 9
+151 58
+
+confusion matrices from minimum object level for window size 1 & threshold -12.084276756234829:
+112 19
+94 115
+
+confusion matrices from minimum object level for window size 1 & threshold -56.28745855446982:
+131 0
+184 25
+
+confusion matrices from minimum object level for window size 1 & threshold -15.652113398092855:
+119 12
+132 77
+
+confusion matrices from minimum object level for window size 1 & threshold -11.905914982240194:
+111 20
+89 120
+
+confusion matrices from minimum object level for window size 1 & threshold -15.552118933425813:
+119 12
+130 79
+
+confusion matrices from minimum object level for window size 1 & threshold -12.86662149549748:
+113 18
+104 105
+
+confusion matrices from minimum object level for window size 1 & threshold -12.298367895889104:
+112 19
+98 111
+
+confusion matrices from minimum object level for window size 1 & threshold -11.267263339241119:
+105 26
+72 137
+
+confusion matrices from minimum object level for window size 1 & threshold -11.278368483137996:
+105 26
+73 136
+
+confusion matrices from minimum object level for window size 1 & threshold -11.228508299717424:
+105 26
+70 139
+
+confusion matrices from minimum object level for window size 1 & threshold -11.633229730889774:
+107 24
+82 127
+
+confusion matrices from minimum object level for window size 1 & threshold -19.8213182302975:
+124 7
+155 54
+
+confusion matrices from minimum object level for window size 1 & threshold -10.45723827609184:
+102 29
+58 151
+
+confusion matrices from minimum object level for window size 1 & threshold -10.744045039633637:
+105 26
+63 146
+
+confusion matrices from minimum object level for window size 1 & threshold -8.097094704672386:
+61 70
+29 180
+
+confusion matrices from minimum object level for window size 1 & threshold -551.8528009681642:
+131 0
+205 4
+
+confusion matrices from minimum object level for window size 1 & threshold -34.799146732508795:
+127 4
+176 33
+
+confusion matrices from minimum object level for window size 1 & threshold -11.831652795066947:
+110 21
+87 122
+
+confusion matrices from minimum object level for window size 1 & threshold -11.266429858373293:
+105 26
+71 138
+
+confusion matrices from minimum object level for window size 1 & threshold -11.456159426859283:
+105 26
+75 134
+
+confusion matrices from minimum object level for window size 1 & threshold -14.247179546966454:
+118 13
+121 88
+
+confusion matrices from minimum object level for window size 1 & threshold -14.027129598322258:
+116 15
+116 93
+
+confusion matrices from minimum object level for window size 1 & threshold -27.500687222770097:
+126 5
+170 39
+
+confusion matrices from minimum object level for window size 1 & threshold -15.647357442333385:
+119 12
+131 78
+
+confusion matrices from minimum object level for window size 1 & threshold -12.396459892079331:
+112 19
+99 110
+
+confusion matrices from minimum object level for window size 1 & threshold -10.94420047740346:
+105 26
+66 143
+
+confusion matrices from minimum object level for window size 1 & threshold -12.289618756424733:
+112 19
+97 112
+
+confusion matrices from minimum object level for window size 1 & threshold -10.582355564344144:
+104 27
+60 149
+
+confusion matrices from minimum object level for window size 1 & threshold -13.378487323231283:
+115 16
+110 99
+
+confusion matrices from minimum object level for window size 1 & threshold -10.724441408979182:
+105 26
+62 147
+
+confusion matrices from minimum object level for window size 1 & threshold -11.943353992825685:
+111 20
+90 119
+
+confusion matrices from minimum object level for window size 1 & threshold -11.002717677322014:
+105 26
+68 141
+
+confusion matrices from minimum object level for window size 1 & threshold -57.428098549396246:
+131 0
+185 24
+
+confusion matrices from minimum object level for window size 1 & threshold -13.407688675636283:
+115 16
+111 98
+
+confusion matrices from minimum object level for window size 1 & threshold -21.22297491400434:
+124 7
+158 51
+
+confusion matrices from minimum object level for window size 1 & threshold -68.12800241958068:
+131 0
+187 22
+
+confusion matrices from minimum object level for window size 1 & threshold -11.75469831302474:
+108 23
+85 124
+
+confusion matrices from minimum object level for window size 1 & threshold -11.634129832479267:
+107 24
+83 126
+
+confusion matrices from minimum object level for window size 1 & threshold -22.902251478109875:
+125 6
+162 47
+
+confusion matrices from minimum object level for window size 1 & threshold -13.266406698511267:
+115 16
+107 102
+
+confusion matrices from minimum object level for window size 1 & threshold -20.565971041288783:
+124 7
+156 53
+
+confusion matrices from minimum object level for window size 1 & threshold -24.05881535179356:
+126 5
+166 43
+
+confusion matrices from minimum object level for window size 1 & threshold -38.21255921655939:
+128 3
+178 31
+
+confusion matrices from minimum object level for window size 1 & threshold -79.93863446861467:
+131 0
+189 20
+
+confusion matrices from minimum object level for window size 1 & threshold -27.299177730572364:
+126 5
+169 40
+
+confusion matrices from minimum object level for window size 1 & threshold -23.497425944758376:
+125 6
+164 45
+
+confusion matrices from minimum object level for window size 1 & threshold -29.200301918205344:
+126 5
+172 37
+
+confusion matrices from minimum object level for window size 1 & threshold -40.9258669382307:
+128 3
+181 28
+
+confusion matrices from minimum object level for window size 1 & threshold -25.822632019337867:
+126 5
+168 41
+
+confusion matrices from minimum object level for window size 1 & threshold -144.78339805147078:
+131 0
+196 13
+
+confusion matrices from minimum object level for window size 1 & threshold -14.436109976960362:
+118 13
+124 85
+
+confusion matrices from minimum object level for window size 1 & threshold -12.828887667324901:
+112 19
+103 106
+
+confusion matrices from minimum object level for window size 1 & threshold -17.715095720783154:
+121 10
+147 62
+
+confusion matrices from minimum object level for window size 1 & threshold -22.398404767013986:
+125 6
+161 48
+
+confusion matrices from minimum object level for window size 1 & threshold -8.143617155767082:
+62 69
+30 179
+
+confusion matrices from minimum object level for window size 1 & threshold -9.717474208778413:
+93 38
+50 159
+
+confusion matrices from minimum object level for window size 1 & threshold -11.779600969412733:
+110 21
+86 123
+
+confusion matrices from minimum object level for window size 1 & threshold -14.142980167830459:
+117 14
+117 92
+
+confusion matrices from minimum object level for window size 1 & threshold -9.787658152721164:
+93 38
+52 157
+
+confusion matrices from minimum object level for window size 1 & threshold -11.62910917165712:
+107 24
+81 128
+
+confusion matrices from minimum object level for window size 1 & threshold -11.474977278464497:
+105 26
+76 133
+
+confusion matrices from minimum object level for window size 1 & threshold -10.406718366175088:
+102 29
+57 152
+
+confusion matrices from minimum object level for window size 1 & threshold -390.4413842924997:
+131 0
+204 5
+
+confusion matrices from minimum object level for window size 1 & threshold -15.715486782946016:
+119 12
+134 75
+
+confusion matrices from minimum object level for window size 1 & threshold -238.25845417597125:
+131 0
+198 11
+
+confusion matrices from minimum object level for window size 1 & threshold -16.95919999281713:
+121 10
+142 67
+
+confusion matrices from minimum object level for window size 1 & threshold -320.53346092266344:
+131 0
+200 9
+
+confusion matrices from minimum object level for window size 1 & threshold -9.937418268775337:
+93 38
+53 156
+
+confusion matrices from minimum object level for window size 1 & threshold -8.228384367848024:
+63 68
+32 177
+
+confusion matrices from minimum object level for window size 1 & threshold -339.03803764691554:
+131 0
+201 8
+
+confusion matrices from minimum object level for window size 1 & threshold -9.503081222105699:
+91 40
+43 166
+
+confusion matrices from minimum object level for window size 1 & threshold -9.22859211257893:
+89 42
+38 171
+
+confusion matrices from minimum object level for window size 1 & threshold -132.3603223702951:
+131 0
+194 15
+
+confusion matrices from minimum object level for window size 1 & threshold -9.957486200036412:
+94 37
+54 155
+
+confusion matrices from minimum object level for window size 1 & threshold -9.739083900448161:
+93 38
+51 158
+
+confusion matrices from minimum object level for window size 1 & threshold -16.34028982708347:
+119 12
+138 71
+
+confusion matrices from minimum object level for window size 1 & threshold -14.30003558711034:
+118 13
+122 87
+
+confusion matrices from minimum object level for window size 1 & threshold -13.249773013713394:
+115 16
+106 103
+
+confusion matrices from minimum object level for window size 1 & threshold -14.337202830007724:
+118 13
+123 86
+
+confusion matrices from minimum object level for window size 1 & threshold -25.676138721762015:
+126 5
+167 42
+
+confusion matrices from minimum object level for window size 1 & threshold -17.02838522783287:
+121 10
+143 66
+
+confusion matrices from minimum object level for window size 1 & threshold -11.620348970492827:
+107 24
+80 129
+
+confusion matrices from minimum object level for window size 1 & threshold -40.6228525673765:
+128 3
+180 29
+
+confusion matrices from minimum object level for window size 1 & threshold -10.336157533101142:
+101 30
+56 153
+
+confusion matrices from minimum object level for window size 1 & threshold -11.951503447783425:
+111 20
+91 118
+
+confusion matrices from minimum object level for window size 1 & threshold -19.411379226021005:
+124 7
+154 55
+
+confusion matrices from minimum object level for window size 1 & threshold -21.485538769620508:
+125 6
+160 49
+
+confusion matrices from minimum object level for window size 1 & threshold -29.395222834697023:
+126 5
+173 36
+
+confusion matrices from minimum object level for window size 1 & threshold -12.062797154005622:
+112 19
+93 116
+
+confusion matrices from minimum object level for window size 1 & threshold -18.204669564225824:
+122 9
+150 59
+
+confusion matrices from minimum object level for window size 1 & threshold -17.74574858554099:
+121 10
+148 61
+
+confusion matrices from minimum object level for window size 1 & threshold -23.330489430038888:
+125 6
+163 46
+
+confusion matrices from minimum object level for window size 1 & threshold -18.905268514621287:
+124 7
+153 56
+
+confusion matrices from minimum object level for window size 1 & threshold -17.305723267502643:
+121 10
+144 65
+
+confusion matrices from minimum object level for window size 1 & threshold -40.1259844934561:
+128 3
+179 30
+
+confusion matrices from minimum object level for window size 1 & threshold -16.86303251055809:
+121 10
+140 69
+
+confusion matrices from minimum object level for window size 1 & threshold -17.802502649964197:
+121 10
+149 60
+
+confusion matrices from minimum object level for window size 1 & threshold -58.245553002132986:
+131 0
+186 23
+
+confusion matrices from minimum object level for window size 1 & threshold -15.778477704383933:
+119 12
+135 74
+
+confusion matrices from minimum object level for window size 1 & threshold -13.36330901489978:
+115 16
+109 100
+
+confusion matrices from minimum object level for window size 1 & threshold -11.530771412020105:
+105 26
+78 131
+
+confusion matrices from minimum object level for window size 1 & threshold -21.33904372036125:
+124 7
+159 50
+
+confusion matrices from minimum object level for window size 1 & threshold -14.691752987218685:
+118 13
+126 83
+
+confusion matrices from minimum object level for window size 1 & threshold -17.314227781251954:
+121 10
+145 64
+
+confusion matrices from minimum object level for window size 1 & threshold -14.653024165581552:
+118 13
+125 84
+
+confusion matrices from minimum object level for window size 1 & threshold -14.857817607203554:
+119 12
+129 80
+
+confusion matrices from minimum object level for window size 1 & threshold -13.421071885590012:
+115 16
+112 97
+
+confusion matrices from minimum object level for window size 1 & threshold -9.699472315615562:
+92 39
+49 160
+
+confusion matrices from minimum object level for window size 1 & threshold -8.884763169185543:
+83 48
+36 173
+
+confusion matrices from minimum object level for window size 1 & threshold -8.728803552086767:
+78 53
+35 174
+
+confusion matrices from minimum object level for window size 1 & threshold -20.58733440540457:
+124 7
+157 52
+
+confusion matrices from minimum object level for window size 1 & threshold -14.15724769459628:
+118 13
+118 91
+
+confusion matrices from minimum object level for window size 1 & threshold -7.7581435164668635:
+45 86
+25 184
+
+confusion matrices from minimum object level for window size 1 & threshold -16.6042705087626:
+121 10
+139 70
+
+confusion matrices from minimum object level for window size 1 & threshold -13.995947730840726:
+116 15
+115 94
+
+confusion matrices from minimum object level for window size 1 & threshold -9.060992639851893:
+86 45
+37 172
+
+confusion matrices from minimum object level for window size 1 & threshold -13.872277411302862:
+115 16
+113 96
+
+confusion matrices from minimum object level for window size 1 & threshold -7.627340232138444:
+41 90
+24 185
+
+confusion matrices from minimum object level for window size 1 & threshold -9.36796202061634:
+89 42
+40 169
+
+confusion matrices from minimum object level for window size 1 & threshold -13.204754679809314:
+114 17
+105 104
+
+confusion matrices from minimum object level for window size 1 & threshold -8.58665793683441:
+75 56
+34 175
+
+confusion matrices from minimum object level for window size 1 & threshold -14.821874603850016:
+119 12
+128 81
+
+confusion matrices from minimum object level for window size 1 & threshold -14.198739718128172:
+118 13
+120 89
+
+confusion matrices from minimum object level for window size 1 & threshold -10.459111236897854:
+102 29
+59 150
+
+confusion matrices from minimum object level for window size 1 & threshold -9.43223491246995:
+89 42
+41 168
+
+confusion matrices from minimum object level for window size 1 & threshold -11.74534251723559:
+107 24
+84 125
+
+confusion matrices from minimum object level for window size 1 & threshold -9.616505236437796:
+91 40
+46 163
+
+confusion matrices from minimum object level for window size 1 & threshold -12.805287161698967:
+112 19
+102 107
+
+confusion matrices from minimum object level for window size 1 & threshold -10.813981923848349:
+105 26
+64 145
+
+confusion matrices from minimum object level for window size 1 & threshold -8.185589423703703:
+63 68
+31 178
+
+confusion matrices from minimum object level for window size 1 & threshold -15.67966904368151:
+119 12
+133 76
+
+confusion matrices from minimum object level for window size 1 & threshold -12.56057738868274:
+112 19
+101 108
+
+confusion matrices from minimum object level for window size 1 & threshold -9.998663111195041:
+94 37
+55 154
+
+confusion matrices from minimum object level for window size 1 & threshold -9.664881144527874:
+91 40
+47 162
+
+confusion matrices from minimum object level for window size 1 & threshold -16.28293920761037:
+119 12
+137 72
+
+confusion matrices from minimum object level for window size 1 & threshold -13.995030290833366:
+116 15
+114 95
+
+confusion matrices from minimum object level for window size 1 & threshold -18.27432835931235:
+122 9
+152 57
+
+confusion matrices from minimum object level for window size 1 & threshold -9.574045263515604:
+91 40
+45 164
+
+confusion matrices from minimum object level for window size 1 & threshold -9.691337534477162:
+92 39
+48 161
+
+confusion matrices from minimum object level for window size 1 & threshold -8.013269566818987:
+57 74
+28 181
+
+confusion matrices from minimum object level for window size 1 & threshold -9.559769110063563:
+91 40
+44 165
+
+confusion matrices from minimum object level for window size 1 & threshold -12.169561360364408:
+112 19
+95 114
+
+confusion matrices from minimum object level for window size 1 & threshold -12.026696475754964:
+112 19
+92 117
+
+confusion matrices from minimum object level for window size 1 & threshold -12.495272809937337:
+112 19
+100 109
+
+confusion matrices from minimum object level for window size 1 & threshold -11.513523481642647:
+105 26
+77 132
+
+confusion matrices from minimum object level for window size 1 & threshold -9.269533100438526:
+89 42
+39 170
+
+confusion matrices from minimum object level for window size 1 & threshold -11.218979308166904:
+105 26
+69 140
+
+confusion matrices from minimum object level for window size 1 & threshold -7.910589332632424:
+53 78
+27 182
+
+confusion matrices from minimum object level for window size 1 & threshold -10.844153026829883:
+105 26
+65 144
+
+confusion matrices from minimum object level for window size 1 & threshold -7.806643629671761:
+48 83
+26 183
+
+confusion matrices from minimum object level for window size 1 & threshold -8.55611585619882:
+74 57
+33 176
+
+confusion matrices from minimum object level for window size 1 & threshold -14.195649918215107:
+118 13
+119 90
+
+confusion matrices from minimum object level for window size 1 & threshold -11.42815775041257:
+105 26
+74 135
+
+confusion matrices from minimum object level for window size 1 & threshold -10.944314857590232:
+105 26
+67 142
+
+confusion matrices from minimum object level for window size 1 & threshold -12.262362291129751:
+112 19
+96 113
+
+confusion matrices from minimum object level for window size 1 & threshold -9.492944989138325:
+90 41
+42 167
+
+confusion matrices from minimum object level for window size 1 & threshold -16.231195947661533:
+119 12
+136 73
+
+confusion matrices from minimum object level for window size 1 & threshold -29.809162606246908:
+126 5
+174 35
+
+confusion matrices from minimum object level for window size 1 & threshold -82.60230776928698:
+131 0
+190 19
+
+confusion matrices from minimum object level for window size 1 & threshold -17.514483035182405:
+121 10
+146 63
+
+confusion matrices from minimum object level for window size 1 & threshold -23.555260095655616:
+125 6
+165 44
+
+confusion matrices from minimum object level for window size 1 & threshold -16.87500096236434:
+121 10
+141 68
+
+confusion matrices from minimum object level for window size 1 & threshold -11.613391273003103:
+107 24
+79 130
+
+confusion matrices from minimum object level for window size 1 & threshold -11.852172296268073:
+110 21
+88 121
+
+confusion matrices from minimum object level for window size 1 & threshold -14.781139441705285:
+118 13
+127 82
+
+confusion matrices from minimum object level for window size 1 & threshold -29.070943107758005:
+126 5
+171 38
+
+confusion matrices from minimum object level for window size 1 & threshold -13.310395687639344:
+115 16
+108 101
+

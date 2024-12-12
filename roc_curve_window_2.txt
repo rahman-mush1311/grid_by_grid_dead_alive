@@ -1,0 +1,400 @@
+confusion matrices from roc_curve for window size 2 & threshold -4.873084163438611:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -4.976873290636196:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.038773454289485:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.124346053623233:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.188988931555519:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.419519124946472:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.589334943776951:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.6483252417859475:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.690632229938301:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.717583335938908:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.742749844614395:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.782103811361269:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.813886513581107:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.8381901714202895:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.8705010519778:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.90312613372042:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.920981275723495:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.9455116639567365:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -5.976015575706589:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.02200359424202:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.061194221594853:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.095765322015638:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.124998185409905:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.153218540698956:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.178351279808746:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.207698903679929:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.227726790267995:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.247843671734262:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.27882605943214:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.302136686120885:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.335010254472549:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.369727032151784:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.388249858485694:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.418196901309603:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.44275760797215:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.471153323027212:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.489690152195192:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.510971321350014:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.537722371138768:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.5679109265184:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.603251704630501:
+24 107
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.628415648765555:
+25 106
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.647864923554798:
+25 106
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.665041591495177:
+25 106
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.697984402451201:
+25 106
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.726086991358661:
+25 106
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.750291239178182:
+25 106
+29 180
+
+confusion matrices from roc_curve for window size 2 & threshold -6.774884398698197:
+25 106
+30 179
+
+confusion matrices from roc_curve for window size 2 & threshold -6.797656992755795:
+25 106
+31 178
+
+confusion matrices from roc_curve for window size 2 & threshold -6.822252837025271:
+26 105
+31 178
+
+confusion matrices from roc_curve for window size 2 & threshold -6.839627353501715:
+26 105
+31 178
+
+confusion matrices from roc_curve for window size 2 & threshold -6.868112363235855:
+28 103
+32 177
+
+confusion matrices from roc_curve for window size 2 & threshold -6.889843748263901:
+30 101
+32 177
+
+confusion matrices from roc_curve for window size 2 & threshold -6.908503262561566:
+30 101
+32 177
+
+confusion matrices from roc_curve for window size 2 & threshold -6.933774302222817:
+31 100
+32 177
+
+confusion matrices from roc_curve for window size 2 & threshold -6.955430753369636:
+33 98
+32 177
+
+confusion matrices from roc_curve for window size 2 & threshold -6.972689811385566:
+35 96
+32 177
+
+confusion matrices from roc_curve for window size 2 & threshold -6.99721722777751:
+36 95
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.020592049974315:
+37 94
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.049343577393259:
+40 91
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.0820886681238004:
+41 90
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.1108123406625445:
+42 89
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.140848946727282:
+42 89
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.162194849063658:
+44 87
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.1845277851602205:
+47 84
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.203971583332775:
+47 84
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.229645492690921:
+47 84
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.247783046003513:
+47 84
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.270440819314316:
+51 80
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.292052949088144:
+55 76
+34 175
+
+confusion matrices from roc_curve for window size 2 & threshold -7.330812188209791:
+55 76
+36 173
+
+confusion matrices from roc_curve for window size 2 & threshold -7.3625983352518025:
+56 75
+37 172
+
+confusion matrices from roc_curve for window size 2 & threshold -7.410282282446899:
+57 74
+40 169
+
+confusion matrices from roc_curve for window size 2 & threshold -7.452618766865524:
+59 72
+43 166
+
+confusion matrices from roc_curve for window size 2 & threshold -7.488063804088995:
+61 70
+46 163
+
+confusion matrices from roc_curve for window size 2 & threshold -7.519687643843859:
+64 67
+48 161
+
+confusion matrices from roc_curve for window size 2 & threshold -7.546758826781018:
+64 67
+49 160
+
+confusion matrices from roc_curve for window size 2 & threshold -7.586105710579982:
+66 65
+52 157
+
+confusion matrices from roc_curve for window size 2 & threshold -7.630698171726289:
+67 64
+52 157
+
+confusion matrices from roc_curve for window size 2 & threshold -7.67760737341333:
+71 60
+54 155
+
+confusion matrices from roc_curve for window size 2 & threshold -7.725481950704834:
+71 60
+59 150
+
+confusion matrices from roc_curve for window size 2 & threshold -7.770593716999278:
+75 56
+61 148
+
+confusion matrices from roc_curve for window size 2 & threshold -7.826847912696137:
+79 52
+65 144
+
+confusion matrices from roc_curve for window size 2 & threshold -7.877049056595858:
+81 50
+66 143
+
+confusion matrices from roc_curve for window size 2 & threshold -7.935315436034428:
+82 49
+74 135
+
+confusion matrices from roc_curve for window size 2 & threshold -7.988084130970949:
+84 47
+77 132
+
+confusion matrices from roc_curve for window size 2 & threshold -8.061751199383243:
+87 44
+82 127
+
+confusion matrices from roc_curve for window size 2 & threshold -8.142182421525614:
+87 44
+85 124
+
+confusion matrices from roc_curve for window size 2 & threshold -8.24448073744845:
+90 41
+94 115
+
+confusion matrices from roc_curve for window size 2 & threshold -8.392451799890218:
+93 38
+103 106
+
+confusion matrices from roc_curve for window size 2 & threshold -8.488951012550917:
+95 36
+104 105
+
+confusion matrices from roc_curve for window size 2 & threshold -8.592112158681747:
+100 31
+106 103
+
+confusion matrices from roc_curve for window size 2 & threshold -8.740301347079159:
+101 30
+111 98
+
+confusion matrices from roc_curve for window size 2 & threshold -8.887051258664492:
+102 29
+117 92
+
+confusion matrices from roc_curve for window size 2 & threshold -9.0762191610289:
+105 26
+126 83
+
+confusion matrices from roc_curve for window size 2 & threshold -9.473547321488233:
+110 21
+137 72
+
+confusion matrices from roc_curve for window size 2 & threshold -10.023026148539742:
+115 16
+148 61
+
+confusion matrices from roc_curve for window size 2 & threshold -10.843653999731409:
+120 11
+157 52
+
+confusion matrices from roc_curve for window size 2 & threshold -12.71460325285981:
+126 5
+177 32
+
+confusion matrices from roc_curve for window size 2 & threshold -18.57586058459645:
+128 3
+192 17
+
