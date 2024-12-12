@@ -113,9 +113,43 @@ def compute_likelihood(log_pdfs_dead_dis_dead, log_pdfs_dead_dis_alive, true_lab
         else:
             curr_likelihood[f"{obj_id}a"] = {'true_labels': 'a', 'predicted_labels': cls}
     
-    print(curr_likelihood)
+    #print(curr_likelihood)
     return curr_likelihood
 
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+
+def create_confusion_matrix(alive_dict, dead_dict):
+    """
+    Create a confusion matrix from two dictionaries containing alive and dead information.
+
+    Parameters:
+        alive_dict (dict): Dictionary with alive-related data (e.g., {obj_id: {'true_label': 'a', 'predicted_labels': 'd'}}).
+        dead_dict (dict): Dictionary with dead-related data (e.g., {obj_id: {'true_label': 'd', 'predicted_labels': 'a'}}).
+
+    Returns:
+        None: Displays the confusion matrix.
+    """
+    # Combine dictionaries
+    combined_dict = {**alive_dict, **dead_dict}
+
+    # Extract true and predicted labels
+    true_labels = [1 if v['true_labels'] == 'a' else 0 for v in combined_dict.values()]
+    predicted_labels = [1 if v['predicted_labels'] == 'a' else 0 for v in combined_dict.values()]
+
+    # Compute confusion matrix
+    cm = confusion_matrix(true_labels, predicted_labels, labels=[0, 1])
+
+    # Display confusion matrix
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["Dead (0)", "Alive (1)"])
+    disp.plot(cmap="Blues")
+    disp.ax_.set_title("Confusion Matrix")
+    disp.ax_.set_xlabel("Predicted Labels")
+    disp.ax_.set_ylabel("True Labels")
+    #plt.show()
+
+    # Print confusion matrix values
+    print("Confusion Matrix:")
+    print(cm)
 
     
 def prepare_data(dead_obs,alive_obs):
@@ -159,7 +193,14 @@ def prepare_data(dead_obs,alive_obs):
     print(prior_dead,prior_alive)
     
     #classifications
-    dead_obs_pred=compute_likelihood(train_dead_with_dead_log_pdf,train_dead_with_alive_log_pdf,'d',prior_dead,prior_alive)
-    alive_obs_pred=compute_likelihood(train_alive_with_dead_log_pdf,train_alive_with_alive_log_pdf,'a',prior_dead,prior_alive)
+    dead_obs_pred=compute_likelihood(train_dead_with_dead_pdf_dict,train_dead_with_alive_pdf_dict,'d',prior_dead,prior_alive)
+    alive_obs_pred=compute_likelihood(train_alive_with_dead_pdf_dict,train_alive_with_alive_pdf_dict,'a',prior_dead,prior_alive)
+    
+    create_confusion_matrix(dead_obs_pred,alive_obs_pred)
+    
+    dead_log_obs_pred=compute_likelihood(train_dead_with_dead_log_pdf,train_dead_with_alive_log_pdf,'d',prior_dead,prior_alive)
+    alive_log_obs_pred=compute_likelihood(train_alive_with_dead_log_pdf,train_alive_with_alive_log_pdf,'a',prior_dead,prior_alive)
+    
+    create_confusion_matrix(dead_log_obs_pred,alive_log_obs_pred)
     
 
