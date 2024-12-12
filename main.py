@@ -99,8 +99,8 @@ if __name__ == "__main__":
     dead_log_pdf_dict, alive_log_pdf_dict=get_log_dictionary(dead_pdf_all_dict,alive_pdf_all_dict)
     #get_thresholds_from_roc(dead_log_pdf_dict,alive_log_pdf_dict)
     #thresholding_with_window_roc_curve(dead_log_pdf_dict,alive_log_pdf_dict)
-    thresholding_classification_with_window_minimum(dead_log_pdf_dict,alive_log_pdf_dict)
-    #prepare_data(dead_obs,alive_obs)
+    #thresholding_classification_with_window_minimum(dead_log_pdf_dict,alive_log_pdf_dict)
+    prepare_data(dead_obs,alive_obs)
    
    
     
