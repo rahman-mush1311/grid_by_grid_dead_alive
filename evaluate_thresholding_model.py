@@ -9,7 +9,15 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 def get_log_dictionary(dead_pdf_all_dict,alive_pdf_all_dict):
-    
+    """
+    this function creates a log of all the pdfs values displacements from dead & alive pdf's dictionary
+    Parameters:
+    - dead_pdf_all_dict: dictionary containing {object id: (pdf_values_for displacements) for all the dead displacements}
+    - alive_pdf_all_dict: dictionary containing {object id: (pdf_values_for displacements) for all the alive displacements}
+    Returns:
+    - dead_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the dead displacements}
+    - alive_log_pdf_dict: dictionary containing {object id: (log of pdf_values_for displacements) for all the alive displacements}
+    """
     dead_log_pdf_dict ={
         key: [np.log(value) for value in values if value > 0]
         for key,values in dead_pdf_all_dict.items()

@@ -245,9 +245,9 @@ def mean_covariance_plot(grid_stat):
             ax.set_ylabel("Y")
             ax.legend()
             ax.grid(True)
-            ax.set_title(f"Visualization of Mean and Covariance Matrix as Ellipses For Alive Grid {[i]}{[j]}")
+            ax.set_title(f"Visualization of Mean and Covariance Matrix as Ellipses For Train Alive Grid {[i]}{[j]}")
             #plt.axis('equal')
-            #plt.savefig(f"dead_grid_stats_in_same_range[{i}][{j}]")
+            plt.savefig(f"train_alive_grid_stats[{i}][{j}]")
             plt.show()
 
 def plot_cdf_line_side_by_side(dead_pdf_list, alive_pdf_list):
@@ -499,8 +499,8 @@ def make_collage():
 
 
     # Folder containing your saved images
-    image_folder = r"D:\RA work Fall2024\grid_by_grid_dead_alive\dead_collage"
-    output_file = "collage.png"
+    image_folder = r"D:\RA work Fall2024\grid_by_grid_dead_alive\alive_collage"
+    output_file = "train_alive_collage.png"
 
     # Get list of image files
     image_files = [os.path.join(image_folder, f) for f in os.listdir(image_folder) if f.endswith(".png")]
