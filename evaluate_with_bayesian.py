@@ -12,7 +12,7 @@ import random
 
 from grid_by_grid_guassian_estimation import grid_by_grid_displacement_observation,grid_covariance_calculate,print_grid_stats
 from result_visualization import mean_covariance_plot,make_collage
-from evaluate_with_probability_density_values import grid_by_grid_pdf,calculate_pdf_all_by_displacements,get_pdf_value_list,mismatching_pdf_observations,get_unique_values_of_pdfs,alive_dead_thresholding,alive_dead_thresholding_sequential,evaluate_model_performance
+from evaluate_with_probability_density_values import grid_by_grid_pdf,calculate_pdf_all_by_displacements,get_pdf_value_list,mismatching_pdf_observations,get_unique_values_of_pdfs
 from evaluate_thresholding_model import get_log_dictionary
 
 def prepare_train_test(curr_obs,train_ratio):
@@ -191,7 +191,7 @@ def prepare_data(dead_obs,alive_obs):
     
     prior_dead,prior_alive=calculate_prior(alive_train_obs,dead_train_obs)
     print(prior_dead,prior_alive)
-    
+    '''
     #classifications
     dead_obs_pred=compute_likelihood(train_dead_with_dead_pdf_dict,train_dead_with_alive_pdf_dict,'d',prior_dead,prior_alive)
     alive_obs_pred=compute_likelihood(train_alive_with_dead_pdf_dict,train_alive_with_alive_pdf_dict,'a',prior_dead,prior_alive)
@@ -202,5 +202,5 @@ def prepare_data(dead_obs,alive_obs):
     alive_log_obs_pred=compute_likelihood(train_alive_with_dead_log_pdf,train_alive_with_alive_log_pdf,'a',prior_dead,prior_alive)
     
     create_confusion_matrix(dead_log_obs_pred,alive_log_obs_pred)
-    
+    '''
 
