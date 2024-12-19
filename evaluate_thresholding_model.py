@@ -78,7 +78,7 @@ def get_threshold_from_object_minimum(data,dead_log_pdf_dict,alive_log_pdf_dict)
     """
     thresholds=[min(values) for values in data.values()  if values ]
     thresholds.insert(0,float('inf'))
-    
+    '''
     alive_log_values = [v for values in alive_log_pdf_dict.values() for v in values]
     dead_log_values = [v for values in dead_log_pdf_dict.values() for v in values]
     true_labels = [0] * len(alive_log_values) + [1] * len(dead_log_values)  # 1 for Alive, 0 for Dead
@@ -111,7 +111,7 @@ def get_threshold_from_object_minimum(data,dead_log_pdf_dict,alive_log_pdf_dict)
     plt.title('Receiver Operating Characteristic (ROC) Curve')
     #plt.show()
     #print(len(thresholds))
-    
+    '''
     return thresholds
 def write_confusion_matrices(filename,threshold,true_labels,predicted_labels):
     """
@@ -132,10 +132,18 @@ def write_confusion_matrices(filename,threshold,true_labels,predicted_labels):
             # Compute confusion matrix
         cm = confusion_matrix(true_labels, predicted_labels)
         # Write confusion matrix to the file
-        file.write(f"confusion matrices from minimum object level for window size 2 & threshold {threshold}:\n")
+        file.write(f"confusion matrices roc_curve for window size 1 & threshold {threshold}:\n")
         file.write(f"{cm[0][0]:} {cm[0][1]:}\n")
         file.write(f"{cm[1][0]:} {cm[1][1]:}\n")
         file.write("\n")
+        
+        accuracy = accuracy_score(true_labels, predicted_labels)
+        f1 = f1_score(true_labels, predicted_labels)
+        recall = recall_score(true_labels, predicted_labels)
+
+        file.write(f"Accuracy: , {accuracy} \n")
+        file.write(f"F1-score:, {f1}\n")
+        file.write(f"Recall:, {recall}\n")
 
 def combine_dictionaries(dead_log_pdf_dict,alive_log_pdf_dict):
     """
@@ -156,24 +164,8 @@ def combine_dictionaries(dead_log_pdf_dict,alive_log_pdf_dict):
     #print(len(merged_dict))
     return merged_dict
     
-def max_matrix(threshold,window_size,true_labels,predicted_labels):
-    """
-    this function prints the confusion matrices which has highest TP/TN rate
-    Parameters:
-    - threshold: current threshold to get the confusion matrix
-    - window_size: for which size we are getting the maximum TP/TN rate
-    - true_labels: 0/1 indicating dead/alive
-    - predicted_labels: 0/1 calculated using the threshold
-    Returns:
-    - N/A
-    
-    """
-    cm = confusion_matrix(true_labels, predicted_labels)
-    print(f"Confusion Matrix for Threshold {threshold} Maximum TP/TN & Window Size {window_size}:")
-    print(f"True d Pred d [[{cm[0][0]} {cm[0][1]}] True d Pre a")  # True Positive, False Negative
-    print(f"True a Pred d [{cm[1][0]} {cm[1][1]}]] True a Pre a")  # False Positive, True Negative
 
-def thresholding_with_window_roc_curve(dead_log_pdf_dict,alive_log_pdf_dict):
+def thresholding_with_window_roc_curve(dead_log_pdf_dict,alive_log_pdf_dict,window):
     """
     this function does the classification according to the thresholds got from roc_curve, it looks at different window to consider the classification 
     additionally it computes the thresholds for which we get the maximum tp/tn
@@ -187,23 +179,18 @@ def thresholding_with_window_roc_curve(dead_log_pdf_dict,alive_log_pdf_dict):
     filtered_thresholds=get_thresholds_from_roc(dead_log_pdf_dict,alive_log_pdf_dict)
     #get_threshold_from_object_minimum(data,dead_log_pdf_dict,alive_log_pdf_dict)
     
-    window_size=2
+    window_size=window
     thresholds=filtered_thresholds[0:100]
     #print(thresholds)
     
-    max_tp=0
-    max_tn=0
-    max_tp_threshold=0
-    max_tn_threshold=0
-    max_tp_pred=[]
-    max_tp_true=[]
-    max_tn_pred=[]
-    max_tn_true=[]
+    best_threshold = None
+    best_accuracy_threshold= None
+    best_classify = -float('inf')
+    best_accuracy = -float('inf')
     
     for threshold in thresholds:
         predictions=[]
         true_labels=[]
-        #print(f"Threshold: {threshold} with window_size {window_size}:")
         for obj_id in data:
             cls = 'd'
             for i in range(len(data[obj_id]) - window_size + 1):
@@ -214,30 +201,44 @@ def thresholding_with_window_roc_curve(dead_log_pdf_dict,alive_log_pdf_dict):
             predictions.append(1 if cls=='a' else 0)
             true_labels.append (1 if obj_id[-1] == 'a' else 0)
         cm = confusion_matrix(true_labels, predictions, labels=[0, 1])
-        '''
+        
         #print(len(true_labels),len(predictions))
-        # Print confusion matrix
-        print("Confusion Matrix:")
-        print(f"True d Pred d [[{cm[0][0]} {cm[0][1]}] True d Pre a")  # True Positive, False Negative
-        print(f"True a Pred d [{cm[1][0]} {cm[1][1]}]] True a Pre a")  # False Positive, True Negative
-        '''
-        if(max_tp<cm[0][0]):
-            max_tp=cm[0][0]
-            max_tp_threshold=threshold
-            max_tp_pred=predictions
-            max_tp_true=true_labels
-        if(max_tn<cm[1][1]):
-            max_tn=cm[1][1]
-            max_tn_threshold=threshold
-            max_tn_pred=predictions
-            max_tn_true=true_labels
-        #print(max_tp,max_tn,max_tp_threshold,max_tn_threshold)
-        #write_confusion_matrices('confusion_matrices_obj_level.txt',threshold,true_labels,predictions)
-    print(max_tp,max_tn,max_tp_threshold,max_tn_threshold)
-    max_matrix(max_tp_threshold,1,max_tp_true,max_tp_pred)
-    max_matrix(max_tn_threshold,1,max_tn_true,max_tn_pred)
+        accuracy = accuracy_score(true_labels, predictions)
+        f1 = f1_score(true_labels, predictions)
+        recall = recall_score(true_labels, predictions)
+        classify = cm[0, 0] + cm[1, 1]  # True positives + True negatives
+        print(f"{threshold:<12.3f}{accuracy:<10.3f}{f1:<10.3f}{recall:<10.3f}{cm.tolist()} from ROC Curve {window_size}")
+        
+        if classify > best_classify:
+            best_classify = classify
+            best_threshold = threshold
+        if best_accuracy < accuracy:
+            best_accuracy_threshold = threshold
+            best_accuracy=accuracy
+            
+    print(f"Optimal Threshold: {best_threshold}, Maximum Classification: {best_classify}, Accuracy: {best_accuracy}, Threshold for Best Accuracy: {best_accuracy_threshold}")
+    
+    
+    return best_threshold
+    
+def predict_probabilities_dictionary_update(dead_log_pdf_dict,alive_log_pdf_dict, best_threshold,window_size):
+    data=combine_dictionaries(dead_log_pdf_dict,alive_log_pdf_dict)
+    #print(data)
+    for obj_id in data:
+        cls = 'd'
+        for i in range(len(data[obj_id]) - window_size + 1):
+            w = data[obj_id][i:i+window_size]
+            if all([p <= best_threshold for p in w]):
+                cls = 'a'
 
-def thresholding_classification_with_window_minimum(dead_log_pdf_dict,alive_log_pdf_dict):
+        # Update the dictionary with predicted and true labels
+        data[obj_id] = {
+            'log_pdfs': data[obj_id],  # Original log PDF values
+            'true_labels': 'a' if obj_id[-1] == 'a' else 'd',
+            'predicted_labels': cls
+        }
+    return data
+def thresholding_classification_with_window_minimum(dead_log_pdf_dict,alive_log_pdf_dict,window):
     """
     this function does the classification according to the thresholds got from taking object's minimum, it looks at different window to consider the classification 
     additionally it prints the confusion matrix
@@ -250,9 +251,13 @@ def thresholding_classification_with_window_minimum(dead_log_pdf_dict,alive_log_
     data=combine_dictionaries(dead_log_pdf_dict,alive_log_pdf_dict)
     filtered_thresholds=get_threshold_from_object_minimum(data,dead_log_pdf_dict,alive_log_pdf_dict)
     
-    window_size=2
+    window_size=window
     thresholds=filtered_thresholds[0:10]
     
+    best_threshold = None
+    best_accuracy_threshold= None
+    best_classify = -float('inf')
+    best_accuracy = -float('inf')
     
     for threshold in filtered_thresholds:
         predictions=[]
@@ -270,10 +275,22 @@ def thresholding_classification_with_window_minimum(dead_log_pdf_dict,alive_log_
         cm = confusion_matrix(true_labels, predictions, labels=[0, 1])
         
         #print(len(true_labels),len(predictions))
-        print("Confusion Matrix:")
-        print(f"True d Pred d [[{cm[0][0]} {cm[0][1]}] True d Pre a")  # True Positive, False Negative
-        print(f"True a Pred d [{cm[1][0]} {cm[1][1]}]] True a Pre a")  # False Positive, True Negative
-        #write_confusion_matrices('confusion_matrices_obj_level.txt',threshold,true_labels,predictions)
+        accuracy = accuracy_score(true_labels, predictions)
+        f1 = f1_score(true_labels, predictions)
+        recall = recall_score(true_labels, predictions)
+        classify = cm[0, 0] + cm[1, 1]  # True positives + True negatives
+        print(f"{threshold:<12.3f}{accuracy:<10.3f}{f1:<10.3f}{recall:<10.3f}{cm.tolist()} from ROC Curve {window_size}")
+        
+        if classify > best_classify:
+            best_classify = classify
+            best_threshold = threshold
+        if best_accuracy < accuracy:
+            best_accuracy_threshold = threshold
+            best_accuracy=accuracy
+            
+    print(f"Optimal Threshold: {best_threshold}, Maximum Classification: {best_classify}, Accuracy: {best_accuracy}, Threshold for Best Accuracy: {best_accuracy_threshold}")
+    
+    return best_threshold
       
       
    

@@ -1,0 +1,1039 @@
+confusion matrices roc_curve for window size 1 & threshold -4.894903185810944:
+16 88
+20 147
+
+Accuracy: , 0.6014760147601476 
+F1-score:, 0.7313432835820896
+Recall:, 0.8802395209580839
+
+confusion matrices roc_curve for window size 1 & threshold -6.8195552430303:
+17 87
+20 147
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7331670822942643
+Recall:, 0.8802395209580839
+
+confusion matrices roc_curve for window size 1 & threshold -6.858028649273054:
+19 85
+20 147
+
+Accuracy: , 0.6125461254612546 
+F1-score:, 0.7368421052631579
+Recall:, 0.8802395209580839
+
+confusion matrices roc_curve for window size 1 & threshold -6.9317271888589485:
+20 84
+20 147
+
+Accuracy: , 0.6162361623616236 
+F1-score:, 0.7386934673366834
+Recall:, 0.8802395209580839
+confusion matrices roc_curve for window size 1 & threshold -6.95972201888306:
+21 83
+20 147
+
+Accuracy: , 0.6199261992619927 
+F1-score:, 0.7405541561712846
+Recall:, 0.8802395209580839
+confusion matrices roc_curve for window size 1 & threshold -6.981856748900597:
+21 83
+20 147
+
+Accuracy: , 0.6199261992619927 
+F1-score:, 0.7405541561712846
+Recall:, 0.8802395209580839
+confusion matrices roc_curve for window size 1 & threshold -7.021303089934049:
+21 83
+20 147
+
+Accuracy: , 0.6199261992619927 
+F1-score:, 0.7405541561712846
+Recall:, 0.8802395209580839
+confusion matrices roc_curve for window size 1 & threshold -7.0387688399935575:
+22 82
+20 147
+
+Accuracy: , 0.6236162361623616 
+F1-score:, 0.7424242424242424
+Recall:, 0.8802395209580839
+confusion matrices roc_curve for window size 1 & threshold -7.059089645487338:
+23 81
+20 147
+
+Accuracy: , 0.6273062730627307 
+F1-score:, 0.7443037974683544
+Recall:, 0.8802395209580839
+confusion matrices roc_curve for window size 1 & threshold -7.085715383364421:
+24 80
+21 146
+
+Accuracy: , 0.6273062730627307 
+F1-score:, 0.7430025445292621
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.109670157426983:
+24 80
+21 146
+
+Accuracy: , 0.6273062730627307 
+F1-score:, 0.7430025445292621
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.1353954953503855:
+25 79
+21 146
+
+Accuracy: , 0.6309963099630996 
+F1-score:, 0.7448979591836735
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.162512231273813:
+25 79
+21 146
+
+Accuracy: , 0.6309963099630996 
+F1-score:, 0.7448979591836735
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.188198101082001:
+25 79
+21 146
+
+Accuracy: , 0.6309963099630996 
+F1-score:, 0.7448979591836735
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.201738654748545:
+25 79
+21 146
+
+Accuracy: , 0.6309963099630996 
+F1-score:, 0.7448979591836735
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.221023663972634:
+26 78
+21 146
+
+Accuracy: , 0.6346863468634686 
+F1-score:, 0.7468030690537084
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.248145630415628:
+26 78
+21 146
+
+Accuracy: , 0.6346863468634686 
+F1-score:, 0.7468030690537084
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.284198687589109:
+27 77
+21 146
+
+Accuracy: , 0.6383763837638377 
+F1-score:, 0.7487179487179487
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.311913885216804:
+27 77
+21 146
+
+Accuracy: , 0.6383763837638377 
+F1-score:, 0.7487179487179487
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.340535422416047:
+28 76
+21 146
+
+Accuracy: , 0.6420664206642066 
+F1-score:, 0.7506426735218509
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.365798137423173:
+29 75
+21 146
+
+Accuracy: , 0.6457564575645757 
+F1-score:, 0.7525773195876289
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.398432630382013:
+29 75
+21 146
+
+Accuracy: , 0.6457564575645757 
+F1-score:, 0.7525773195876289
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.438122660502648:
+29 75
+21 146
+
+Accuracy: , 0.6457564575645757 
+F1-score:, 0.7525773195876289
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.480161000614756:
+31 73
+21 146
+
+Accuracy: , 0.6531365313653137 
+F1-score:, 0.7564766839378239
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.517211805633269:
+32 72
+21 146
+
+Accuracy: , 0.6568265682656826 
+F1-score:, 0.7584415584415585
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.549348773881878:
+32 72
+21 146
+
+Accuracy: , 0.6568265682656826 
+F1-score:, 0.7584415584415585
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.591347023981809:
+36 68
+21 146
+
+Accuracy: , 0.6715867158671587 
+F1-score:, 0.7664041994750657
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.6511687413798395:
+37 67
+21 146
+
+Accuracy: , 0.6752767527675276 
+F1-score:, 0.7684210526315789
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.694900927289639:
+38 66
+21 146
+
+Accuracy: , 0.6789667896678967 
+F1-score:, 0.7704485488126649
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.741650027443505:
+40 64
+21 146
+
+Accuracy: , 0.6863468634686347 
+F1-score:, 0.7745358090185677
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.7859946813739365:
+42 62
+21 146
+
+Accuracy: , 0.6937269372693727 
+F1-score:, 0.7786666666666666
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.848557387706879:
+44 60
+21 146
+
+Accuracy: , 0.7011070110701108 
+F1-score:, 0.7828418230563002
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.885849169504803:
+49 55
+21 146
+
+Accuracy: , 0.7195571955719557 
+F1-score:, 0.7934782608695652
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -7.94134521767733:
+50 54
+24 143
+
+Accuracy: , 0.7121771217712177 
+F1-score:, 0.7857142857142857
+Recall:, 0.8562874251497006
+confusion matrices roc_curve for window size 1 & threshold -8.029865657039919:
+52 52
+24 143
+
+Accuracy: , 0.7195571955719557 
+F1-score:, 0.7900552486187845
+Recall:, 0.8562874251497006
+confusion matrices roc_curve for window size 1 & threshold -8.150980861428405:
+54 50
+25 142
+
+Accuracy: , 0.7232472324723247 
+F1-score:, 0.7910863509749304
+Recall:, 0.8502994011976048
+confusion matrices roc_curve for window size 1 & threshold -8.240895175409287:
+55 49
+25 142
+
+Accuracy: , 0.7269372693726938 
+F1-score:, 0.7932960893854749
+Recall:, 0.8502994011976048
+confusion matrices roc_curve for window size 1 & threshold -8.309473740664423:
+55 49
+26 141
+
+Accuracy: , 0.7232472324723247 
+F1-score:, 0.7899159663865546
+Recall:, 0.844311377245509
+confusion matrices roc_curve for window size 1 & threshold -8.397116529417316:
+58 46
+26 141
+
+Accuracy: , 0.7343173431734318 
+F1-score:, 0.7966101694915254
+Recall:, 0.844311377245509
+confusion matrices roc_curve for window size 1 & threshold -8.513893135742885:
+63 41
+26 141
+
+Accuracy: , 0.7527675276752768 
+F1-score:, 0.8080229226361032
+Recall:, 0.844311377245509
+confusion matrices roc_curve for window size 1 & threshold -8.692641085323984:
+67 37
+30 137
+
+Accuracy: , 0.7527675276752768 
+F1-score:, 0.8035190615835777
+Recall:, 0.8203592814371258
+confusion matrices roc_curve for window size 1 & threshold -8.891589399872176:
+68 36
+30 137
+
+Accuracy: , 0.7564575645756457 
+F1-score:, 0.8058823529411765
+Recall:, 0.8203592814371258
+confusion matrices roc_curve for window size 1 & threshold -9.174828768611356:
+72 32
+32 135
+
+Accuracy: , 0.7638376383763837 
+F1-score:, 0.8083832335329342
+Recall:, 0.8083832335329342
+confusion matrices roc_curve for window size 1 & threshold -9.537604926046406:
+78 26
+38 129
+
+Accuracy: , 0.7638376383763837 
+F1-score:, 0.8012422360248447
+Recall:, 0.7724550898203593
+confusion matrices roc_curve for window size 1 & threshold -10.13935394157161:
+81 23
+43 124
+
+Accuracy: , 0.7564575645756457 
+F1-score:, 0.7898089171974523
+Recall:, 0.7425149700598802
+confusion matrices roc_curve for window size 1 & threshold -10.840966025619636:
+81 23
+50 117
+
+Accuracy: , 0.7306273062730627 
+F1-score:, 0.762214983713355
+Recall:, 0.7005988023952096
+confusion matrices roc_curve for window size 1 & threshold -12.947252080973538:
+89 15
+75 92
+
+Accuracy: , 0.6678966789667896 
+F1-score:, 0.6715328467153284
+Recall:, 0.5508982035928144
+confusion matrices roc_curve for window size 1 & threshold -18.417966687849447:
+97 7
+115 52
+
+Accuracy: , 0.5498154981549815 
+F1-score:, 0.46017699115044247
+Recall:, 0.31137724550898205
+confusion matrices roc_curve for window size 1 & threshold -4.602019800860487:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -4.71631423887194:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -4.812547149765953:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -4.873226065363688:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -4.932119682355496:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -4.988715288337956:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.083535715115034:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.179326105440734:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.265292394630388:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.328739278241812:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.36837800957735:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.433426028031523:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.495073797539147:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.5173852051297745:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.543507999886897:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.557414310099787:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.584759785218215:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.600813052864206:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.62456923180356:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.655878257148207:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.681517097511699:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.722768416749425:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.744155303923196:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.764333444403809:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.787672147495351:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.808944079183823:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.830004868623604:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.852107138571238:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.883105358275451:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.904731412208603:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.925084421341874:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -5.959344020357328:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.015379915438343:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.055131954260065:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.0878905411232624:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.12320150830702:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.1555726723199164:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.17737486882587:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.212578991324006:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.249669867617445:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.2856064294965455:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.304175755189125:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.330072426987563:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.354751658051775:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.373298657378354:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.393583611560998:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.425071253470579:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.4492187234948215:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.478583472317779:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.506084828207844:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.543214290198708:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.567619948980666:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.598238412279557:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.627936351528882:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.665815639586572:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.695983287848685:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.716249557730823:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.7484432878947125:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.772908080738808:
+15 89
+18 149
+
+Accuracy: , 0.6051660516605166 
+F1-score:, 0.7358024691358025
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.7994777855886:
+16 88
+18 149
+
+Accuracy: , 0.6088560885608856 
+F1-score:, 0.7376237623762376
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.820110461942323:
+16 88
+18 149
+
+Accuracy: , 0.6088560885608856 
+F1-score:, 0.7376237623762376
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.835201175780263:
+16 88
+18 149
+
+Accuracy: , 0.6088560885608856 
+F1-score:, 0.7376237623762376
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.860700989573927:
+17 87
+18 149
+
+Accuracy: , 0.6125461254612546 
+F1-score:, 0.739454094292804
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.883579575095847:
+20 84
+18 149
+
+Accuracy: , 0.6236162361623616 
+F1-score:, 0.745
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.91410750821715:
+20 84
+18 149
+
+Accuracy: , 0.6236162361623616 
+F1-score:, 0.745
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.9356909516491:
+20 84
+18 149
+
+Accuracy: , 0.6236162361623616 
+F1-score:, 0.745
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.958205500590163:
+20 84
+18 149
+
+Accuracy: , 0.6236162361623616 
+F1-score:, 0.745
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -6.992219741738995:
+20 84
+18 149
+
+Accuracy: , 0.6236162361623616 
+F1-score:, 0.745
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.01809899677269:
+21 83
+18 149
+
+Accuracy: , 0.6273062730627307 
+F1-score:, 0.7468671679197995
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.056992261844629:
+22 82
+18 149
+
+Accuracy: , 0.6309963099630996 
+F1-score:, 0.7487437185929648
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.099113456153435:
+22 82
+18 149
+
+Accuracy: , 0.6309963099630996 
+F1-score:, 0.7487437185929648
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.143579080382883:
+23 81
+18 149
+
+Accuracy: , 0.6346863468634686 
+F1-score:, 0.7506297229219143
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.190566304933069:
+26 78
+18 149
+
+Accuracy: , 0.6457564575645757 
+F1-score:, 0.7563451776649747
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.2433723788818245:
+26 78
+18 149
+
+Accuracy: , 0.6457564575645757 
+F1-score:, 0.7563451776649747
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.28416538170959:
+28 76
+18 149
+
+Accuracy: , 0.6531365313653137 
+F1-score:, 0.7602040816326531
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.321751635267752:
+28 76
+18 149
+
+Accuracy: , 0.6531365313653137 
+F1-score:, 0.7602040816326531
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.355173838034643:
+29 75
+18 149
+
+Accuracy: , 0.6568265682656826 
+F1-score:, 0.7621483375959079
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.385419890140162:
+30 74
+18 149
+
+Accuracy: , 0.6605166051660517 
+F1-score:, 0.764102564102564
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.413660559066275:
+30 74
+18 149
+
+Accuracy: , 0.6605166051660517 
+F1-score:, 0.764102564102564
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.441185612207261:
+30 74
+18 149
+
+Accuracy: , 0.6605166051660517 
+F1-score:, 0.764102564102564
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.479644640923059:
+30 74
+18 149
+
+Accuracy: , 0.6605166051660517 
+F1-score:, 0.764102564102564
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.514728442129561:
+31 73
+18 149
+
+Accuracy: , 0.6642066420664207 
+F1-score:, 0.7660668380462725
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.549416660314138:
+32 72
+18 149
+
+Accuracy: , 0.6678966789667896 
+F1-score:, 0.7680412371134021
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.612115968051651:
+34 70
+18 149
+
+Accuracy: , 0.6752767527675276 
+F1-score:, 0.772020725388601
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.673271926794849:
+35 69
+18 149
+
+Accuracy: , 0.6789667896678967 
+F1-score:, 0.7740259740259741
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.742862682271138:
+36 68
+18 149
+
+Accuracy: , 0.6826568265682657 
+F1-score:, 0.7760416666666666
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.7933960400528965:
+39 65
+18 149
+
+Accuracy: , 0.6937269372693727 
+F1-score:, 0.7821522309711286
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -7.867443097218901:
+42 62
+18 149
+
+Accuracy: , 0.7047970479704797 
+F1-score:, 0.7883597883597884
+Recall:, 0.8922155688622755
+confusion matrices roc_curve for window size 1 & threshold -8.007506335864479:
+44 60
+19 148
+
+Accuracy: , 0.7084870848708487 
+F1-score:, 0.7893333333333333
+Recall:, 0.8862275449101796
+confusion matrices roc_curve for window size 1 & threshold -8.124230283453244:
+47 57
+19 148
+
+Accuracy: , 0.7195571955719557 
+F1-score:, 0.7956989247311828
+Recall:, 0.8862275449101796
+confusion matrices roc_curve for window size 1 & threshold -8.238859438488925:
+50 54
+19 148
+
+Accuracy: , 0.7306273062730627 
+F1-score:, 0.8021680216802168
+Recall:, 0.8862275449101796
+confusion matrices roc_curve for window size 1 & threshold -8.346454238537643:
+54 50
+20 147
+
+Accuracy: , 0.7416974169741697 
+F1-score:, 0.8076923076923077
+Recall:, 0.8802395209580839
+confusion matrices roc_curve for window size 1 & threshold -8.574896275708333:
+60 44
+20 147
+
+Accuracy: , 0.7638376383763837 
+F1-score:, 0.8212290502793296
+Recall:, 0.8802395209580839
+confusion matrices roc_curve for window size 1 & threshold -8.774289763073158:
+60 44
+21 146
+
+Accuracy: , 0.7601476014760148 
+F1-score:, 0.8179271708683473
+Recall:, 0.874251497005988
+confusion matrices roc_curve for window size 1 & threshold -8.990865021436727:
+63 41
+22 145
+
+Accuracy: , 0.7675276752767528 
+F1-score:, 0.8215297450424929
+Recall:, 0.8682634730538922
+confusion matrices roc_curve for window size 1 & threshold -9.511688746460772:
+67 37
+22 145
+
+Accuracy: , 0.7822878228782287 
+F1-score:, 0.830945558739255
+Recall:, 0.8682634730538922
+confusion matrices roc_curve for window size 1 & threshold -10.18878890761707:
+73 31
+28 139
+
+Accuracy: , 0.7822878228782287 
+F1-score:, 0.8249258160237388
+Recall:, 0.8323353293413174
+confusion matrices roc_curve for window size 1 & threshold -10.939213628778312:
+82 22
+31 136
+
+Accuracy: , 0.8044280442804428 
+F1-score:, 0.8369230769230769
+Recall:, 0.8143712574850299
+confusion matrices roc_curve for window size 1 & threshold -12.694789578176149:
+87 17
+55 112
+
+Accuracy: , 0.7343173431734318 
+F1-score:, 0.7567567567567568
+Recall:, 0.6706586826347305
+confusion matrices roc_curve for window size 1 & threshold -16.603317656366837:
+95 9
+95 72
+
+Accuracy: , 0.6162361623616236 
+F1-score:, 0.5806451612903226
+Recall:, 0.4311377245508982
