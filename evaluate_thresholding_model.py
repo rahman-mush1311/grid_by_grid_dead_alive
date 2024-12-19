@@ -64,6 +64,15 @@ def get_thresholds_from_roc(dead_log_pdf_dict,alive_log_pdf_dict):
             #print(tpr[i],tpr[i - 1], fpr[i] ,fpr[i - 1])
             filtered_thresholds.append(roc_thresholds[i])
     print(len(filtered_thresholds))
+    '''
+    plt.figure(figsize=(10, 6))
+    # Plot the ROC curve
+    plt.plot(fpr, tpr)
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver Operating Characteristic (ROC) Curve')
+    plt.show()
+    '''
     return filtered_thresholds
 def get_threshold_from_object_minimum(data,dead_log_pdf_dict,alive_log_pdf_dict):
     """

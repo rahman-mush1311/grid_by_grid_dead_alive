@@ -245,7 +245,7 @@ def optimize_threshold(data):
     ]
     min_diff = min(differences)
     max_diff = max(differences)
-
+    threshold_dict={}
     # Define threshold range based on min and max differences
     thresholds = np.linspace(min_diff, max_diff, 100) 
     
@@ -270,7 +270,7 @@ def optimize_threshold(data):
         recall = recall_score(true_labels, pred_labels, pos_label='d', average='binary')
         classify = cm[0, 0] + cm[1, 1]  # True positives + True negatives
         error=cm[0,1]+cm[1,0] #false positive + false negatives
-        
+      
         print(f"{t:<12.3f}{accuracy:<10.3f}{f1:<10.3f}{recall:<10.3f}{classify:<10}{cm.tolist()}")
         
         if classify > best_classify:
@@ -283,6 +283,7 @@ def optimize_threshold(data):
             best_accuracy=accuracy
 
     print(f"Optimal Threshold: {best_threshold}, Maximum Classification: {best_classify}, Accuracy: {best_accuracy}, Threshold for Best Accuracy: {best_accuracy_threshold}")
+   
     return best_threshold
 
 def compute_likelihood_with_threshold(data, threshold):
@@ -488,7 +489,7 @@ def prepare_data(dead_obs,alive_obs):
     #plot_misclassified_paths(total_preds_thresholds, train_obs, mis_bayes,miss_roc_1,miss_roc_2,miss_obj_1,miss_obj_2)
     
     #plot_misclassified_paths(total_preds_thresholds, train_obs, mis_bayes)
-    plot_misclassified_paths(roc_train_window_1, train_obs, miss_roc_1)
+    #plot_misclassified_paths(roc_train_window_1, train_obs, miss_roc_1)
     
     test_obs=get_combined_dictionaries(dead_test_obs,alive_test_obs)
     #plot_misclassified_paths(test_total_preds_thresholds, test_obs)
