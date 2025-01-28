@@ -117,7 +117,7 @@ def compute_likelihood_without_threshold(log_pdfs_dead_dis_dead, log_pdfs_dead_d
             'predicted_labels': cls
         }
         '''
-        curr_likelihood[f"{obj_id}{true_labels}"] = {
+        curr_likelihood[obj_id] = {
             'true_labels': true_labels,
             'dead_prob': dead_log_sum_pdf,
             'alive_prob': alive_log_sum_pdf,
@@ -260,8 +260,8 @@ def optimize_threshold(data):
             for obj_id, values in data.items()
         }
         true_labels = [values['true_labels'] for values in data.values()]
-        pred_labels = list(predictions.values())
-
+        #pred_labels = list(predictions.values())
+        pred_labels = [predictions[obj_id] for obj_id in data.keys()]
         
         # Calculate confusion matrix and metrics
         cm = confusion_matrix(true_labels, pred_labels, labels=['d', 'a'])
@@ -401,11 +401,12 @@ def prepare_data(dead_obs,alive_obs):
     dead_train_grid_displacements=grid_by_grid_displacement_observation(dead_train_obs,5,4128,2196)   
     dead_grid_stats=grid_covariance_calculate(dead_train_grid_displacements)
     #print_grid_stats(dead_grid_stats)
-
+   
     #grid_by grid displacements & mu_sigma calculation for alive
     alive_train_grid_displacements=grid_by_grid_displacement_observation(alive_train_obs,5,4128,2196)   
     alive_grid_stats=grid_covariance_calculate(alive_train_grid_displacements)
     print_grid_stats(alive_grid_stats)
+  
 
     #grid by grid pdf calculation with dead & alive grid stats 
     train_dead_with_dead_pdf_dict=calculate_pdf_all_by_displacements(dead_train_obs,dead_grid_stats,4128,2196)
@@ -458,6 +459,7 @@ def prepare_data(dead_obs,alive_obs):
     
     test_total=test_dead_obs_pred | test_alive_obs_pred
     test_total_preds_thresholds=compute_likelihood_with_threshold(test_total, threshold)#does classification based on threshold
+    #create_confusion_matrix(total_preds_thresholds,threshold, 'Bayesian', 'Trainning Data')
     #create_confusion_matrix(test_total_preds_thresholds,threshold, 'Bayesian', 'Testing Data')
     
     #thresholding related classification with scores
@@ -467,31 +469,29 @@ def prepare_data(dead_obs,alive_obs):
     create_confusion_matrix(roc_train_window_1,roc_threshold_1,'ROC Curve', 'Trainning Data')
     roc_test_window_1=predict_probabilities_dictionary_update(test_dead_with_dead_log_pdf,test_alive_with_dead_log_pdf, roc_threshold_1,2)
     create_confusion_matrix(roc_test_window_1,roc_threshold_1, 'ROC Curve', 'Testing Data')
-    
-    obj_minimum_threshold_1=thresholding_classification_with_window_minimum(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,1)
-    obj_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,obj_minimum_threshold_1,1)
-    create_confusion_matrix(obj_train_window_1,obj_minimum_threshold_1, 'Object Minimum', 'Trainning Data')
-    obj_test_window_1=predict_probabilities_dictionary_update(test_dead_with_dead_log_pdf,test_alive_with_dead_log_pdf,obj_minimum_threshold_1,1)
-    create_confusion_matrix(obj_test_window_1,obj_minimum_threshold_1, 'Object Minimum', 'Testing Data')
     '''
+    obj_minimum_threshold_1=thresholding_classification_with_window_minimum(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,2)
+    obj_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,obj_minimum_threshold_1,2)
+    #create_confusion_matrix(obj_train_window_1,obj_minimum_threshold_1, 'Object Minimum', 'Trainning Data')
+    obj_test_window_1=predict_probabilities_dictionary_update(test_dead_with_dead_log_pdf,test_alive_with_dead_log_pdf,obj_minimum_threshold_1,2)
+    #create_confusion_matrix(obj_test_window_1,obj_minimum_threshold_1, 'Object Minimum', 'Testing Data')
     
-    train_obs=get_combined_dictionaries(dead_train_obs,alive_train_obs)
+    train_obs = dead_train_obs | alive_train_obs
+    #train_obs=get_combined_dictionaries(dead_train_obs,alive_train_obs)
     mis_bayes=find_the_misclassified_obj(total_preds_thresholds, train_obs)
-    roc_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf, -9.971,1)
+    roc_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf, -9.277,1)
     miss_roc_1=find_the_misclassified_obj(roc_train_window_1, train_obs)
-    roc_train_window_2=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf, -7.616,2)
+    roc_train_window_2=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf, -8.668,2)
     miss_roc_2=find_the_misclassified_obj(roc_train_window_2, train_obs)
-    obj_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,-9.052,1)
+    obj_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,-9.981,1)
     miss_obj_1=find_the_misclassified_obj(obj_train_window_1, train_obs)
-    obj_train_window_2=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,-7.602,2)
+    obj_train_window_2=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,-8.414,2)
     miss_obj_2=find_the_misclassified_obj(obj_train_window_2, train_obs)
     
-    #plot_misclassified_paths(total_preds_thresholds, train_obs, mis_bayes,miss_roc_1,miss_roc_2,miss_obj_1,miss_obj_2)
-    
-    #plot_misclassified_paths(total_preds_thresholds, train_obs, mis_bayes)
+    plot_misclassified_paths(total_preds_thresholds, train_obs, mis_bayes)
     #plot_misclassified_paths(roc_train_window_1, train_obs, miss_roc_1)
     
-    test_obs=get_combined_dictionaries(dead_test_obs,alive_test_obs)
+    #test_obs=get_combined_dictionaries(dead_test_obs,alive_test_obs)
     #plot_misclassified_paths(test_total_preds_thresholds, test_obs)
     '''
     roc_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf, -9.971,1)

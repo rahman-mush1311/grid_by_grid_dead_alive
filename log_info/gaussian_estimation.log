@@ -4676,3 +4676,141 @@ ERROR - grid[4][1] doesnot enough data to calculate mu & sigma for grid[4][1].
 WARNING - grid[4][2] has less than 30 observations.
 WARNING - grid[4][3] has less than 30 observations.
 ERROR - grid[4][4] doesnot enough data to calculate mu & sigma for grid[4][4].
+ERROR - grid[0][0] doesnot enough data to calculate mu & sigma for grid[0][0].
+ERROR - grid[0][1] doesnot enough data to calculate mu & sigma for grid[0][1].
+ERROR - grid[0][2] doesnot enough data to calculate mu & sigma for grid[0][2].
+ERROR - grid[0][3] doesnot enough data to calculate mu & sigma for grid[0][3].
+ERROR - grid[0][4] doesnot enough data to calculate mu & sigma for grid[0][4].
+ERROR - grid[1][0] doesnot enough data to calculate mu & sigma for grid[1][0].
+ERROR - grid[1][1] doesnot enough data to calculate mu & sigma for grid[1][1].
+ERROR - grid[1][2] doesnot enough data to calculate mu & sigma for grid[1][2].
+ERROR - grid[1][3] doesnot enough data to calculate mu & sigma for grid[1][3].
+ERROR - grid[1][4] doesnot enough data to calculate mu & sigma for grid[1][4].
+ERROR - grid[2][0] doesnot enough data to calculate mu & sigma for grid[2][0].
+ERROR - grid[2][1] doesnot enough data to calculate mu & sigma for grid[2][1].
+ERROR - grid[2][2] doesnot enough data to calculate mu & sigma for grid[2][2].
+ERROR - grid[2][3] doesnot enough data to calculate mu & sigma for grid[2][3].
+ERROR - grid[2][4] doesnot enough data to calculate mu & sigma for grid[2][4].
+ERROR - grid[3][0] doesnot enough data to calculate mu & sigma for grid[3][0].
+ERROR - grid[3][1] doesnot enough data to calculate mu & sigma for grid[3][1].
+ERROR - grid[3][2] doesnot enough data to calculate mu & sigma for grid[3][2].
+ERROR - grid[3][3] doesnot enough data to calculate mu & sigma for grid[3][3].
+ERROR - grid[3][4] doesnot enough data to calculate mu & sigma for grid[3][4].
+ERROR - grid[4][0] doesnot enough data to calculate mu & sigma for grid[4][0].
+ERROR - grid[4][1] doesnot enough data to calculate mu & sigma for grid[4][1].
+ERROR - grid[4][2] doesnot enough data to calculate mu & sigma for grid[4][2].
+ERROR - grid[4][3] doesnot enough data to calculate mu & sigma for grid[4][3].
+ERROR - grid[4][4] doesnot enough data to calculate mu & sigma for grid[4][4].
+ERROR - grid[0][0] doesnot enough data to calculate mu & sigma for grid[0][0].
+ERROR - grid[0][1] doesnot enough data to calculate mu & sigma for grid[0][1].
+ERROR - grid[0][2] doesnot enough data to calculate mu & sigma for grid[0][2].
+ERROR - grid[0][3] doesnot enough data to calculate mu & sigma for grid[0][3].
+ERROR - grid[0][4] doesnot enough data to calculate mu & sigma for grid[0][4].
+ERROR - grid[1][0] doesnot enough data to calculate mu & sigma for grid[1][0].
+ERROR - grid[1][1] doesnot enough data to calculate mu & sigma for grid[1][1].
+ERROR - grid[1][2] doesnot enough data to calculate mu & sigma for grid[1][2].
+ERROR - grid[1][3] doesnot enough data to calculate mu & sigma for grid[1][3].
+ERROR - grid[1][4] doesnot enough data to calculate mu & sigma for grid[1][4].
+ERROR - grid[2][0] doesnot enough data to calculate mu & sigma for grid[2][0].
+ERROR - grid[2][1] doesnot enough data to calculate mu & sigma for grid[2][1].
+ERROR - grid[2][2] doesnot enough data to calculate mu & sigma for grid[2][2].
+ERROR - grid[2][3] doesnot enough data to calculate mu & sigma for grid[2][3].
+ERROR - grid[2][4] doesnot enough data to calculate mu & sigma for grid[2][4].
+ERROR - grid[3][0] doesnot enough data to calculate mu & sigma for grid[3][0].
+ERROR - grid[3][1] doesnot enough data to calculate mu & sigma for grid[3][1].
+ERROR - grid[3][2] doesnot enough data to calculate mu & sigma for grid[3][2].
+ERROR - grid[3][3] doesnot enough data to calculate mu & sigma for grid[3][3].
+ERROR - grid[3][4] doesnot enough data to calculate mu & sigma for grid[3][4].
+ERROR - grid[4][0] doesnot enough data to calculate mu & sigma for grid[4][0].
+ERROR - grid[4][1] doesnot enough data to calculate mu & sigma for grid[4][1].
+ERROR - grid[4][2] doesnot enough data to calculate mu & sigma for grid[4][2].
+ERROR - grid[4][3] doesnot enough data to calculate mu & sigma for grid[4][3].
+ERROR - grid[4][4] doesnot enough data to calculate mu & sigma for grid[4][4].
+ERROR - grid[0][0] doesnot enough data to calculate mu & sigma for grid[0][0].
+ERROR - grid[0][1] doesnot enough data to calculate mu & sigma for grid[0][1].
+ERROR - grid[0][2] doesnot enough data to calculate mu & sigma for grid[0][2].
+ERROR - grid[0][3] doesnot enough data to calculate mu & sigma for grid[0][3].
+ERROR - grid[0][4] doesnot enough data to calculate mu & sigma for grid[0][4].
+ERROR - grid[1][0] doesnot enough data to calculate mu & sigma for grid[1][0].
+ERROR - grid[1][1] doesnot enough data to calculate mu & sigma for grid[1][1].
+ERROR - grid[1][2] doesnot enough data to calculate mu & sigma for grid[1][2].
+ERROR - grid[1][3] doesnot enough data to calculate mu & sigma for grid[1][3].
+ERROR - grid[1][4] doesnot enough data to calculate mu & sigma for grid[1][4].
+ERROR - grid[2][0] doesnot enough data to calculate mu & sigma for grid[2][0].
+ERROR - grid[2][1] doesnot enough data to calculate mu & sigma for grid[2][1].
+ERROR - grid[2][2] doesnot enough data to calculate mu & sigma for grid[2][2].
+ERROR - grid[2][3] doesnot enough data to calculate mu & sigma for grid[2][3].
+ERROR - grid[2][4] doesnot enough data to calculate mu & sigma for grid[2][4].
+ERROR - grid[3][0] doesnot enough data to calculate mu & sigma for grid[3][0].
+ERROR - grid[3][1] doesnot enough data to calculate mu & sigma for grid[3][1].
+ERROR - grid[3][2] doesnot enough data to calculate mu & sigma for grid[3][2].
+ERROR - grid[3][3] doesnot enough data to calculate mu & sigma for grid[3][3].
+ERROR - grid[3][4] doesnot enough data to calculate mu & sigma for grid[3][4].
+ERROR - grid[4][0] doesnot enough data to calculate mu & sigma for grid[4][0].
+ERROR - grid[4][1] doesnot enough data to calculate mu & sigma for grid[4][1].
+ERROR - grid[4][2] doesnot enough data to calculate mu & sigma for grid[4][2].
+ERROR - grid[4][3] doesnot enough data to calculate mu & sigma for grid[4][3].
+ERROR - grid[4][4] doesnot enough data to calculate mu & sigma for grid[4][4].
+ERROR - grid[0][0] doesnot enough data to calculate mu & sigma for grid[0][0].
+ERROR - grid[0][1] doesnot enough data to calculate mu & sigma for grid[0][1].
+ERROR - grid[0][2] doesnot enough data to calculate mu & sigma for grid[0][2].
+ERROR - grid[0][3] doesnot enough data to calculate mu & sigma for grid[0][3].
+ERROR - grid[0][4] doesnot enough data to calculate mu & sigma for grid[0][4].
+ERROR - grid[1][0] doesnot enough data to calculate mu & sigma for grid[1][0].
+ERROR - grid[1][1] doesnot enough data to calculate mu & sigma for grid[1][1].
+ERROR - grid[1][2] doesnot enough data to calculate mu & sigma for grid[1][2].
+ERROR - grid[1][3] doesnot enough data to calculate mu & sigma for grid[1][3].
+ERROR - grid[1][4] doesnot enough data to calculate mu & sigma for grid[1][4].
+ERROR - grid[2][0] doesnot enough data to calculate mu & sigma for grid[2][0].
+ERROR - grid[2][1] doesnot enough data to calculate mu & sigma for grid[2][1].
+ERROR - grid[2][2] doesnot enough data to calculate mu & sigma for grid[2][2].
+ERROR - grid[2][3] doesnot enough data to calculate mu & sigma for grid[2][3].
+ERROR - grid[2][4] doesnot enough data to calculate mu & sigma for grid[2][4].
+ERROR - grid[3][0] doesnot enough data to calculate mu & sigma for grid[3][0].
+ERROR - grid[3][1] doesnot enough data to calculate mu & sigma for grid[3][1].
+ERROR - grid[3][2] doesnot enough data to calculate mu & sigma for grid[3][2].
+ERROR - grid[3][3] doesnot enough data to calculate mu & sigma for grid[3][3].
+ERROR - grid[3][4] doesnot enough data to calculate mu & sigma for grid[3][4].
+ERROR - grid[4][0] doesnot enough data to calculate mu & sigma for grid[4][0].
+ERROR - grid[4][1] doesnot enough data to calculate mu & sigma for grid[4][1].
+ERROR - grid[4][2] doesnot enough data to calculate mu & sigma for grid[4][2].
+ERROR - grid[4][3] doesnot enough data to calculate mu & sigma for grid[4][3].
+ERROR - grid[4][4] doesnot enough data to calculate mu & sigma for grid[4][4].
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[1][0] has less than 30 observations.
+WARNING - grid[2][0] has less than 30 observations.
+WARNING - grid[3][0] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[1][0] has less than 30 observations.
+WARNING - grid[2][0] has less than 30 observations.
+WARNING - grid[3][0] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[1][0] has less than 30 observations.
+WARNING - grid[2][0] has less than 30 observations.
+WARNING - grid[3][0] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[1][0] has less than 30 observations.
+WARNING - grid[2][0] has less than 30 observations.
+WARNING - grid[3][0] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[0][1] has less than 30 observations.
+WARNING - grid[1][0] has less than 30 observations.
+WARNING - grid[2][0] has less than 30 observations.
+WARNING - grid[3][0] has less than 30 observations.
+WARNING - grid[0][1] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[1][0] has less than 30 observations.
+WARNING - grid[2][0] has less than 30 observations.
+WARNING - grid[3][0] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[1][0] has less than 30 observations.
+WARNING - grid[2][0] has less than 30 observations.
+WARNING - grid[3][0] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[0][0] has less than 30 observations.
+WARNING - grid[1][0] has less than 30 observations.
+WARNING - grid[2][0] has less than 30 observations.
+WARNING - grid[3][0] has less than 30 observations.

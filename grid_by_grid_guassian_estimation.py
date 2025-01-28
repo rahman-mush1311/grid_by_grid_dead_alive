@@ -47,23 +47,37 @@ def load_observations(filenames):
 ''', re.VERBOSE)
     
     observations = collections.defaultdict(list)
+    first_char=''
+    prefix=''
+    
     for filename in filenames:
+        if 'O' in filename:
+            prefix=filename.split('O')[0]
+        print(prefix)
         with open(filename) as object_xys:
             for line in object_xys:
                 m = pattern.match(line)
                 if m:
                     obj_id = int(m.group('object_id'))
-                    frame = m.group('frame')
-                    cX=m.group('x')
-                    cY=m.group('y')
-                
-                    observations[int(m.group('object_id'))].append((int(m.group('frame')), int(m.group('x')), int(m.group('y'))))
-
+                    frame = int (m.group('frame'))
+                    cX= int (m.group('x'))
+                    cY= int (m.group('y'))
+                    if first_char=='D':
+                        obj_id=str(obj_id)+'d'
+                    
+                    else:
+                        obj_id=prefix+'_'+str(obj_id)+'a'
+                    
+                    observations[obj_id].append((frame, cX, cY))
+               
+                    
     # make sure the observations are in frame order
     
     for object_id in observations:
         observations[object_id].sort()
-                
+    
+    for object_id, items in observations.items():
+        assert all(items[i][0] <= items[i + 1][0] for i in range(len(items) - 1)), f"Items for {object_id} are not sorted by frame"           
     return observations
  
 
