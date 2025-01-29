@@ -283,7 +283,7 @@ def plot_cdf_line_side_by_side(dead_pdf_list, alive_pdf_list):
     axes[1].set_ylabel('Cumulative Probability', fontsize=12)
     axes[1].grid()
     
-    plt.savefig(f"dead_alive_cdf_line(n).png", format='png', dpi=300)
+    #plt.savefig(f"dead_alive_cdf_line(n).png", format='png', dpi=300)
     # Adjust layout and display the plot
     plt.tight_layout()
     plt.show()
@@ -491,7 +491,7 @@ def filtered_overlay_histogram(dead_pdf_list,alive_pdf_list):
     plt.title(f"Overlay of Two Histograms Lines with Non-Zero Bins Width={bin_width}", fontsize=14)
     plt.legend()
     #plt.grid(axis='y', linestyle='--', alpha=0.7)
-    plt.savefig("Overlay of Two Histograms Lines with Non-Zero Bins")
+    #plt.savefig("Overlay of Two Histograms Lines with Non-Zero Bins")
     # Show the plot
     plt.show()
     

@@ -14,7 +14,7 @@ from sklearn.metrics import confusion_matrix, roc_curve, auc, ConfusionMatrixDis
 from grid_by_grid_guassian_estimation import grid_by_grid_displacement_observation,grid_covariance_calculate,print_grid_stats
 from result_visualization import mean_covariance_plot,make_collage
 from evaluate_with_probability_density_values import grid_by_grid_pdf,calculate_pdf_all_by_displacements,get_pdf_value_list,mismatching_pdf_observations,get_unique_values_of_pdfs
-from evaluate_thresholding_model import get_log_dictionary,get_thresholds_from_roc,thresholding_with_window_roc_curve,thresholding_classification_with_window_minimum,predict_probabilities_dictionary_update
+from evaluate_thresholding_model import get_log_dictionary,get_thresholds_from_roc,thresholding_with_window_roc_curve,predict_probabilities_dictionary_update
 
 def prepare_train_test(curr_obs,train_ratio):
     """
@@ -175,7 +175,7 @@ def create_confusion_matrix(data,t, thresholding_type,data_type):
     print(f"{accuracy:<10.3f}{f1:<10.3f}{recall:<10.3f}")
     
     # Display confusion matrix
-    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["Dead (0)", "Alive (1)"])
+    disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=["Dead (1)", "Alive (0)"])
     disp.plot(cmap="Blues")
     disp.ax_.set_title(f" {data_type} Confusion Matrix Using {thresholding_type}")
     disp.ax_.set_xlabel("Predicted Labels")

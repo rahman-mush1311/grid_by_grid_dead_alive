@@ -47,13 +47,14 @@ def load_observations(filenames):
 ''', re.VERBOSE)
     
     observations = collections.defaultdict(list)
-    first_char=''
+    last_char=''
     prefix=''
     
     for filename in filenames:
         if 'O' in filename:
             prefix=filename.split('O')[0]
-        print(prefix)
+            last_char=filename[-6]
+        print(prefix,last_char)
         with open(filename) as object_xys:
             for line in object_xys:
                 m = pattern.match(line)
@@ -62,11 +63,11 @@ def load_observations(filenames):
                     frame = int (m.group('frame'))
                     cX= int (m.group('x'))
                     cY= int (m.group('y'))
-                    if first_char=='D':
+                    if prefix[0]=='D':
                         obj_id=str(obj_id)+'d'
                     
                     else:
-                        obj_id=prefix+'_'+str(obj_id)+'a'
+                        obj_id=str(obj_id)+'a'+last_char
                     
                     observations[obj_id].append((frame, cX, cY))
                
