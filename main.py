@@ -25,8 +25,8 @@ if __name__ == "__main__":
     dead_obs = load_observations(dead_file_list) 
     #print(dead_obs)
     dead_grid_displacements=grid_by_grid_displacement_observation(dead_obs,5,4128,2196)   
-    dead_grid_stats=grid_covariance_calculate(dead_grid_displacements)
-    print_grid_stats(dead_grid_stats) #run this to see the mu & sigma in formatted way
+    dead_grid_stats=grid_covariance_calculate(dead_grid_displacements,"dead")
+    #print_grid_stats(dead_grid_stats) #run this to see the mu & sigma in formatted way
     
     #in below statement calculates the all dead object's probability density value of the displacements
     dead_pdf_all_dict=calculate_pdf_all_by_displacements(dead_obs,dead_grid_stats,4128,2196)
@@ -38,10 +38,10 @@ if __name__ == "__main__":
 
 
     alive_obs = load_observations(alive_file_list)
-    print(len(alive_obs))
+    #print(len(alive_obs))
     alive_grid_displacements=grid_by_grid_displacement_observation(alive_obs,5,4128,2196) 
-    alive_grid_stats=grid_covariance_calculate(alive_grid_displacements)
-    print_grid_stats(alive_grid_stats)
+    alive_grid_stats=grid_covariance_calculate(alive_grid_displacements,"alive")
+    #print_grid_stats(alive_grid_stats)
     alive_pdf_all_dict=calculate_pdf_all_by_displacements(alive_obs,dead_grid_stats,4128,2196)
     dead_log_pdf_dict,alive_log_pdf_dict=get_log_dictionary(dead_pdf_all_dict,alive_pdf_all_dict)
     all_log_pdf_dict=combine_dictionaries(dead_log_pdf_dict,alive_log_pdf_dict)
@@ -114,7 +114,7 @@ if __name__ == "__main__":
     #predicted_dict=predict_probabilities_dictionary_update(all_log_pdf_dict, best_threshold,2)
     
     #create_confusion_matrix(predicted_dict,best_threshold, "roc_curve","all ")
-    #prepare_data(dead_obs,alive_obs)
+    prepare_data(dead_obs,alive_obs)
     
     
    

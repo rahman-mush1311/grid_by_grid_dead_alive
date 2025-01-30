@@ -159,8 +159,8 @@ def thresholding_with_window_roc_curve(data,window):
     Returns:
     - N/A
     """
-    #filtered_thresholds=get_thresholds_from_roc(data)
-    filtered_thresholds=get_threshold_from_object_minimum(data)
+    filtered_thresholds=get_thresholds_from_roc(data)
+    #filtered_thresholds=get_threshold_from_object_minimum(data)
     
     window_size=window
     thresholds=filtered_thresholds
@@ -192,7 +192,7 @@ def thresholding_with_window_roc_curve(data,window):
         f1 = f1_score(true_labels, predictions)
         recall = recall_score(true_labels, predictions)
         classify = cm[0, 0] + cm[1, 1]  # True positives + True negatives
-        print(f"{threshold:<12.3f}{accuracy:<10.3f}{f1:<10.3f}{recall:<10.3f}{cm.tolist()} from ROC Curve {window_size}")
+        #print(f"{threshold:<12.3f}{accuracy:<10.3f}{f1:<10.3f}{recall:<10.3f}{cm.tolist()} from ROC Curve {window_size}")
         
         if classify > best_classify:
             best_classify = classify
@@ -221,7 +221,7 @@ def predict_probabilities_dictionary_update(data, best_threshold,window_size):
             'true_labels': data[obj_id]["true_labels"],
             'predicted_labels': cls
         }
-    print(data)
+    #print(data)
     return data
 
       

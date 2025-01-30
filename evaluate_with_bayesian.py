@@ -14,7 +14,7 @@ from sklearn.metrics import confusion_matrix, roc_curve, auc, ConfusionMatrixDis
 from grid_by_grid_guassian_estimation import grid_by_grid_displacement_observation,grid_covariance_calculate,print_grid_stats
 from result_visualization import mean_covariance_plot,make_collage
 from evaluate_with_probability_density_values import grid_by_grid_pdf,calculate_pdf_all_by_displacements,get_pdf_value_list,mismatching_pdf_observations,get_unique_values_of_pdfs
-from evaluate_thresholding_model import get_log_dictionary,get_thresholds_from_roc,thresholding_with_window_roc_curve,predict_probabilities_dictionary_update
+from evaluate_thresholding_model import get_log_dictionary,get_thresholds_from_roc,thresholding_with_window_roc_curve,predict_probabilities_dictionary_update,combine_dictionaries
 
 def prepare_train_test(curr_obs,train_ratio):
     """
@@ -65,17 +65,17 @@ def calculate_prior(alive_train_obs,dead_train_obs):
 def compute_likelihood_without_threshold(log_pdfs_dead_dis_dead, log_pdfs_dead_dis_alive, true_labels, prior_dead, prior_alive):
     """
     this function creates a log of all the pdfs values displacements from dead / alive  log pdf's dictionary and calculates the sum and adds the log of prior probabilites
+    then computes the predicted label whichever's sum is greater
     Parameters:
     - log_pdfs_dead_dis_dead: dictionary containing {object id: (pdf_values_for displacements using dead grid stats)}
     - log_pdfs_dead_dis_dead: dictionary containing {object id: (pdf_values_for displacements) using alive grid stats}
     Returns:
-    - curr_likelihood: dictionary containing {object id: {true_label: 'd'/'a', dead_log_pdf: 'P(D/X), alive_log_pdf: P(A/X)'}}
+    - curr_likelihood: dictionary containing {object id: {true_label: 'd'/'a', dead_log_pdf: 'P(D/X), alive_log_pdf: P(A/X), pred_labels: 'a/d''}}
     """
     curr_likelihood = {}
     
     for obj_id in log_pdfs_dead_dis_dead:
-        cls = 'd'
-        
+        cls=''
         # Filter valid log PDFs
         valid_dead_log_pdfs = [v for v in log_pdfs_dead_dis_dead[obj_id] if v != 0]
         valid_alive_log_pdfs = [v for v in log_pdfs_dead_dis_alive[obj_id] if v != 0]
@@ -91,36 +91,15 @@ def compute_likelihood_without_threshold(log_pdfs_dead_dis_dead, log_pdfs_dead_d
         alive_log_sum_pdf = np.sum(valid_alive_log_pdfs) + np.log(prior_alive)
         
         #print(f"dead_log_sum is {dead_log_sum_pdf}, alive_log_sum_pdf: {alive_log_sum_pdf}")
-        '''
-        # Classification based on posterior probabilities
-        if dead_log_sum_pdf > alive_log_sum_pdf:
-            cls = 'd'
-            
+        if dead_log_sum_pdf>alive_log_sum_pdf:
+            cls='d'
         else:
-            cls = 'a'
-        
-        # Record the true and predicted labels
-        if true_labels == 'd':
-            curr_likelihood[f"{obj_id}d"] = {'true_labels': 'd', 'predicted_labels': cls}
-        else:
-            curr_likelihood[f"{obj_id}a"] = {'true_labels': 'a', 'predicted_labels': cls}
-        
-        if true_labels == 'd':
-            curr_likelihood[f"{obj_id}d"] = {'true_labels': 'd', 'dead_prob': dead_log_sum_pdf, 'alive_prob': alive_log_sum_pdf, 'predicted_labels': cls }
-        else:
-            curr_likelihood[f"{obj_id}a"] = {'true_labels': 'a', 'dead_prob': dead_log_sum_pdf, 'alive_prob': alive_log_sum_pdf, 'predicted_labels': cls }
-        
-        curr_likelihood[f"{obj_id}{true_labels}"] = {
-            'true_labels': true_labels,
-            'dead_prob': dead_log_sum_pdf,
-            'alive_prob': alive_log_sum_pdf,
-            'predicted_labels': cls
-        }
-        '''
+            cls='a'
         curr_likelihood[obj_id] = {
             'true_labels': true_labels,
             'dead_prob': dead_log_sum_pdf,
             'alive_prob': alive_log_sum_pdf,
+            'predicted_labels':cls
         }
 
     #print(curr_likelihood)
@@ -260,7 +239,6 @@ def optimize_threshold(data):
             for obj_id, values in data.items()
         }
         true_labels = [values['true_labels'] for values in data.values()]
-        #pred_labels = list(predictions.values())
         pred_labels = [predictions[obj_id] for obj_id in data.keys()]
         
         # Calculate confusion matrix and metrics
@@ -271,7 +249,7 @@ def optimize_threshold(data):
         classify = cm[0, 0] + cm[1, 1]  # True positives + True negatives
         error=cm[0,1]+cm[1,0] #false positive + false negatives
       
-        print(f"{t:<12.3f}{accuracy:<10.3f}{f1:<10.3f}{recall:<10.3f}{classify:<10}{cm.tolist()}")
+        #print(f"{t:<12.3f}{accuracy:<10.3f}{f1:<10.3f}{recall:<10.3f}{classify:<10}{cm.tolist()}")
         
         if classify > best_classify:
             best_classify = classify
@@ -320,24 +298,6 @@ def compute_likelihood_with_threshold(data, threshold):
 
     return curr_likelihood
 
-def get_combined_dictionaries(dead_obs,alive_obs):
-    '''
-    this function takes 2 dictionaries & merges them into one by modifying the object id with a/d
-    Parameters:
-    - dead obs: dictionary containing dead observations: object id: [(frame,x,y)]
-    - alive obs: dictionary containing alive observations: object id: [(frame,x,y)]
-    Returns:
-    - merged dict: object id: [(frame,x,y)]
-    '''
-    merged_dict={}
-    
-    for obj_id, paths in dead_obs.items():
-        merged_dict[f"{obj_id}d"]=paths
-    for obj_id, paths in alive_obs.items():
-        merged_dict[f"{obj_id}a"]=paths
-    
-    #print(merged_dict)
-    return merged_dict
 def find_the_misclassified_obj(curr_pred_dict, curr_obs):
     '''
     this functions finds the misclassified object's ids only
@@ -394,52 +354,30 @@ def prepare_data(dead_obs,alive_obs):
     #splits into train test for alive & dead
     alive_train_obs,alive_test_obs=prepare_train_test(alive_obs,0.8)
     dead_train_obs,dead_test_obs=prepare_train_test(dead_obs,0.8)
-    #print(len(alive_train_obs),len(alive_test_obs))
+    print(f"train set size for dead & alive: {len(dead_train_obs)},{len(alive_train_obs)}")
+    print(f"test set size for dead & alive: {len(dead_test_obs)},{len(alive_test_obs)}")
     #print(len(dead_train_obs),len(dead_test_obs))
     
     #grid_by grid displacements & mu_sigma calculation for dead
     dead_train_grid_displacements=grid_by_grid_displacement_observation(dead_train_obs,5,4128,2196)   
-    dead_grid_stats=grid_covariance_calculate(dead_train_grid_displacements)
+    dead_grid_stats=grid_covariance_calculate(dead_train_grid_displacements,"dead trainning set")
     #print_grid_stats(dead_grid_stats)
    
     #grid_by grid displacements & mu_sigma calculation for alive
     alive_train_grid_displacements=grid_by_grid_displacement_observation(alive_train_obs,5,4128,2196)   
-    alive_grid_stats=grid_covariance_calculate(alive_train_grid_displacements)
-    print_grid_stats(alive_grid_stats)
+    alive_grid_stats=grid_covariance_calculate(alive_train_grid_displacements,"alive trainning set")
+    #print_grid_stats(alive_grid_stats)
   
 
     #grid by grid pdf calculation with dead & alive grid stats 
     train_dead_with_dead_pdf_dict=calculate_pdf_all_by_displacements(dead_train_obs,dead_grid_stats,4128,2196)
-    print(len(train_dead_with_dead_pdf_dict))
+    #print(len(train_dead_with_dead_pdf_dict))
     train_dead_with_alive_pdf_dict=calculate_pdf_all_by_displacements(dead_train_obs,alive_grid_stats,4128,2196)
-    print(len(train_dead_with_alive_pdf_dict))
+    #print(len(train_dead_with_alive_pdf_dict))
     train_alive_with_dead_pdf_dict=calculate_pdf_all_by_displacements(alive_train_obs,dead_grid_stats,4128,2196)
-    print(len(train_alive_with_dead_pdf_dict))
+    #print(len(train_alive_with_dead_pdf_dict))
     train_alive_with_alive_pdf_dict=calculate_pdf_all_by_displacements(alive_train_obs,alive_grid_stats,4128,2196)
-    print(len(train_alive_with_alive_pdf_dict))
-    
-    #log of the grid by grid pdfs
-    train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf=get_log_dictionary(train_dead_with_dead_pdf_dict,train_alive_with_dead_pdf_dict)
-    #print(train_dead_with_dead_log_pdf)
-    train_dead_with_alive_log_pdf,train_alive_with_alive_log_pdf=get_log_dictionary(train_dead_with_alive_pdf_dict,train_alive_with_alive_pdf_dict)
-    
-    prior_dead,prior_alive=calculate_prior(alive_train_obs,dead_train_obs)
-    print(prior_dead,prior_alive)
-    
-    #calculates the sum of log probabilites with prior
-    dead_obs_pred=compute_likelihood_without_threshold(train_dead_with_dead_pdf_dict,train_dead_with_alive_pdf_dict,'d',prior_dead,prior_alive)
-    alive_obs_pred=compute_likelihood_without_threshold(train_alive_with_dead_pdf_dict,train_alive_with_alive_pdf_dict,'a',prior_dead,prior_alive)
-    #concates both of the precomputed dictionaries
-    total_preds=dead_obs_pred | alive_obs_pred
-
-   
-    #thresholding related classification with scores
-    #thresholding_with_window_roc_curve(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf)
-    
-    #finds the threshold by maximizing accuracy
-    threshold=optimize_threshold(total_preds)
-    total_preds_thresholds=compute_likelihood_with_threshold(total_preds, threshold) #calculates the classifications
-    #create_confusion_matrix(total_preds_thresholds,threshold)
+    #print(len(train_alive_with_alive_pdf_dict))
     
     #test set probability calculations
     test_dead_with_dead_pdf_dict=calculate_pdf_all_by_displacements(dead_test_obs,dead_grid_stats,4128,2196)
@@ -448,59 +386,57 @@ def prepare_data(dead_obs,alive_obs):
     test_alive_with_dead_pdf_dict=calculate_pdf_all_by_displacements(alive_test_obs,dead_grid_stats,4128,2196)
     test_alive_with_alive_pdf_dict=calculate_pdf_all_by_displacements(alive_test_obs,alive_grid_stats,4128,2196)
     
+    
+    
     #log of the grid by grid pdfs
+    train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf=get_log_dictionary(train_dead_with_dead_pdf_dict,train_alive_with_dead_pdf_dict)
     test_dead_with_dead_log_pdf,test_alive_with_dead_log_pdf=get_log_dictionary(test_dead_with_dead_pdf_dict,test_alive_with_dead_pdf_dict)
-    #print(train_dead_with_dead_log_pdf)
+    print(f"train size after probability calculation: {len(train_dead_with_dead_log_pdf)}, {len(train_alive_with_dead_log_pdf)}")
+    print(f"test size after probability calculation: {len(test_dead_with_dead_log_pdf)}, {len(test_alive_with_dead_log_pdf)}")
+    
+    #thresholding for outliers:
+    train_all_log_pdf_dict=combine_dictionaries(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf)
+    print(f"train size from bayesian py: {len(train_all_log_pdf_dict)}")
+    best_threshold_from_roc=thresholding_with_window_roc_curve(train_all_log_pdf_dict,2)
+    print(f"from roc curve & window size 2 the best threshold {best_threshold_from_roc}")
+    predicted_train_dict=predict_probabilities_dictionary_update(train_all_log_pdf_dict, best_threshold_from_roc,2)
+    #create_confusion_matrix(predicted_train_dict,best_threshold_from_roc, "Roc Curve","Train Set")  
+    
+    test_all_log_pdf_dict=combine_dictionaries(test_dead_with_dead_log_pdf,test_alive_with_dead_log_pdf)
+    print(f"test size from bayesian py: {len(test_all_log_pdf_dict)}")
+    predicted_test_dict=predict_probabilities_dictionary_update(test_all_log_pdf_dict, best_threshold_from_roc,2)
+    #create_confusion_matrix(predicted_test_dict,best_threshold_from_roc, "Roc Curve","Test Set")
+    
+    
+    #bayesian classifer related codes:
+    train_dead_with_alive_log_pdf,train_alive_with_alive_log_pdf=get_log_dictionary(train_dead_with_alive_pdf_dict,train_alive_with_alive_pdf_dict)
     test_dead_with_alive_log_pdf,test_alive_with_alive_log_pdf=get_log_dictionary(test_dead_with_alive_pdf_dict,test_alive_with_alive_pdf_dict)
     
-    #calculates the log sum of the probabilites with prior
+    #calculates the sum of log probabilites with prior add predicted without threshold
+    prior_dead,prior_alive=calculate_prior(alive_train_obs,dead_train_obs)
+    print(prior_dead,prior_alive)
+    
+    
+    train_dead_obs_pred=compute_likelihood_without_threshold(train_dead_with_dead_pdf_dict,train_dead_with_alive_pdf_dict,'d',prior_dead,prior_alive)
+    train_alive_obs_pred=compute_likelihood_without_threshold(train_alive_with_dead_pdf_dict,train_alive_with_alive_pdf_dict,'a',prior_dead,prior_alive)
+    print(f"size of trainning set for: {len(train_dead_obs_pred)},{len(train_alive_obs_pred)}")
+    
+    #concates both of the precomputed dictionaries
+    train_total_preds=train_dead_obs_pred | train_alive_obs_pred
+    #create_confusion_matrix(train_total_preds,0, "None","Train Set Bayesian")
+    
     test_dead_obs_pred=compute_likelihood_without_threshold(test_dead_with_dead_pdf_dict,test_dead_with_alive_pdf_dict,'d',prior_dead,prior_alive)
     test_alive_obs_pred=compute_likelihood_without_threshold(test_alive_with_dead_pdf_dict,test_alive_with_alive_pdf_dict,'a',prior_dead,prior_alive)
     
-    test_total=test_dead_obs_pred | test_alive_obs_pred
-    test_total_preds_thresholds=compute_likelihood_with_threshold(test_total, threshold)#does classification based on threshold
-    #create_confusion_matrix(total_preds_thresholds,threshold, 'Bayesian', 'Trainning Data')
-    #create_confusion_matrix(test_total_preds_thresholds,threshold, 'Bayesian', 'Testing Data')
+    test_total_preds=test_dead_obs_pred | test_alive_obs_pred
+    #create_confusion_matrix(test_total_preds,0, "None","Test Set Bayesian Without Threshold")
     
     #thresholding related classification with scores
-    '''
-    roc_threshold_1=thresholding_with_window_roc_curve(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,2)
-    roc_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf, roc_threshold_1,2)
-    create_confusion_matrix(roc_train_window_1,roc_threshold_1,'ROC Curve', 'Trainning Data')
-    roc_test_window_1=predict_probabilities_dictionary_update(test_dead_with_dead_log_pdf,test_alive_with_dead_log_pdf, roc_threshold_1,2)
-    create_confusion_matrix(roc_test_window_1,roc_threshold_1, 'ROC Curve', 'Testing Data')
-    '''
-    obj_minimum_threshold_1=thresholding_classification_with_window_minimum(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,2)
-    obj_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,obj_minimum_threshold_1,2)
-    #create_confusion_matrix(obj_train_window_1,obj_minimum_threshold_1, 'Object Minimum', 'Trainning Data')
-    obj_test_window_1=predict_probabilities_dictionary_update(test_dead_with_dead_log_pdf,test_alive_with_dead_log_pdf,obj_minimum_threshold_1,2)
-    #create_confusion_matrix(obj_test_window_1,obj_minimum_threshold_1, 'Object Minimum', 'Testing Data')
+    threshold_bayesian=optimize_threshold(train_total_preds)#finds the threshold by maximizing accuracy
+    print(f"best threshold for bayesian difference: {threshold_bayesian}")
+    train_total_preds_with_threshold=compute_likelihood_with_threshold(train_total_preds, threshold_bayesian) #calculates the classifications
+    create_confusion_matrix(train_total_preds_with_threshold,threshold_bayesian, "Bayesian","Train Set")
     
-    train_obs = dead_train_obs | alive_train_obs
-    #train_obs=get_combined_dictionaries(dead_train_obs,alive_train_obs)
-    mis_bayes=find_the_misclassified_obj(total_preds_thresholds, train_obs)
-    roc_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf, -9.277,1)
-    miss_roc_1=find_the_misclassified_obj(roc_train_window_1, train_obs)
-    roc_train_window_2=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf, -8.668,2)
-    miss_roc_2=find_the_misclassified_obj(roc_train_window_2, train_obs)
-    obj_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,-9.981,1)
-    miss_obj_1=find_the_misclassified_obj(obj_train_window_1, train_obs)
-    obj_train_window_2=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf,-8.414,2)
-    miss_obj_2=find_the_misclassified_obj(obj_train_window_2, train_obs)
-    
-    plot_misclassified_paths(total_preds_thresholds, train_obs, mis_bayes)
-    #plot_misclassified_paths(roc_train_window_1, train_obs, miss_roc_1)
-    
-    #test_obs=get_combined_dictionaries(dead_test_obs,alive_test_obs)
-    #plot_misclassified_paths(test_total_preds_thresholds, test_obs)
-    '''
-    roc_train_window_1=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf, -9.971,1)
-    plot_misclassified_paths(roc_train_window_1, train_obs)
-    roc_test_window_1=predict_probabilities_dictionary_update(test_dead_with_dead_log_pdf,test_alive_with_dead_log_pdf,  -9.971,1)
-    plot_misclassified_paths(roc_test_window_1, test_obs)
-    
-    roc_train_window_2=predict_probabilities_dictionary_update(train_dead_with_dead_log_pdf,train_alive_with_dead_log_pdf, -7.616,2)
-    plot_misclassified_paths(roc_train_window_2, train_obs)
-    roc_test_window_2=predict_probabilities_dictionary_update(test_dead_with_dead_log_pdf,test_alive_with_dead_log_pdf,  -7.616,2)
-    plot_misclassified_paths(roc_test_window_2, test_obs)
-    '''
+    test_total_preds_with_threshold=compute_likelihood_with_threshold(test_total_preds, threshold_bayesian) #calculates the classifications
+    create_confusion_matrix(test_total_preds_with_threshold,threshold_bayesian, "Bayesian","Test Set")
+   

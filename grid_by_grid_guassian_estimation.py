@@ -149,14 +149,14 @@ def grid_by_grid_displacement_observation(curr_obs,grid_squares,max_x,max_y):
         #print(f"The loop ran the same number of times as the list size, loop count is: {loop_count}")          
     return grid_dis
 
-def grid_covariance_calculate(grid_displacements):
+def grid_covariance_calculate(grid_displacements,type_of_grid):
     """
     this function creates a 5*5 list (grid_stats) from grid_displacements (5*5 list (dx,dy)) ,in the grid_stats each grid cell has their mu and covariance_matrix of size(2*2)
     it calculates by 1 grid cell at one time using numpy mean function and numpy cov function
     before the calculation it converts the list of displacement (in a particular cell) to a numpy array
     Parameters:
     - grid_displacements: grid_displacements (5*5 list where all the displacement's lie)
-    
+    - type_of_grid: string indicating whether it's alive/dead
     Returns:
     - returns a 5*5 list of mu and covariance matrix.
     """
@@ -174,7 +174,7 @@ def grid_covariance_calculate(grid_displacements):
             # be a warning, if not an error.(w)
             if(len(grid_displacements[i][j])>1):
                 if(len(grid_displacements[i][j])<30):
-                    logging.warning(f"grid[{i}][{j}] has less than 30 observations.")
+                    logging.warning(f"for {type_of_grid} grid[{i}][{j}] has less than 30 observations.")
                 dxdy_items = np.array(grid_displacements[i][j])
                 #print(f" for {i,j} cell displacements are {dxdy_items}, {dxdy_items.shape}")
                 #print(f" at {i,j} cell")
